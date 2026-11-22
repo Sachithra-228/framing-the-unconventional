@@ -14,10 +14,19 @@ const crypto = require("crypto");
 const MAX_TEXT = 200000;
 const HISTORY = 30;
 
+// Vercel may add a custom prefix to the variable names (e.g. STORAGE_KV_REST_API_URL), so match by suffix.
+const pick = (...suffixes) => {
+  for (const s of suffixes) {
+    if (process.env[s]) return process.env[s];
+    const k = Object.keys(process.env).find(name => name.endsWith(`_${s}`) && process.env[name]);
+    if (k) return process.env[k];
+  }
+  return undefined;
+};
 const env = () => ({
   pass: process.env.NOTES_PASSCODE,
-  url: process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL,
-  token: process.env.KV_REST_API_TOKEN || process.env.UPSTASH_REDIS_REST_TOKEN,
+  url: pick("KV_REST_API_URL", "UPSTASH_REDIS_REST_URL"),
+  token: pick("KV_REST_API_TOKEN", "UPSTASH_REDIS_REST_TOKEN"),
 });
 
 const noteKey = id => `ftu:note:${id}`;
