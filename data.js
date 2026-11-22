@@ -245,6 +245,44 @@ const INTERVIEWS = {
           si: "මෙම අරමුණ ඉතිරි සම්මුඛ සාකච්ඡා ඔස්සේ ආවරණය කෙරේ.",
         },
       },
+      O5: {
+        partial: true,
+        heading: { en: "An evolving, open-ended cinema", si: "පරිණාමය වන, විවෘත සිනමාවක්" },
+        said: [],
+        interpretation: {
+          en: "The future of Sri Lankan cinema was not discussed directly. However, his view that cinema is an evolving medium that keeps searching for new rules points to an open, exploratory vision of its future, one in which filmmakers with their own cinematic language move beyond existing conventions.",
+          si: "ශ්‍රී ලාංකීය සිනමාවේ අනාගතය පිළිබඳව සෘජුව සාකච්ඡා නොවිණි. නමුත් සිනමාව නව රීති සොයා යන, පරිණාමය වන මාධ්‍යයක් බවට ඔහු දරන අදහස, එහි අනාගතය පිළිබඳ විවෘත සහ ගවේෂණාත්මක දැක්මක් පෙන්නුම් කරයි — එනම් ස්වකීය සිනමා භාෂාවක් ඇති නිර්මාණකරුවන් පවතින සම්මතයන්ගෙන් ඔබ්බට යන අනාගතයකි.",
+        },
+        note: {
+          en: "Inferred from his wider views; this objective will be explored directly in the remaining interviews.",
+          si: "ඔහුගේ පුළුල් අදහස් ඇසුරින් නිගමනය කළකි; මෙම අරමුණ ඉතිරි සම්මුඛ සාකච්ඡාවලදී සෘජුව විමසනු ලැබේ.",
+        },
+      },
+      O6: {
+        heading: { en: "His position in the overall pattern", si: "සමස්ත රටාව තුළ ඔහුගේ ස්ථානය" },
+        said: [
+          {
+            en: "Defines unconventional framing by the idea it generates, not by its visual form.",
+            si: "Unconventional framing නිර්වචනය කරන්නේ එහි දෘශ්‍ය ස්වරූපයෙන් නොව, එය ජනනය කරන අදහසෙනි.",
+          },
+          {
+            en: "Sees cinematic rules as historical and changeable, with freedom tied to a personal cinematic language.",
+            si: "සිනමා රීති ඓතිහාසික සහ වෙනස් විය හැකි ඒවා ලෙස දකින අතර, නිදහස පුද්ගලික සිනමා භාෂාවක් හා බැඳී ඇති බව දකී.",
+          },
+          {
+            en: "Treats seeing beyond accepted frames as inherently political, illustrated through post-war cinema.",
+            si: "සම්මත රාමුවලින් ඔබ්බට දැකීම ස්වභාවයෙන්ම දේශපාලනික ලෙස සලකන අතර, එය පශ්චාත්-යුද සිනමාව ඇසුරින් පැහැදිලි කරයි.",
+          },
+          {
+            en: "Locates unconventionality in the eye of the critic and the viewer.",
+            si: "Unconventional බව රඳා පවතින්නේ විචාරකයාගේ සහ ප්‍රේක්ෂකයාගේ දැක්ම මත බව පවසයි.",
+          },
+        ],
+        interpretation: {
+          en: "As the first industry-professional voice, his view sets a reference point: framing as an ideational, political and subjective practice. The cross-group pattern will emerge as the academics and young filmmakers are compared against it.",
+          si: "පළමු කර්මාන්ත වෘත්තිකයාගේ හඬ ලෙස, ඔහුගේ දැක්ම සංසන්දනය සඳහා මූලික ලක්ෂ්‍යයක් සපයයි: රාමුකරණය අදහස්මය, දේශපාලනික සහ ආත්මීය ක්‍රියාවලියක් ලෙස. ශාස්ත්‍රඥයන් සහ නවක සිනමාකරුවන් මේ සමඟ සංසන්දනය කරන විට කණ්ඩායම් හරහා රටාව මතු වේ.",
+        },
+      },
     },
     closing: {
       heading: { en: "Unconventionality is subjective", si: "Unconventional බව ආත්මීයයි" },

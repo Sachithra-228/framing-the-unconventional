@@ -34,6 +34,8 @@ const UI = {
     interviewPending: "Interview pending",
     objectives: "Objectives",
     notCovered: "not covered",
+    partial: "partial",
+    notAddressed: "Not addressed in this interview.",
     interpretation: "Interpretation",
     note: "Note",
     closing: "Closing",
@@ -82,6 +84,8 @@ const UI = {
     interviewPending: "සම්මුඛ සාකච්ඡාව ඉදිරියේදී",
     objectives: "අරමුණු",
     notCovered: "ආවරණය නොවිණි",
+    partial: "අර්ධව",
+    notAddressed: "මෙම සම්මුඛ සාකච්ඡාවේදී සාකච්ඡා නොවිණි.",
     interpretation: "අර්ථකථනය",
     note: "සටහන",
     closing: "අවසාන",
@@ -300,10 +304,11 @@ function renderPerson(pid) {
   const prev = siblings[(idx - 1 + siblings.length) % siblings.length];
   const next = siblings[(idx + 1) % siblings.length];
 
-  const personal = OBJECTIVES.filter(o => !o.crossGroup);
+  const personal = OBJECTIVES;
   const coverage = personal.map(o => {
     if (!iv) return `<span class="pill todo">${o.code}</span>`;
     const ob = iv.objectives[o.code];
+    if (ob && ob.partial) return `<span class="pill gap">${o.code} · ${L("partial")}</span>`;
     if (!ob || ob.note) return `<span class="pill gap">${o.code} · ${L("notCovered")}</span>`;
     return `<span class="pill done">${o.code}</span>`;
   }).join("");
@@ -312,13 +317,17 @@ function renderPerson(pid) {
   if (iv) {
     body = personal.map(o => {
       const ob = iv.objectives[o.code];
-      if (!ob) return "";
+      if (!ob) return `
+        <div class="obj-block">
+          <div class="label"><div class="c">${o.code}</div><div class="t">${t(o.key)}</div></div>
+          <div class="txt"><p class="muted">${L("notAddressed")}</p></div>
+        </div>`;
       return `
         <div class="obj-block">
           <div class="label"><div class="c">${o.code}</div><div class="t">${t(o.key)}</div></div>
           <div class="txt">
             <h4>${t(ob.heading)}</h4>
-            <ul>${ob.said.map(s => `<li>${t(s)}</li>`).join("")}</ul>
+            ${ob.said && ob.said.length ? `<ul>${ob.said.map(s => `<li>${t(s)}</li>`).join("")}</ul>` : ""}
             ${ob.interpretation ? `<div class="callout"><b>${L("interpretation")}</b>${t(ob.interpretation)}</div>` : ""}
             ${ob.note ? `<div class="callout gap"><b>${L("note")}</b>${t(ob.note)}</div>` : ""}
           </div>
