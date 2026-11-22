@@ -18,7 +18,10 @@ const HISTORY = 30;
 const pick = (...suffixes) => {
   for (const s of suffixes) {
     if (process.env[s]) return process.env[s];
-    const k = Object.keys(process.env).find(name => name.endsWith(`_${s}`) && process.env[name]);
+    const k = Object.keys(process.env).find(name => {
+      const n = name.toUpperCase();
+      return (n === s || n.endsWith(`_${s}`)) && process.env[name];
+    });
     if (k) return process.env[k];
   }
   return undefined;
