@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="si">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Framing the Unconventional</title>
+<meta name="description" content="Qualitative research tracker comparing perspectives on unconventional framing in Sri Lankan cinema.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&family=Noto+Sans+Sinhala:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="top">
+  <div class="inner">
+    <a class="brand" href="#/"><span class="brand-mark"></span><span class="brand-t">Framing the Unconventional</span></a>
+    <div class="links">
+      <a href="#/" data-r="home" data-t="navHome">Home</a>
+      <a href="#/group/industry" data-r="industry" data-t="navIndustry">Industry</a>
+      <a href="#/group/academics" data-r="academics" data-t="navAcademics">Academics</a>
+      <a href="#/group/students" data-r="students" data-t="navStudents">Young filmmakers</a>
+      <a href="#/themes" data-r="themes" data-t="navThemes">Themes</a>
+    </div>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="si">සිං</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
+  </div>
+</nav>
+
+<main id="app"></main>
+
+<nav class="tabbar" aria-label="Sections">
+  <a href="#/" data-r="home">
+    <svg viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>
+    <span data-t="tabHome">Home</span>
+  </a>
+  <a href="#/group/industry" data-r="industry">
+    <svg viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3"/></svg>
+    <span data-t="tabIndustry">Industry</span>
+  </a>
+  <a href="#/group/academics" data-r="academics">
+    <svg viewBox="0 0 24 24"><path d="M2 9 12 4l10 5-10 5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
+    <span data-t="tabAcademics">Academics</span>
+  </a>
+  <a href="#/group/students" data-r="students">
+    <svg viewBox="0 0 24 24"><rect x="3" y="9" width="18" height="11" rx="1.5"/><path d="m3 9 2.5-5 3.5 1-2.5 5M9 5l3.5 1L10 11m2.5-5 3.5 1-2.5 5"/></svg>
+    <span data-t="tabStudents">Young</span>
+  </a>
+  <a href="#/themes" data-r="themes">
+    <svg viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/></svg>
+    <span data-t="tabThemes">Themes</span>
+  </a>
+</nav>
+
+<footer>Framing the Unconventional · <span data-t="footer">Research tracker · Updated</span> <span id="updated"></span></footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
