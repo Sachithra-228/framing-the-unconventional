@@ -19,6 +19,9 @@ const STUDY = {
   workingTitle:
     "An Interpretive & Multi-perspective Analysis of Unconventional Frames in Contemporary Sri Lankan Cinema",
   updated: { en: "22 November 2026", si: "2026 නොවැම්බර් 22" },
+  /* Image on the landing page. Swap for any still (a film frame, a set photo…). */
+  heroImage: "assets/people/vimukthi-jayasundara.png",
+  heroCaption: { en: "Vimukthi Jayasundara · Interview 01", si: "විමුක්ති ජයසුන්දර · සම්මුඛ සාකච්ඡාව 01" },
 };
 
 const GROUPS = [
@@ -110,6 +113,24 @@ const OBJECTIVES = [
       si: "රාමුකරණ තීරණවලදී සිනමාකරු (cinematographer) සහ අධ්‍යක්ෂ අතර සම්බන්ධය එක් එක් කණ්ඩායම තේරුම් ගන්නා ආකාරය සංසන්දනය කිරීම.",
     },
   },
+  {
+    code: "O5",
+    key: { en: "Future vision", si: "අනාගත දැක්ම" },
+    text: {
+      en: "To synthesize each group's vision of the future of Sri Lankan cinema.",
+      si: "ශ්‍රී ලාංකීය සිනමාවේ අනාගතය පිළිබඳ එක් එක් කණ්ඩායමේ දැක්ම සංශ්ලේෂණය කිරීම.",
+    },
+  },
+  {
+    code: "O6",
+    key: { en: "Overall pattern", si: "සමස්ත රටාව" },
+    text: {
+      en: "To interpret the overall pattern across the three groups.",
+      si: "කණ්ඩායම් තුන පුරා දක්නට ලැබෙන සමස්ත රටාව අර්ථකථනය කිරීම.",
+    },
+    /* answered by comparing groups, not inside a single interview */
+    crossGroup: true,
+  },
 ];
 
 /* The dissertation is written in English, so chapter titles stay in English. */
@@ -118,6 +139,7 @@ const STRUCTURE = [
   { n: 2, title: "Literature Review", items: ["Literature on Unconventional Approaches", "Literature on Sri Lankan Cinema", "Literature on Framings and Perspectives", "Literature Gap", "Theoretical Framework and Theories"] },
   { n: 3, title: "Methodology", items: ["Research Method", "Research Techniques", "Qualitative Interviews", "Thematic Analysis"] },
   { n: 4, title: "Findings", items: ["Presentation of Research Findings", "Revisiting the Research Objectives", "Discussion of Findings Using Thematic Analysis"] },
+  { n: 5, title: "Conclusion", items: [] },
 ];
 
 /* =========================================================

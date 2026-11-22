@@ -47,6 +47,16 @@ const UI = {
     themesSub: "Built from the interview codes. Each theme shows how many people in each group support it.",
     keyFinding: n => `Key finding · Interview ${n}`,
     footer: "Research tracker · Updated",
+    navStudy: "Study", tabStudy: "Study",
+    ctaExplore: "Explore participants",
+    ctaStudy: "About the study",
+    statParticipants: "Participants", statGroups: "Groups", statObjectives: "Objectives", statAnalysed: "Analysed",
+    stripTitle: (o, c) => `${o} objectives · ${c} chapters`,
+    stripText: "Research objectives, chapter outline and working title.",
+    viewStudy: "View study",
+    studyEyebrow: "Research design",
+    studyTitle: "About the study",
+    crossGroup: "Across groups",
   },
   si: {
     navHome: "මුල් පිටුව", navIndustry: "කර්මාන්ත", navAcademics: "ශාස්ත්‍රීය", navStudents: "නවක සිනමාකරුවන්", navThemes: "තේමා",
@@ -85,6 +95,16 @@ const UI = {
     themesSub: "සම්මුඛ සාකච්ඡා කේත ඇසුරින් ගොඩනගා ඇත. එක් එක් තේමාවට සහාය දක්වන පුද්ගලයන් ගණන කණ්ඩායම් අනුව මෙහි දැක්වේ.",
     keyFinding: n => `ප්‍රධාන සොයාගැනීම · සම්මුඛ සාකච්ඡාව ${n}`,
     footer: "පර්යේෂණ සටහන · යාවත්කාලීන කළේ",
+    navStudy: "අධ්‍යයනය", tabStudy: "අධ්‍යයනය",
+    ctaExplore: "සහභාගිවන්නන් බලන්න",
+    ctaStudy: "අධ්‍යයනය ගැන",
+    statParticipants: "සහභාගිවන්නන්", statGroups: "කණ්ඩායම්", statObjectives: "අරමුණු", statAnalysed: "විශ්ලේෂිත",
+    stripTitle: (o, c) => `අරමුණු ${o} · පරිච්ඡේද ${c}`,
+    stripText: "පර්යේෂණ අරමුණු, පරිච්ඡේද සැලැස්ම සහ මූලික මාතෘකාව.",
+    viewStudy: "අධ්‍යයනය බලන්න",
+    studyEyebrow: "පර්යේෂණ සැලසුම",
+    studyTitle: "අධ්‍යයනය ගැන",
+    crossGroup: "කණ්ඩායම් හරහා",
   },
 };
 const L = key => UI[LANG][key];
@@ -151,41 +171,89 @@ function renderHome() {
 
   $app.innerHTML = `
     <header class="hero">
-      <div class="eyebrow">${L("heroEyebrow")}</div>
-      <h1>${STUDY.title}</h1>
-      <p class="sub">${t(STUDY.subtitle)}</p>
-      <div class="working"><b>${L("workingTitle")}:</b> ${STUDY.workingTitle}</div>
-      <div class="progress">
-        <div class="pr-row"><span>${L("progress")(done, PEOPLE.length)}</span><span>${pct}%</span></div>
-        <div class="bar"><span style="width:${pct}%"></span></div>
+      <div class="h-text">
+        <div class="eyebrow">${L("heroEyebrow")}</div>
+        <h1>${STUDY.title}</h1>
+        <p class="sub">${t(STUDY.subtitle)}</p>
+        <div class="cta">
+          <button type="button" class="btn primary" id="go-groups">${L("ctaExplore")} <span aria-hidden="true">↓</span></button>
+          <a class="btn ghost" href="#/study">${L("ctaStudy")}</a>
+        </div>
+        <dl class="h-stats">
+          <div><dt>${PEOPLE.length}</dt><dd>${L("statParticipants")}</dd></div>
+          <div><dt>${GROUPS.length}</dt><dd>${L("statGroups")}</dd></div>
+          <div><dt>${OBJECTIVES.length}</dt><dd>${L("statObjectives")}</dd></div>
+          <div><dt>${done}<small>/${PEOPLE.length}</small></dt><dd>${L("statAnalysed")}</dd></div>
+        </dl>
       </div>
+      <figure class="h-media">
+        <div class="vf">
+          <img src="${STUDY.heroImage}" alt="">
+          ${corners}
+          <div class="vf-top"><span class="rec"><span class="dot"></span>REC</span><span>INT · ${pad(done)}</span></div>
+          <div class="vf-bottom">
+            <span>${t(STUDY.heroCaption)}</span>
+            <div class="bar"><span style="width:${pct}%"></span></div>
+          </div>
+        </div>
+      </figure>
     </header>
 
-    <section>
-      <div class="eyebrow">${L("partEyebrow")}</div>
-      <h2>${L("partTitle")}</h2>
-      <p class="lede">${L("partLede")}</p>
+    <section id="groups" class="home-groups">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">${L("partEyebrow")}</div>
+          <h2>${L("partTitle")}</h2>
+        </div>
+        <p class="lede">${L("partLede")}</p>
+      </div>
       <div class="groups">${groupCards}</div>
     </section>
 
-    <section id="objectives">
+    <a class="study-strip" href="#/study">
+      <div class="ss-codes">${OBJECTIVES.map(o => `<span>${o.code}</span>`).join("")}</div>
+      <div class="ss-text">
+        <b>${L("stripTitle")(OBJECTIVES.length, STRUCTURE.length)}</b>
+        <span>${L("stripText")}</span>
+      </div>
+      <span class="ss-go">${L("viewStudy")} <span class="arrow">→</span></span>
+    </a>`;
+
+  document.getElementById("go-groups").addEventListener("click", () =>
+    document.getElementById("groups").scrollIntoView({ behavior: "smooth", block: "start" }));
+}
+
+/* ---------------- STUDY ---------------- */
+function renderStudy() {
+  $app.innerHTML = `
+    ${crumbs([[L("home"), "#/"], [L("navStudy")]])}
+    <header class="page-head">
+      <div class="eyebrow">${L("studyEyebrow")}</div>
+      <h1>${L("studyTitle")}</h1>
+      <div class="working"><b>${L("workingTitle")}:</b> ${STUDY.workingTitle}</div>
+    </header>
+
+    <section class="tight">
       <div class="eyebrow">${L("objEyebrow")}</div>
       <h2>${L("objTitle")}</h2>
       <p class="lede">${L("objLede")}</p>
       <div class="obj-grid">
         ${OBJECTIVES.map(o => `
-          <div class="obj"><div class="code">${o.code}</div><div class="key">${t(o.key)}</div><p>${t(o.text)}</p></div>`).join("")}
+          <div class="obj">
+            <div class="obj-top"><span class="code">${o.code}</span>${o.crossGroup ? `<span class="pill todo">${L("crossGroup")}</span>` : ""}</div>
+            <div class="key">${t(o.key)}</div><p>${t(o.text)}</p>
+          </div>`).join("")}
       </div>
     </section>
 
-    <section id="structure">
+    <section>
       <div class="eyebrow">${L("structEyebrow")}</div>
       <h2>${L("structTitle")}</h2>
       <div class="chapters">
         ${STRUCTURE.map(c => `
           <div class="chapter" lang="en">
             <h3><span>${c.n}</span>${c.title}</h3>
-            <ol>${c.items.map((it, i) => `<li><span class="num">${c.n}.${i + 1}</span>${it}</li>`).join("")}</ol>
+            ${c.items.length ? `<ol>${c.items.map((it, i) => `<li><span class="num">${c.n}.${i + 1}</span>${it}</li>`).join("")}</ol>` : ""}
           </div>`).join("")}
       </div>
     </section>`;
@@ -232,7 +300,8 @@ function renderPerson(pid) {
   const prev = siblings[(idx - 1 + siblings.length) % siblings.length];
   const next = siblings[(idx + 1) % siblings.length];
 
-  const coverage = OBJECTIVES.map(o => {
+  const personal = OBJECTIVES.filter(o => !o.crossGroup);
+  const coverage = personal.map(o => {
     if (!iv) return `<span class="pill todo">${o.code}</span>`;
     const ob = iv.objectives[o.code];
     if (!ob || ob.note) return `<span class="pill gap">${o.code} · ${L("notCovered")}</span>`;
@@ -241,7 +310,7 @@ function renderPerson(pid) {
 
   let body;
   if (iv) {
-    body = OBJECTIVES.map(o => {
+    body = personal.map(o => {
       const ob = iv.objectives[o.code];
       if (!ob) return "";
       return `
@@ -274,7 +343,7 @@ function renderPerson(pid) {
         <h3>${L("emptyTitle")}</h3>
         <p>${L("emptyText")(p.name)}</p>
         <ol class="guide">
-          ${OBJECTIVES.map(o => `<li><b>${o.code}</b> ${t(o.text)}</li>`).join("")}
+          ${personal.map(o => `<li><b>${o.code}</b> ${t(o.text)}</li>`).join("")}
         </ol>
       </div>`;
   }
@@ -349,6 +418,7 @@ function route(scrollTop = true) {
   if (kind === "group") renderGroup(id);
   else if (kind === "person") renderPerson(id);
   else if (kind === "themes") renderThemes();
+  else if (kind === "study") renderStudy();
   else renderHome();
 
   document.querySelectorAll("nav a[data-r]").forEach(a => {
@@ -356,6 +426,7 @@ function route(scrollTop = true) {
     const active =
       (r === "home" && !kind) ||
       (r === "themes" && kind === "themes") ||
+      (r === "study" && kind === "study") ||
       (kind === "group" && r === id) ||
       (kind === "person" && personById(id) && r === personById(id).group);
     a.classList.toggle("on", Boolean(active));
