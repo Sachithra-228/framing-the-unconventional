@@ -64,7 +64,7 @@ const PEOPLE = [
   { id: "prasanna-jayakodi", name: "Prasanna Jayakodi", group: "industry" },
   { id: "majith-s-uyangoda", name: "Majith S. Uyangoda", group: "industry" },
   { id: "md-mahindapaala", name: "M.D. Mahindapaala", group: "industry" },
-  { id: "channa-deshapriya", name: "Channa Deshapriya", group: "industry" },
+  { id: "channa-deshapriya", name: "Channa Deshapriya", group: "industry", role: { en: "Cinematographer", si: "කැමරා ශිල්පී" } },
 
   // Academics
   { id: "supun-hemachandra", name: "Supun Hemachandra", group: "academics" },
@@ -223,8 +223,8 @@ const INTERVIEWS = {
             si: "යුද්ධය සම්බන්ධයෙන් ශ්‍රී ලාංකීය සිනමාවේ ධාරා දෙකක් ඔහු හඳුනාගනී: යුද ජයග්‍රහණය කේන්ද්‍ර කරගත් <b>යුද ජය සිනමාව</b> සහ යුද්ධය නිසා සිදුවූ අහිමිවීම් කේන්ද්‍ර කරගත් <b>යුද ශෝක සිනමාව</b>. ඔහුගේම කෘති බොහොමයක් අයත් වන්නේ දෙවැන්නටය.",
           },
           {
-            en: "Compared with war-victory cinema, this anti-war, artistic stream presents a different political vision. These films differ both aesthetically and in their characteristics.",
-            si: "යුද විරෝධී සහ කලාත්මක මෙම ධාරාව යුද ජය සිනමාව සමඟ සසඳන විට, එය වෙනස් දේශපාලනික දැක්මක් ඉදිරිපත් කරයි. මේවා සෞන්දර්යාත්මකව මෙන්ම ලක්ෂණ අතින් ද වෙනස් සිනමා පට වේ.",
+            en: "Compared with war-victory cinema, this anti-war, artistic stream presents a different political vision. Films such as <i>Purahanda Kaluwara</i> and <i>Me Mage Sandai</i> differ both aesthetically and in their characteristics.",
+            si: "යුද විරෝධී සහ කලාත්මක මෙම ධාරාව යුද ජය සිනමාව සමඟ සසඳන විට, එය වෙනස් දේශපාලනික දැක්මක් ඉදිරිපත් කරයි. <i>පුරහඳ කළුවර</i> සහ <i>මේ මගේ සඳයි</i> වැනි සිනමා පට සෞන්දර්යාත්මකව මෙන්ම ලක්ෂණ අතින් ද වෙනස් වේ.",
           },
         ],
         interpretation: {
@@ -309,28 +309,192 @@ const INTERVIEWS = {
       { en: "Critic / viewer decides", si: "විචාරකයා / ප්‍රේක්ෂකයා තීරණය කරයි" },
     ],
   },
+  "channa-deshapriya": {
+    number: 2,
+    tags: [
+      { en: "Inclusion & exclusion", si: "ඇතුළත් කිරීම සහ බැහැර කිරීම" },
+      { en: "Frame and context", si: "රාමුව සහ සන්දර්භය" },
+      { en: "Relative unconventionality", si: "සාපේක්ෂ බව" },
+      { en: "Static framing", si: "ස්ථිතික රාමුකරණය" },
+      { en: "Commercial vs authored work", si: "වාණිජ සහ ස්වකීය නිර්මාණ" },
+      { en: "Renewal", si: "නොනවතින අලුත් වීම" },
+    ],
+    objectives: {
+      O1: {
+        heading: { en: "A frame is a balance of what to include and exclude", si: "රාමුවක් යනු ඇතුළත් කරන සහ බැහැර කරන දේ අතර සමබරතාවකි" },
+        said: [
+          {
+            en: "A frame is created by striking a balance between what is included and what is left out — the character, the foreground and the background. That balance changes with the context of the story being told.",
+            si: "රාමුවක් නිර්මාණය වන්නේ චරිතය, පෙරබිම සහ පසුබිම ඇතුළුව, රාමුවට ඇතුළත් කරන දේ සහ බැහැර කරන දේ අතර සමබරතාවක් ගොඩනැගීමෙනි. එම සමබරතාව කියන්නට යන කතාවේ සන්දර්භය අනුව වෙනස් වේ.",
+          },
+          {
+            en: "The frame affects the context, and the context in turn affects the frame — the two are bound together.",
+            si: "රාමුව සන්දර්භයට බලපාන අතර, සන්දර්භය ද රාමුවට බලපායි — මේ දෙක එකිනෙක හා බැඳී ඇත.",
+          },
+          {
+            en: "Even once a frame has been decided, the same frame may not work in two different contexts or two different films.",
+            si: "රාමුවක් තීරණය කළ පසුවත්, එකම රාමුව වෙනස් සන්දර්භ දෙකක හෝ චිත්‍රපට දෙකක එකසේ නොගැළපෙන්නට පුළුවන.",
+          },
+          {
+            en: "Whether a frame is unconventional may lie in the viewer's mind: it is the viewer who feels that “this is not the convention”.",
+            si: "රාමුවක් සම්ප්‍රදායික නොවන බව පවතින්නේ බලන කෙනාගේ මනස තුළ විය හැකිය: “මෙය සම්ප්‍රදායක් නොවේ” යැයි දැනෙන්නේ ප්‍රේක්ෂකයාටයි.",
+          },
+          {
+            en: "Frames can shift with the spectator's point of view. When the expected object is missing from the place where it is usually found, the presentation becomes unconventional.",
+            si: "ප්‍රේක්ෂකයාගේ දෘෂ්ටිකෝණය (POV) අනුව රාමු වෙනස් විය හැකිය. සාමාන්‍යයෙන් තිබිය යුතු තැන අදාළ වස්තුව නොතිබුණොත්, එය සම්ප්‍රදායික නොවන ඉදිරිපත් කිරීමක් වේ.",
+          },
+          {
+            en: "As an example he cites <i>Me Mage Sandai</i>: not a single frame contains camera movement — all 507 shots are static. Revisiting the film, he learned several new things about framing from it.",
+            si: "උදාහරණයක් ලෙස ඔහු <i>මේ මගේ සඳයි</i> චිත්‍රපටය දක්වයි: එහි කිසිදු රූප රාමුවක කැමරා චලනයක් නැත — රූප රාමු 507 ම ස්ථිතිකය. එය නැවත නරඹා රාමු පිළිබඳ තවත් දේවල් කිහිපයක් ඉගෙන ගත් බව ඔහු පවසයි.",
+          },
+        ],
+        interpretation: {
+          en: "For him, framing is a craft of selection and balance that only makes sense in context. Unconventionality is not a property of the frame alone: it arises when a frame breaks what the viewer expects to see.",
+          si: "ඔහුට අනුව රාමුකරණය යනු සන්දර්භය තුළ පමණක් අර්ථවත් වන, තේරීමේ සහ සමබරතාවේ ශිල්පයකි. Unconventional බව රාමුවේ පමණක් ඇති ගුණයක් නොවේ: එය මතු වන්නේ ප්‍රේක්ෂකයා දැකීමට අපේක්ෂා කරන දේ රාමුව බිඳ දමන විටය.",
+        },
+      },
+      O2: {
+        heading: { en: "Today's unconventional becomes tomorrow's convention", si: "අද සම්ප්‍රදායික නොවන දේ හෙට සම්මතයක් වේ" },
+        said: [
+          {
+            en: "This is a relative question. After a while, Sri Lankan short filmmakers tried the same approach; once a new method is introduced, the next one has to be found. What is unconventional in one place can be a convention in another.",
+            si: "මෙය සාපේක්ෂ ප්‍රශ්නයකි. ටික කලකට පසු ලංකාවේ කෙටි චිත්‍රපට කරන අය ද එවැනි ක්‍රමය අත්හදා බැලූහ; නව ක්‍රමයක් හඳුන්වා දුන් පසු ඊළඟ එක සොයාගත යුතුය. එක් තැනක සම්ප්‍රදායික නොවන රාමුවක් තවත් තැනක සම්ප්‍රදායක් විය හැකිය.",
+          },
+          {
+            en: "Audiences broadly do not take to unconventional work, but that is no reason for artists to stop being creative; cinema's newness has to be carried forward.",
+            si: "ප්‍රේක්ෂකයෝ පුළුල් වශයෙන් සම්ප්‍රදායික නොවන නිර්මාණවලට කැමති නොවෙති. නමුත් ඒ නිසා කලාකරුවා මෙම නිර්මාණශීලීත්වය නතර කිරීම හොඳ නැත; සිනමාවේ ඇති නවමු බව ඉදිරියට ගෙන යා යුතුය.",
+          },
+          {
+            en: "Somehow, what is made as unconventional is later accepted as convention.",
+            si: "කෙසේ හෝ, සම්ප්‍රදායික නොවන ලෙස කරන දේ පසු කාලයක සම්මත දේ ලෙස පිළිගැනේ.",
+          },
+          {
+            en: "In advertising, which he also does a great deal of, the work must follow what people like and their psychology — when selling a bar of soap, the viewer may prefer the familiar. In his films, however, they worked the way they wanted, and the audience adapted to it.",
+            si: "ඔහු වෙළඳ දැන්වීම් ද බොහෝ සේ කරයි. එහිදී මිනිසුන් කැමති දේ සහ ඔවුන්ගේ මනෝවිද්‍යාව අනුව වැඩ කළ යුතුය — සබන් කැටයක් විකුණන විට ප්‍රේක්ෂකයා හුරුපුරුදු දේ දැකීමට කැමති විය හැකිය. නමුත් තම චිත්‍රපට නිර්මාණවලදී ඔවුන් කැමති ආකාරයටම වැඩ කළ අතර, ප්‍රේක්ෂකයා ඊට හැඩගැසුණි.",
+          },
+        ],
+        interpretation: {
+          en: "He sees rules and freedom as a cycle: an unconventional choice is imitated, absorbed and eventually becomes the norm, so freedom means continually moving on. Freedom is greatest in authored film work and narrowest in commissioned advertising.",
+          si: "ඔහු රීති සහ නිදහස චක්‍රයක් ලෙස දකී: සම්ප්‍රදායික නොවන තේරීමක් අනුකරණය වී, අවශෝෂණය වී, අවසානයේ සම්මතය බවට පත් වේ. එබැවින් නිදහස යනු නොනවත්වා ඉදිරියට යාමයි. නිදහස වැඩිම වන්නේ ස්වකීය චිත්‍රපට නිර්මාණවල වන අතර, අඩුම වන්නේ ඇණවුම් කළ වෙළඳ දැන්වීම්වලය.",
+        },
+      },
+      O3: {
+        partial: true,
+        heading: { en: "Commercial pressure as the main tension", si: "ප්‍රධාන ආතතිය ලෙස වාණිජ පීඩනය" },
+        said: [
+          {
+            en: "Asked how political and cultural conditions sit with unconventional work, he points to commercial cinema, where such unconventional elements can come into conflict.",
+            si: "දේශපාලනික සහ සංස්කෘතික තත්ත්වයන් සම්ප්‍රදායික නොවන නිර්මාණ සමඟ ගැළපෙන්නේ කෙසේදැයි විමසූ විට, ඔහු වාණිජ සිනමාව දෙසට යොමු වෙයි — එහිදී එවැනි සම්ප්‍රදායික නොවන දේ ගැටුමට ලක් විය හැකිය.",
+          },
+        ],
+        interpretation: {
+          en: "He frames the socio-economic dimension mainly through the market rather than through politics. The wider political and cultural influence on framing was not developed further in this interview.",
+          si: "ඔහු සමාජ-ආර්ථික මානය දේශපාලනය හරහා නොව ප්‍රධාන වශයෙන් වෙළඳපොළ හරහා දකී. රාමුකරණයට දේශපාලනික සහ සංස්කෘතික තත්ත්වයන්ගේ පුළුල් බලපෑම මෙම සම්මුඛ සාකච්ඡාවේදී වැඩිදුර සාකච්ඡා නොවිණි.",
+        },
+      },
+      O5: {
+        heading: { en: "Keep renewing — there is room even for small audiences", si: "නොනවත්වා අලුත් වීම — කුඩා ප්‍රේක්ෂකාගාරයකට වුවද ඉඩ ඇත" },
+        said: [
+          {
+            en: "Once a new method has been introduced, the next one must be found — cinema's newness has to be carried forward.",
+            si: "නව ක්‍රමයක් හඳුන්වා දුන් පසු ඊළඟ එක සොයාගත යුතුය — සිනමාවේ නවමු බව ඉදිරියට ගෙන යා යුතුය.",
+          },
+          {
+            en: "Today's emerging cinematographers, working on small commercials, have to make a great effort to create something of their own that is recognised as unconventional.",
+            si: "අද බිහිවන කැමරා ශිල්පීන්ට, කුඩා වෙළඳ දැන්වීම්වල වැඩ කරමින්, සම්ප්‍රදායික නොවන යැයි පිළිගැනෙන ස්වකීය දෙයක් කිරීමට විශාල උත්සාහයක් ගැනීමට සිදු වේ.",
+          },
+          {
+            en: "Even if the audience for such work is not large, there can still be a place for it in the world — and alongside this, filmmakers must work out how to take their work forward.",
+            si: "එවැනි නිර්මාණවලට ප්‍රේක්ෂක ජන සමූහය විශාල නොවුණත්, ලෝකයේ ඊට ඉඩක් තිබිය හැකිය. ඒ සමඟම, තම වැඩ ඉදිරියට ගෙන යන්නේ කෙසේද යන්න ද සොයාගත යුතුය.",
+          },
+        ],
+        interpretation: {
+          en: "His vision of the future is generational: progress depends on new cinematographers continually renewing the frame, even if that means a smaller, possibly international, audience.",
+          si: "ඔහුගේ අනාගත දැක්ම පරම්පරාගතය: ප්‍රගතිය රඳා පවතින්නේ කුඩා — සමහර විට ජාත්‍යන්තර — ප්‍රේක්ෂකාගාරයක් වුවද, නව කැමරා ශිල්පීන් නොනවත්වා රාමුව අලුත් කිරීම මතය.",
+        },
+      },
+      O6: {
+        heading: { en: "His position in the overall pattern", si: "සමස්ත රටාව තුළ ඔහුගේ ස්ථානය" },
+        said: [
+          {
+            en: "Agrees with Vimukthi Jayasundara that unconventionality is decided by the viewer, and adds that it is temporary: it eventually becomes convention.",
+            si: "Unconventional බව තීරණය කරන්නේ ප්‍රේක්ෂකයා බවට විමුක්ති ජයසුන්දර සමඟ එකඟ වන අතර, එය තාවකාලික බවත් — අවසානයේ සම්මතයක් බවට පත් වන බවත් — එකතු කරයි.",
+          },
+          {
+            en: "Approaches framing as a practitioner's craft — inclusion, exclusion and balance — where Vimukthi approaches it through ideas and politics.",
+            si: "විමුක්ති රාමුකරණය අදහස් සහ දේශපාලනය හරහා දකින අතර, චන්න එය ප්‍රායෝගික ශිල්පයක් ලෙස — ඇතුළත් කිරීම, බැහැර කිරීම සහ සමබරතාව ලෙස — දකී.",
+          },
+          {
+            en: "Both cite <i>Me Mage Sandai</i>: Vimukthi for its political vision of the war, Channa for its entirely static framing.",
+            si: "දෙදෙනාම <i>මේ මගේ සඳයි</i> සඳහන් කරයි: විමුක්ති එහි යුද්ධය පිළිබඳ දේශපාලනික දැක්ම නිසා, චන්න එහි සම්පූර්ණයෙන් ස්ථිතික රාමුකරණය නිසා.",
+          },
+          {
+            en: "Both see the commercial setting as the place where unconventional framing is most constrained.",
+            si: "සම්ප්‍රදායික නොවන රාමුකරණය වඩාත්ම සීමා වන්නේ වාණිජ සන්දර්භය තුළ බව දෙදෙනාම දකී.",
+          },
+        ],
+        interpretation: {
+          en: "Within the industry group, a shared view is forming: unconventionality is relative, viewer-dependent and historically temporary, with commerce as its main constraint. The two differ in emphasis — ideas and politics for the director, craft and context for the cinematographer.",
+          si: "කර්මාන්ත කණ්ඩායම තුළ පොදු දැක්මක් ගොඩනැගෙමින් පවතී: unconventional බව සාපේක්ෂ, ප්‍රේක්ෂකයා මත රඳා පවතින සහ ඓතිහාසිකව තාවකාලික වන අතර, එහි ප්‍රධාන සීමාව වාණිජ පීඩනයයි. වෙනස ඇත්තේ අවධාරණයෙහිය — අධ්‍යක්ෂවරයා අදහස් සහ දේශපාලනය අවධාරණය කරන අතර, කැමරා ශිල්පියා ශිල්පය සහ සන්දර්භය අවධාරණය කරයි.",
+        },
+      },
+    },
+    closing: {
+      heading: { en: "Unconventionality is temporary", si: "Unconventional බව තාවකාලිකයි" },
+      text: {
+        en: "What is made today as unconventional is, somehow, accepted later as convention — which is why the search for the next new approach can never stop.",
+        si: "අද සම්ප්‍රදායික නොවන ලෙස කරන දේ, කෙසේ හෝ පසු කාලයක සම්මතයක් ලෙස පිළිගැනේ — ඊළඟ නව ප්‍රවේශය සෙවීම කිසිදා නතර කළ නොහැක්කේ එබැවිනි.",
+      },
+    },
+    codes: [
+      { en: "Frame = balance of include / exclude", si: "රාමුව = ඇතුළත් / බැහැර කිරීමේ සමබරතාව" },
+      { en: "Frame shapes context, context shapes frame", si: "රාමුව සන්දර්භයට, සන්දර්භය රාමුවට බලපායි" },
+      { en: "Same frame, different context", si: "එකම රාමුව, වෙනස් සන්දර්භ" },
+      { en: "Unconventional in the viewer's mind", si: "ප්‍රේක්ෂකයාගේ මනස තුළ unconventional බව" },
+      { en: "Breaking point-of-view expectations", si: "දෘෂ්ටිකෝණ අපේක්ෂා බිඳීම" },
+      { en: "All-static film (Me Mage Sandai, 507 shots)", si: "සම්පූර්ණයෙන් ස්ථිතික චිත්‍රපටය (මේ මගේ සඳයි, රූප රාමු 507)" },
+      { en: "Unconventionality is relative", si: "Unconventional බව සාපේක්ෂයි" },
+      { en: "Innovations get imitated", si: "නවෝත්පාදන අනුකරණය වීම" },
+      { en: "Unconventional becomes convention", si: "Unconventional දේ පසුව සම්මත වීම" },
+      { en: "Creativity despite small audiences", si: "කුඩා ප්‍රේක්ෂකාගාරය මැද නිර්මාණශීලීත්වය" },
+      { en: "Commercial clash", si: "වාණිජ ගැටුම" },
+      { en: "Advertising follows audience psychology", si: "වෙළඳ දැන්වීම් ප්‍රේක්ෂක මනෝවිද්‍යාව අනුගමනය කරයි" },
+      { en: "Audiences adapt to the work", si: "ප්‍රේක්ෂකයා නිර්මාණයට හැඩගැසීම" },
+      { en: "Emerging cinematographers' effort", si: "නවක කැමරා ශිල්පීන්ගේ උත්සාහය" },
+    ],
+  },
 };
 
 const THEMES = [
   {
     name: { en: "Framing as a foundation", si: "මූලිකාංගයක් ලෙස රාමුව" },
-    desc: { en: "The frame is a fundamental element of cinema, beginning in the screenplay.", si: "රාමුව සිනමාවේ මූලික අංගයකි; එය තිර පිටපතේ සිටම ආරම්භ වේ." },
-    objs: ["O1"], who: ["vimukthi-jayasundara"],
+    desc: { en: "The frame is a fundamental element of cinema: it begins in the screenplay and is built through choices of what to include and exclude.", si: "රාමුව සිනමාවේ මූලික අංගයකි: එය තිර පිටපතේ සිටම ආරම්භ වන අතර, ඇතුළත් කරන සහ බැහැර කරන දේ පිළිබඳ තේරීම් හරහා ගොඩනැගේ." },
+    objs: ["O1"], who: ["vimukthi-jayasundara", "channa-deshapriya"],
+  },
+  {
+    name: { en: "Frame and context are interdependent", si: "රාමුව සහ සන්දර්භය අන්‍යෝන්‍ය වශයෙන් බැඳී ඇත" },
+    desc: { en: "The frame shapes the context and the context shapes the frame; the same frame may not work in another film.", si: "රාමුව සන්දර්භයට ද, සන්දර්භය රාමුවට ද බලපායි; එකම රාමුව වෙනත් චිත්‍රපටයක නොගැළපෙන්නට පුළුවන." },
+    objs: ["O1"], who: ["channa-deshapriya"],
   },
   {
     name: { en: "Evolution of cinematic language", si: "සිනමා භාෂාවේ පරිණාමය" },
     desc: { en: "Cinematic rules change from era to era; cinema keeps searching for new ones.", si: "සිනමා රීති යුගයෙන් යුගයට වෙනස් වේ; සිනමාව නව රීති සොයා යයි." },
-    objs: ["O2"], who: ["vimukthi-jayasundara"],
+    objs: ["O2"], who: ["vimukthi-jayasundara", "channa-deshapriya"],
+  },
+  {
+    name: { en: "Unconventional becomes convention", si: "Unconventional දේ සම්මතයක් බවට පත් වීම" },
+    desc: { en: "New approaches are imitated and absorbed until they become the norm, so the next one has to be found.", si: "නව ප්‍රවේශ අනුකරණය වී සම්මතය බවට පත් වන තුරු අවශෝෂණය වේ; එබැවින් ඊළඟ එක සොයාගත යුතුය." },
+    objs: ["O2", "O5"], who: ["vimukthi-jayasundara", "channa-deshapriya"],
   },
   {
     name: { en: "Artistic freedom", si: "කලාත්මක නිදහස" },
-    desc: { en: "The freedom to go beyond existing rules within one's own cinematic language.", si: "තමන්ගේම සිනමා භාෂාවක් තුළ පවතින රීතිවලින් ඔබ්බට යාමේ නිදහස." },
-    objs: ["O2"], who: ["vimukthi-jayasundara"],
+    desc: { en: "The freedom to go beyond existing rules in one's own, authored work.", si: "තමන්ගේම ස්වකීය නිර්මාණ තුළ පවතින රීතිවලින් ඔබ්බට යාමේ නිදහස." },
+    objs: ["O2"], who: ["vimukthi-jayasundara", "channa-deshapriya"],
   },
   {
     name: { en: "Commercial constraint", si: "වාණිජ සීමා" },
-    desc: { en: "In a commercial context, expression stays tied to simple, relatable rules.", si: "වාණිජ සන්දර්භය තුළ ප්‍රකාශනය සරල, සමීප රීතිවලට බැඳී පවතී." },
-    objs: ["O2", "O3"], who: ["vimukthi-jayasundara"],
+    desc: { en: "In commercial cinema and advertising, expression stays tied to what audiences already like.", si: "වාණිජ සිනමාව සහ වෙළඳ දැන්වීම් තුළ ප්‍රකාශනය ප්‍රේක්ෂකයා දැනටමත් කැමති දේට බැඳී පවතී." },
+    objs: ["O2", "O3"], who: ["vimukthi-jayasundara", "channa-deshapriya"],
   },
   {
     name: { en: "Political seeing", si: "දේශපාලනික දැක්ම" },
@@ -345,15 +509,20 @@ const THEMES = [
   {
     name: { en: "Subjectivity of unconventionality", si: "Unconventional බවෙහි ආත්මීයත්වය" },
     desc: { en: "Whether something is unconventional depends on the critic and the viewer.", si: "යමක් unconventional ද යන්න විචාරකයා සහ ප්‍රේක්ෂකයා මත රඳා පවතී." },
-    objs: ["O1"], who: ["vimukthi-jayasundara"],
+    objs: ["O1"], who: ["vimukthi-jayasundara", "channa-deshapriya"],
+  },
+  {
+    name: { en: "Renewal through a new generation", si: "නව පරම්පරාවක් හරහා අලුත් වීම" },
+    desc: { en: "The future depends on emerging filmmakers continually renewing the frame, even for small audiences.", si: "අනාගතය රඳා පවතින්නේ කුඩා ප්‍රේක්ෂකාගාරයක් සඳහා වුවද, නවක සිනමාකරුවන් නොනවත්වා රාමුව අලුත් කිරීම මතය." },
+    objs: ["O5"], who: ["channa-deshapriya"],
   },
 ];
 
 const KEY_FINDING = {
-  from: 1,
-  title: { en: "Unconventionality is subjective", si: "Unconventional බව ආත්මීයයි" },
+  from: "01 · 02",
+  title: { en: "Unconventionality is relative — and temporary", si: "Unconventional බව සාපේක්ෂයි — තාවකාලිකයි" },
   text: {
-    en: "There is no fixed definition of “unconventional”. The same film may appear unconventional to one critic or viewer and not to another. This links the study to reception and spectatorship theory.",
-    si: "Unconventional යන්නට ස්ථාවර නිර්වචනයක් නැත. එකම චිත්‍රපටයක් එක් විචාරකයෙකුට හෝ ප්‍රේක්ෂකයෙකුට unconventional ලෙස පෙනෙන අතර, තවත් කෙනෙකුට එසේ නොපෙනෙන්නට පුළුවන. මෙය අධ්‍යයනය reception සහ spectatorship න්‍යායන් සමඟ සම්බන්ධ කරයි.",
+    en: "Both industry voices agree there is no fixed definition of “unconventional”: it is decided by the critic and the viewer. Channa Deshapriya adds a time dimension — what is unconventional today is absorbed and later accepted as convention. This links the study to reception and spectatorship theory.",
+    si: "Unconventional යන්නට ස්ථාවර නිර්වචනයක් නැති බවත්, එය තීරණය කරන්නේ විචාරකයා සහ ප්‍රේක්ෂකයා බවත් කර්මාන්ත හඬ දෙකම එකඟ වේ. චන්න දේශප්‍රිය කාල මානයක් එකතු කරයි — අද සම්ප්‍රදායික නොවන දේ අවශෝෂණය වී පසුව සම්මතයක් ලෙස පිළිගැනේ. මෙය අධ්‍යයනය reception සහ spectatorship න්‍යායන් සමඟ සම්බන්ධ කරයි.",
   },
 };
