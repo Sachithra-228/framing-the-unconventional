@@ -71,7 +71,10 @@ async function readBody(req) {
 
 module.exports = async function handler(req, res) {
   const cfg = env();
-  if (!cfg.pass || !cfg.url || !cfg.token) return send(res, 503, { error: "not_configured" });
+  if (!cfg.pass || !cfg.url || !cfg.token) {
+    const missing = [!cfg.pass && "NOTES_PASSCODE", !cfg.url && "KV_REST_API_URL", !cfg.token && "KV_REST_API_TOKEN"].filter(Boolean);
+    return send(res, 503, { error: "not_configured", missing });
+  }
   if (!sameSecret(req.headers["x-notes-key"] || "", cfg.pass)) return send(res, 401, { error: "bad_key" });
 
   try {
