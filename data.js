@@ -60,7 +60,7 @@ const GROUPS = [
 const PEOPLE = [
   // Industry professionals
   { id: "vimukthi-jayasundara", name: "Vimukthi Jayasundara", group: "industry", role: { en: "Filmmaker", si: "සිනමාකරු" }, photo: "assets/people/vimukthi-jayasundara.png" },
-  { id: "prasanna-withanage", name: "Prasanna Withanage", group: "industry" },
+  { id: "prasanna-withanage", name: "Prasanna Withanage", group: "industry", role: { en: "Film Director", si: "චිත්‍රපට අධ්‍යක්ෂ" } },
   { id: "prasanna-jayakodi", name: "Prasanna Jayakodi", group: "industry" },
   { id: "majith-s-uyangoda", name: "Majith S. Uyangoda", group: "industry" },
   { id: "md-mahindapaala", name: "M.D. Mahindapaala", group: "industry" },
@@ -463,13 +463,178 @@ const INTERVIEWS = {
       { en: "Emerging cinematographers' effort", si: "නවක කැමරා ශිල්පීන්ගේ උත්සාහය" },
     ],
   },
+  "prasanna-withanage": {
+    number: 3,
+    tags: [
+      { en: "Director's worldview", si: "අධ්‍යක්ෂවරයාගේ ලෝක දෘෂ්ටිය" },
+      { en: "Revealing the inner world", si: "අභ්‍යන්තරය හෙළිදරව් කිරීම" },
+      { en: "Rules, not laws", si: "නීති නොව රීති" },
+      { en: "Historical lineage", si: "ඓතිහාසික පරම්පරාව" },
+      { en: "Borrowed conventions", si: "ණයට ගත් සම්මත" },
+      { en: "Market and state", si: "වෙළඳපොළ සහ රාජ්‍යය" },
+      { en: "Authenticity", si: "ස්වකීයත්වය" },
+    ],
+    objectives: {
+      O1: {
+        heading: { en: "The frame decides how the audience sees the film", si: "ප්‍රේක්ෂකයා චිත්‍රපටය දකින ආකාරය තීරණය කරන්නේ රාමුවයි" },
+        said: [
+          {
+            en: "How an audience sees a film is decided by the frame the director creates. That frame is shaped by the director's worldview, or by the angle from which he looks at a character.",
+            si: "ප්‍රේක්ෂකයා චිත්‍රපටයක් දකින ආකාරය තීරණය වන්නේ අධ්‍යක්ෂවරයා නිර්මාණය කරන රාමුව අනුවයි. එම රාමුව හැඩගැසෙන්නේ අධ්‍යක්ෂවරයාගේ ලෝක දෘෂ්ටියෙන්, නැතහොත් ඔහු චරිතය දෙස බලන කෝණයෙනි.",
+          },
+          {
+            en: "A frame becomes unconventional when it shows us something in a way not seen here before. What art has always done is to show, through its uniqueness, something that has not been shown before — and “unconventional” simply means what is not traditional.",
+            si: "රාමුවක් unconventional වන්නේ මෙහි මීට පෙර නොදුටු ආකාරයකින් යමක් අපට පෙන්වන විටය. කලාව සැමවිටම කරන්නේ අපූර්වත්වය පදනම් කරගෙන, පෙර නොවූ විරූ දෙයක් පෙන්වීමයි — “unconventional” යනු සාම්ප්‍රදායික නොවන දෙයයි.",
+          },
+          {
+            en: "Leaving the traditional path for the unconventional can put a filmmaker in difficulty. That is why he says whether a frame is conventional or unconventional comes down to the choice of the frame itself.",
+            si: "සාම්ප්‍රදායික මාවත අත්හැර unconventional ලෙස යාම සිනමාකරුවා අමාරුවේ වැටීමට හේතු විය හැකිය. එබැවින්, රාමුවක් conventional ද unconventional ද යන්න තීරණය වන්නේ රාමුව තෝරාගැනීම පදනම් කරගෙන බව ඔහු පවසයි.",
+          },
+          {
+            en: "Films are normally shot in master shots and cuts; unconventional frames can be used instead to reveal what is inside a character.",
+            si: "සාමාන්‍යයෙන් චිත්‍රපටයක් රූගත කරන්නේ master shots සහ cuts ලෙසය; ඒ වෙනුවට, චරිතයක අභ්‍යන්තරය හෙළිදරව් කිරීමට unconventional රාමු භාවිත කළ හැකිය.",
+          },
+        ],
+        interpretation: {
+          en: "For him the frame is the director's way of seeing, handed to the audience. Unconventionality is defined historically — as what has not been seen before — and its purpose is expressive: to open up the inner life of a character.",
+          si: "ඔහුට අනුව රාමුව යනු අධ්‍යක්ෂවරයාගේ දැකීමේ ආකාරය ප්‍රේක්ෂකයාට පිරිනැමීමයි. Unconventional බව ඔහු ඓතිහාසිකව නිර්වචනය කරයි — එනම් මීට පෙර නොදුටු දේ ලෙස — එහි අරමුණ ප්‍රකාශනාත්මකය: චරිතයක අභ්‍යන්තර ලෝකය විවර කිරීමයි.",
+        },
+      },
+      O2: {
+        heading: { en: "Cinema has rules, not laws — and rules can be broken", si: "සිනමාවේ ඇත්තේ නීති නොව රීති ය — රීති බිඳිය හැකිය" },
+        said: [
+          {
+            en: "There is a difference between rules and laws. A rule can be broken; breaking a law brings trouble. Cinema has rules, and it is because directors break them that new creations come about.",
+            si: "රීති සහ නීති අතර වෙනසක් ඇත. රීතියක් කඩා බිඳ දැමිය හැකිය; නීතියක් කැඩුවොත් ගැටලුවක් වේ. සිනමාවේ ඇත්තේ රීති ය; අධ්‍යක්ෂවරුන් එම රීති කඩන නිසා නව නිර්මාණ බිහි වේ.",
+          },
+          {
+            en: "In a conventional film you would normally keep headroom above a character, but a filmmaker can break that and be creative.",
+            si: "සාම්ප්‍රදායික ලෙස චිත්‍රපටයක් කරන විට චරිතයට ඉහළින් headroom එකක් තැබිය හැකි නමුත්, නිර්මාණකරුවෙකුට එය බිඳ දමා නිර්මාණශීලී විය හැකිය.",
+          },
+          {
+            en: "World cinema shows the same: after the Second World War, neorealist cinema placed the camera differently from the norm — <i>Rome, Open City</i> showed that this was not an ordinary film but reality itself.",
+            si: "ලෝක සිනමාවේ ද මෙය දැකිය හැකිය: දෙවන ලෝක යුද්ධයෙන් පසු නව යථාර්ථවාදී සිනමාව බිහිවෙද්දී කැමරාව ස්ථානගත කළ ආකාරය සාමාන්‍ය ආකාරයට වඩා වෙනස් විය — <i>Rome, Open City</i> චිත්‍රපටය මෙය සාමාන්‍ය චිත්‍රපටයක් නොව සැබෑවක් බව පෙන්වූයේය.",
+          },
+        ],
+        interpretation: {
+          en: "His distinction between rules and laws frames creative freedom as legitimate rule-breaking: conventions are working agreements, not obligations, and new cinematic forms are born precisely where they are broken.",
+          si: "රීති සහ නීති අතර ඔහු දක්වන වෙනස, නිර්මාණාත්මක නිදහස නීත්‍යනුකූල රීති බිඳීමක් ලෙස පෙන්වයි: සම්මතයන් යනු බැඳීම් නොව, ක්‍රියාකාරී එකඟතා ය; නව සිනමා ආකෘති බිහි වන්නේ ඒවා බිඳෙන තැනදීමය.",
+        },
+      },
+      O3: {
+        heading: { en: "Framing is shaped by history, the market and the state", si: "රාමුකරණය හැඩගැසෙන්නේ ඉතිහාසය, වෙළඳපොළ සහ රාජ්‍යය අනුවයි" },
+        said: [
+          {
+            en: "Sri Lankan framing has long borrowed its language: from 1947 it followed the language of Tamil cinema, in the 1980s that of Hindi cinema, and Indian cinema's influence remains today. Directors and cinematographers shape their frames to the tastes that dominate at any given moment.",
+            si: "ශ්‍රී ලාංකීය රාමුකරණය දිගු කලක් තම භාෂාව ණයට ගෙන ඇත: 1947 සිට රාමු සැකසීමේදී දෙමළ සිනමාවේ භාෂාව ද, 1980 දශකයේ හින්දි සිනමාවේ භාෂාව ද අනුගමනය කළ අතර, ඉන්දීය සිනමාවේ බලපෑම අදටත් පවතී. අධ්‍යක්ෂවරුන් සහ කැමරා ශිල්පීන් එක් එක් මොහොතේ ආධිපත්‍යය දරන රුචිකත්වයන්ට ගැළපෙන සේ රාමු හැඩගස්වති.",
+          },
+          {
+            en: "Against this, national cinema renewed the frame. In 1956 Lester James Peries took the camera outdoors, bringing a natural, realistic influence at a time when the question was how to represent national identity rather than repeat the Tamil-cinema idiom; Ediriweera Sarachchandra's theatre ran in parallel.",
+            si: "මෙයට ප්‍රතිවිරුද්ධව, ජාතික සිනමාව රාමුව අලුත් කළේය. 1956 දී ලෙස්ටර් ජේම්ස් පීරිස් කැමරාව එළියට ගෙන ගියේය — 50 දශකයේ ජාතික අනන්‍යතාව නිරූපණය කළ යුත්තේ කෙසේද යන ප්‍රශ්නය මතු වූ විට, දෙමළ සිනමා භාෂාව වෙනුවට ස්වාභාවික, යථාර්ථවාදී බලපෑමක් ඔහු පෙන්වීය; එදිරිවීර සරච්චන්ද්‍රයන්ගේ නාට්‍ය ද ඊට සමාන්තරව පැවතුණි.",
+          },
+          {
+            en: "In the 1970s, <i>Ahas Gauwa</i> brought urban youth onto the screen in a way entirely different from commercial cinema. Donald Karunaratne and Dharmasena Pathiraja used the handheld camera to represent youth; it had been used before (he mentions Nihal Singha), but in framing young people's restlessness and their search for freedom, they showed Colombo's urban youth in a way not seen before.",
+            si: "1970 දශකයේ <i>අහස් ගව්ව</i> චිත්‍රපටය, වාණිජ සිනමාව තරුණ ජීවිත නිරූපණය කළ ආකාරයට වඩා සම්පූර්ණයෙන්ම වෙනස් ලෙස නාගරික තරුණ ජීවිතය තිරයට ගෙනාවේය. ඩොනල්ඩ් කරුණාරත්න සහ ධර්මසේන පතිරාජ තරුණයා නිරූපණය කිරීමට අතින් ගත් (handheld) කැමරාව යොදා ගත්හ. එය මීට පෙර (නිහාල් සිංහ මහතා විසින්) භාවිත කර තිබුණද, තරුණයාගේ නොසන්සුන්කම සහ නිදහස සොයා යාම රූප රාමුවලට නැගීමේදී, කොළඹ නාගරික තරුණ ජීවිතය මීට පෙර නොදුටු ආකාරයකින් ඔවුහු පෙන්වූහ.",
+          },
+          {
+            en: "In his film <i>Purahanda Kaluwara</i>, a home guard carries a monk on a bicycle through the middle of abandoned paddy fields. That single frame shows the condition of the village — not drought, but poverty. As the camera tilts down, a gun barrel comes into view, showing the village's insecurity: everything is shown within one frame.",
+            si: "ඔහුගේ <i>පුරහඳ කළුවර</i> චිත්‍රපටයේ ග්‍රාම ආරක්ෂකයෙකු භික්ෂුවක් බයිසිකලයේ නංවාගෙන, වගා නොකර අතහැර දැමූ කුඹුරු යායක් මැදින් එන රූප රාමුවක් ඇත. එම එක් රූප රාමුවෙන්ම ගමේ තත්ත්වය පෙන්වයි — එය නියඟයක් නොව, දරිද්‍රතාවයි. කැමරාව පහත් කරන විට තුවක්කු බටයක් පෙනෙන අතර, එයින් ගමේ අනාරක්ෂිත බව පෙන්වයි: ඒ සියල්ල එක් රාමුවක් තුළම පෙන්වයි.",
+          },
+          {
+            en: "In Vimukthi Jayasundara's <i>Sulanga Enu Pinisa</i>, rather than building the story of the moment, the frame conveys the characters' inner state. A character conceived this way is communicated through the frame itself rather than by having the characters narrate their experiences.",
+            si: "විමුක්ති ජයසුන්දරගේ <i>සුළඟ එනු පිණිස</i> චිත්‍රපටයේ, එම මොහොතේ කතාව ගොඩනැගීමට වඩා, චරිතවල අභ්‍යන්තර තත්ත්වය සහ හැඟීම් රාමුවෙන් දැනවේ. මෙවැනි චරිතයක් සන්නිවේදනය කරන්නේ, චරිත තම අත්දැකීම් පවසනවාට වඩා, රූප රාමුව හරහාමය.",
+          },
+          {
+            en: "Working within a conventional framework places a film in the market far more easily, because audiences are used to it — but that is not the director's aspiration.",
+            si: "සාම්ප්‍රදායික රාමුවක් තුළ වැඩ කළොත් චිත්‍රපටය වෙළඳපොළේ ස්ථානගත වීම බොහෝ සෙයින් පහසුය, මන්ද ප්‍රේක්ෂකයා ඊට හුරු වී ඇත — නමුත් එය අධ්‍යක්ෂවරයාගේ අභිලාෂය නොවේ.",
+          },
+          {
+            en: "Between roughly 2005 and 2015 the state itself extended patronage, and state narratives followed. A frame can be used in the service of an ideology.",
+            si: "2005 – 2015 පමණ කාලයේ පැවති රාජ්‍යය විසින්ම අනුග්‍රහය දැක්වූ අතර, එවිට රාජ්‍ය කතා බිහි විය. මතවාදයක් සඳහා රාමුවක් භාවිත විය හැකිය.",
+          },
+          {
+            en: "On the other hand, there are also socio-economic reasons behind unconventional frames.",
+            si: "අනෙක් අතට, unconventional රාමු පිටුපස සමාජ-ආර්ථික හේතු ද පවතී.",
+          },
+        ],
+        interpretation: {
+          en: "He gives the most historical account so far. Sri Lankan convention is itself borrowed from South Indian and Hindi cinema, and each break with it — from 1956 to the 1970s to the war-era films — was tied to its social moment. Framing is pulled between the market, which rewards the familiar, and the state, which can turn the frame into a vehicle for ideology.",
+          si: "මෙතෙක් ලැබුණු වඩාත්ම ඓතිහාසික විග්‍රහය ඔහු ලබා දෙයි. ශ්‍රී ලාංකීය සම්මතය ම දකුණු ඉන්දීය සහ හින්දි සිනමාවෙන් ණයට ගත් එකක් වන අතර, එයින් සිදු වූ සෑම බිඳීමක්ම — 1956 සිට 1970 දශකය දක්වාත්, යුද සමයේ චිත්‍රපට දක්වාත් — එහි සමාජ මොහොත හා බැඳී පැවතුණි. රාමුකරණය, හුරුපුරුදු දේට ත්‍යාග දෙන වෙළඳපොළ සහ රාමුව මතවාදයක වාහකයක් කළ හැකි රාජ්‍යය අතර ඇදී යයි.",
+        },
+      },
+      O4: {
+        partial: true,
+        heading: { en: "Success is shared by director and cinematographer", si: "සාර්ථකත්වය අධ්‍යක්ෂ සහ කැමරා අධ්‍යක්ෂ දෙදෙනාටම හිමිය" },
+        said: [
+          {
+            en: "Asked what he expects from a cinematographer, he says a film's success comes from both the director and the cinematographer.",
+            si: "කැමරා අධ්‍යක්ෂවරයෙකුගෙන් ඔහු බලාපොරොත්තු වන්නේ කුමක්දැයි විමසූ විට, චිත්‍රපටයක සාර්ථකත්වයට අධ්‍යක්ෂවරයා සහ කැමරා අධ්‍යක්ෂවරයා යන දෙදෙනාම හේතු වන බව ඔහු පවසයි.",
+          },
+        ],
+        interpretation: {
+          en: "He sees framing as a shared responsibility rather than the cinematographer's alone, although the interview does not go into how decisions are divided between the two.",
+          si: "ඔහු රාමුකරණය කැමරා ශිල්පියාගේ පමණක් නොව හවුල් වගකීමක් ලෙස දකී. නමුත් දෙදෙනා අතර තීරණ බෙදී යන ආකාරය මෙම සම්මුඛ සාකච්ඡාවේදී විස්තර නොවිණි.",
+        },
+      },
+      O6: {
+        heading: { en: "His position in the overall pattern", si: "සමස්ත රටාව තුළ ඔහුගේ ස්ථානය" },
+        said: [
+          {
+            en: "Shares Vimukthi Jayasundara's political reading of the frame, and adds the role of the state: patronage between 2005 and 2015 produced state narratives.",
+            si: "රාමුව පිළිබඳ විමුක්ති ජයසුන්දරගේ දේශපාලනික කියවීම බෙදා ගන්නා අතර, රාජ්‍යයේ භූමිකාව එකතු කරයි: 2005 – 2015 කාලයේ අනුග්‍රහය රාජ්‍ය කතා බිහි කළේය.",
+          },
+          {
+            en: "Agrees with Channa Deshapriya that the market favours the familiar, because audiences are used to conventional framing.",
+            si: "ප්‍රේක්ෂකයා සාම්ප්‍රදායික රාමුකරණයට හුරු වී ඇති නිසා, වෙළඳපොළ හුරුපුරුදු දේට නැඹුරු වන බවට චන්න දේශප්‍රිය සමඟ එකඟ වේ.",
+          },
+          {
+            en: "Both he and Vimukthi cite <i>Purahanda Kaluwara</i>; he in turn cites Vimukthi's <i>Sulanga Enu Pinisa</i> as an example of conveying character through the frame.",
+            si: "ඔහු සහ විමුක්ති දෙදෙනාම <i>පුරහඳ කළුවර</i> සඳහන් කරයි; ඔහු ද රාමුව හරහා චරිතය සන්නිවේදනය කිරීමේ උදාහරණයක් ලෙස විමුක්තිගේ <i>සුළඟ එනු පිණිස</i> දක්වයි.",
+          },
+          {
+            en: "Adds what the others did not: a historical lineage of Sri Lankan framing, the distinction between rules and laws, and the first remarks on the director–cinematographer relationship.",
+            si: "අනෙක් අය සාකච්ඡා නොකළ දේ එකතු කරයි: ශ්‍රී ලාංකීය රාමුකරණයේ ඓතිහාසික පරම්පරාව, රීති සහ නීති අතර වෙනස, සහ අධ්‍යක්ෂ–කැමරා අධ්‍යක්ෂ සම්බන්ධතාව පිළිබඳ පළමු අදහස්.",
+          },
+        ],
+        interpretation: {
+          en: "With three industry voices, the group's view is clearer: unconventionality is relative — to the viewer, to time and to what came before — and is held back by the market. Prasanna Withanage widens this to history and power: the frame is shaped not only by the audience but also by the state.",
+          si: "කර්මාන්ත හඬ තුනක් සමඟ කණ්ඩායමේ දැක්ම වඩාත් පැහැදිලි වේ: unconventional බව සාපේක්ෂයි — ප්‍රේක්ෂකයාට, කාලයට සහ ඊට පෙර පැවති දේට — එය වෙළඳපොළ විසින් සීමා කෙරේ. ප්‍රසන්න විතානගේ මෙය ඉතිහාසය සහ බලය දක්වා පුළුල් කරයි: රාමුව හැඩගැසෙන්නේ ප්‍රේක්ෂකයා අනුව පමණක් නොව, රාජ්‍යය අනුව ද වේ.",
+        },
+      },
+    },
+    closing: {
+      heading: { en: "Showing what has not been seen before", si: "පෙර නොවූ විරූ දේ පෙන්වීම" },
+      text: {
+        en: "Anyone can be unconventional for the sake of it; what counts is whether it comes from the director's own vision. It is not about adopting someone else's style.",
+        si: "ඕනෑම කෙනෙකුට බොරුවට unconventional විය හැකිය; වැදගත් වන්නේ එය අධ්‍යක්ෂවරයාගේ ස්වකීය දැක්මෙන් පැන නගින්නේද යන්නයි. අවශ්‍ය වන්නේ වෙනත් කෙනෙකුගේ ශෛලියකට හැඩගැසීම නොවේ.",
+      },
+    },
+    codes: [
+      { en: "Frame = director's worldview", si: "රාමුව = අධ්‍යක්ෂවරයාගේ ලෝක දෘෂ්ටිය" },
+      { en: "Unconventional = not seen before", si: "Unconventional = පෙර නොදුටු දේ" },
+      { en: "Risk of the unconventional path", si: "Unconventional මාවතේ අවදානම" },
+      { en: "Frames that reveal a character's interior", si: "චරිතයේ අභ්‍යන්තරය හෙළි කරන රාමු" },
+      { en: "Rules can be broken, laws cannot", si: "රීති බිඳිය හැක, නීති නොහැක" },
+      { en: "Breaking headroom", si: "Headroom බිඳීම" },
+      { en: "Neorealism (Rome, Open City)", si: "නව යථාර්ථවාදය (Rome, Open City)" },
+      { en: "Convention borrowed from Tamil / Hindi cinema", si: "දෙමළ / හින්දි සිනමාවෙන් ණයට ගත් සම්මතය" },
+      { en: "1956: camera taken outdoors", si: "1956: කැමරාව එළියට ගෙන යාම" },
+      { en: "1970s handheld youth cinema", si: "1970 දශකයේ handheld තරුණ සිනමාව" },
+      { en: "One frame shows a whole village (Purahanda Kaluwara)", si: "එක් රාමුවකින් මුළු ගමම (පුරහඳ කළුවර)" },
+      { en: "Character conveyed through the frame", si: "රාමුව හරහා චරිතය සන්නිවේදනය" },
+      { en: "Market favours the familiar", si: "වෙළඳපොළ හුරුපුරුදු දේට නැඹුරුයි" },
+      { en: "State patronage and ideology", si: "රාජ්‍ය අනුග්‍රහය සහ මතවාදය" },
+      { en: "Authenticity over style", si: "ශෛලියට වඩා ස්වකීයත්වය" },
+      { en: "Shared director–cinematographer success", si: "අධ්‍යක්ෂ–කැමරා අධ්‍යක්ෂ හවුල් සාර්ථකත්වය" },
+    ],
+  },
 };
 
 const THEMES = [
   {
     name: { en: "Framing as a foundation", si: "මූලිකාංගයක් ලෙස රාමුව" },
     desc: { en: "The frame is a fundamental element of cinema: it begins in the screenplay and is built through choices of what to include and exclude.", si: "රාමුව සිනමාවේ මූලික අංගයකි: එය තිර පිටපතේ සිටම ආරම්භ වන අතර, ඇතුළත් කරන සහ බැහැර කරන දේ පිළිබඳ තේරීම් හරහා ගොඩනැගේ." },
-    objs: ["O1"], who: ["vimukthi-jayasundara", "channa-deshapriya"],
+    objs: ["O1"], who: ["vimukthi-jayasundara", "channa-deshapriya", "prasanna-withanage"],
   },
   {
     name: { en: "Frame and context are interdependent", si: "රාමුව සහ සන්දර්භය අන්‍යෝන්‍ය වශයෙන් බැඳී ඇත" },
@@ -479,7 +644,7 @@ const THEMES = [
   {
     name: { en: "Evolution of cinematic language", si: "සිනමා භාෂාවේ පරිණාමය" },
     desc: { en: "Cinematic rules change from era to era; cinema keeps searching for new ones.", si: "සිනමා රීති යුගයෙන් යුගයට වෙනස් වේ; සිනමාව නව රීති සොයා යයි." },
-    objs: ["O2"], who: ["vimukthi-jayasundara", "channa-deshapriya"],
+    objs: ["O2"], who: ["vimukthi-jayasundara", "channa-deshapriya", "prasanna-withanage"],
   },
   {
     name: { en: "Unconventional becomes convention", si: "Unconventional දේ සම්මතයක් බවට පත් වීම" },
@@ -489,17 +654,17 @@ const THEMES = [
   {
     name: { en: "Artistic freedom", si: "කලාත්මක නිදහස" },
     desc: { en: "The freedom to go beyond existing rules in one's own, authored work.", si: "තමන්ගේම ස්වකීය නිර්මාණ තුළ පවතින රීතිවලින් ඔබ්බට යාමේ නිදහස." },
-    objs: ["O2"], who: ["vimukthi-jayasundara", "channa-deshapriya"],
+    objs: ["O2"], who: ["vimukthi-jayasundara", "channa-deshapriya", "prasanna-withanage"],
   },
   {
     name: { en: "Commercial constraint", si: "වාණිජ සීමා" },
     desc: { en: "In commercial cinema and advertising, expression stays tied to what audiences already like.", si: "වාණිජ සිනමාව සහ වෙළඳ දැන්වීම් තුළ ප්‍රකාශනය ප්‍රේක්ෂකයා දැනටමත් කැමති දේට බැඳී පවතී." },
-    objs: ["O2", "O3"], who: ["vimukthi-jayasundara", "channa-deshapriya"],
+    objs: ["O2", "O3"], who: ["vimukthi-jayasundara", "channa-deshapriya", "prasanna-withanage"],
   },
   {
     name: { en: "Political seeing", si: "දේශපාලනික දැක්ම" },
-    desc: { en: "Looking beyond the accepted frame is itself political and can move society.", si: "සම්මත රාමුවෙන් ඔබ්බට බැලීමම දේශපාලනික වන අතර, එයට සමාජය පෙළඹවිය හැකිය." },
-    objs: ["O3"], who: ["vimukthi-jayasundara"],
+    desc: { en: "Looking beyond the accepted frame is itself political and can move society — and the state, in turn, can use the frame to serve an ideology.", si: "සම්මත රාමුවෙන් ඔබ්බට බැලීමම දේශපාලනික වන අතර, එයට සමාජය පෙළඹවිය හැකිය — අනෙක් අතට, රාජ්‍යයට ද මතවාදයක් සඳහා රාමුව භාවිත කළ හැකිය." },
+    objs: ["O3"], who: ["vimukthi-jayasundara", "prasanna-withanage"],
   },
   {
     name: { en: "Multiple perspectives on war", si: "යුද්ධය පිළිබඳ විවිධ දෘෂ්ටිකෝණ" },
@@ -516,13 +681,38 @@ const THEMES = [
     desc: { en: "The future depends on emerging filmmakers continually renewing the frame, even for small audiences.", si: "අනාගතය රඳා පවතින්නේ කුඩා ප්‍රේක්ෂකාගාරයක් සඳහා වුවද, නවක සිනමාකරුවන් නොනවත්වා රාමුව අලුත් කිරීම මතය." },
     objs: ["O5"], who: ["channa-deshapriya"],
   },
+  {
+    name: { en: "The frame reveals the inner world", si: "රාමුව අභ්‍යන්තර ලෝකය හෙළි කරයි" },
+    desc: { en: "Unconventional frames can convey a character's inner state, or a whole social condition, without dialogue.", si: "Unconventional රාමුවලට දෙබසකින් තොරව චරිතයක අභ්‍යන්තර තත්ත්වය හෝ සමස්ත සමාජ තත්ත්වයක් සන්නිවේදනය කළ හැකිය." },
+    objs: ["O1", "O3"], who: ["prasanna-withanage"],
+  },
+  {
+    name: { en: "Rules, not laws", si: "නීති නොව රීති" },
+    desc: { en: "Cinema's conventions are rules that can be broken, unlike laws; new creations come from breaking them.", si: "සිනමාවේ සම්මතයන් නීති නොව බිඳිය හැකි රීති ය; නව නිර්මාණ බිහි වන්නේ ඒවා බිඳීමෙනි." },
+    objs: ["O2"], who: ["prasanna-withanage"],
+  },
+  {
+    name: { en: "Borrowed conventions", si: "ණයට ගත් සම්මත" },
+    desc: { en: "Sri Lankan framing conventions came from Tamil and Hindi cinema; national cinema defined itself by breaking from them.", si: "ශ්‍රී ලාංකීය රාමුකරණ සම්මත දෙමළ සහ හින්දි සිනමාවෙන් පැමිණි ඒවා ය; ජාතික සිනමාව තමන්ව නිර්වචනය කළේ ඒවායෙන් බිඳී යාමෙනි." },
+    objs: ["O3"], who: ["prasanna-withanage"],
+  },
+  {
+    name: { en: "Authenticity over style", si: "ශෛලියට වඩා ස්වකීයත්වය" },
+    desc: { en: "Unconventional framing has value only when it comes from the director's own vision, not from imitating a style.", si: "Unconventional රාමුකරණය වටින්නේ එය ශෛලියක් අනුකරණය කිරීමෙන් නොව, අධ්‍යක්ෂවරයාගේ ස්වකීය දැක්මෙන් පැන නගින විට පමණි." },
+    objs: ["O2"], who: ["prasanna-withanage"],
+  },
+  {
+    name: { en: "Shared authorship of the frame", si: "රාමුවේ හවුල් කර්තෘත්වය" },
+    desc: { en: "A film's success belongs to both the director and the cinematographer.", si: "චිත්‍රපටයක සාර්ථකත්වය අධ්‍යක්ෂවරයාට සහ කැමරා අධ්‍යක්ෂවරයාට යන දෙදෙනාටම හිමිය." },
+    objs: ["O4"], who: ["prasanna-withanage"],
+  },
 ];
 
 const KEY_FINDING = {
-  from: "01 · 02",
-  title: { en: "Unconventionality is relative — and temporary", si: "Unconventional බව සාපේක්ෂයි — තාවකාලිකයි" },
+  from: "01 · 02 · 03",
+  title: { en: "Unconventionality is relative — to the viewer, to time and to power", si: "Unconventional බව සාපේක්ෂයි — ප්‍රේක්ෂකයාට, කාලයට සහ බලයට" },
   text: {
-    en: "Both industry voices agree there is no fixed definition of “unconventional”: it is decided by the critic and the viewer. Channa Deshapriya adds a time dimension — what is unconventional today is absorbed and later accepted as convention. This links the study to reception and spectatorship theory.",
-    si: "Unconventional යන්නට ස්ථාවර නිර්වචනයක් නැති බවත්, එය තීරණය කරන්නේ විචාරකයා සහ ප්‍රේක්ෂකයා බවත් කර්මාන්ත හඬ දෙකම එකඟ වේ. චන්න දේශප්‍රිය කාල මානයක් එකතු කරයි — අද සම්ප්‍රදායික නොවන දේ අවශෝෂණය වී පසුව සම්මතයක් ලෙස පිළිගැනේ. මෙය අධ්‍යයනය reception සහ spectatorship න්‍යායන් සමඟ සම්බන්ධ කරයි.",
+    en: "All three industry voices agree there is no fixed definition of “unconventional”. For Vimukthi Jayasundara it is decided by the critic and the viewer; Channa Deshapriya adds time — today's unconventional is later accepted as convention; Prasanna Withanage adds history and power — unconventional is what has not been seen before, Sri Lankan convention was itself borrowed, and both the market and the state shape what a frame may show. This links the study to reception theory and to the politics of national cinema.",
+    si: "Unconventional යන්නට ස්ථාවර නිර්වචනයක් නැති බවට කර්මාන්ත හඬ තුනම එකඟ වේ. විමුක්ති ජයසුන්දරට අනුව එය තීරණය කරන්නේ විචාරකයා සහ ප්‍රේක්ෂකයා ය; චන්න දේශප්‍රිය කාලය එකතු කරයි — අද සම්ප්‍රදායික නොවන දේ පසුව සම්මතයක් ලෙස පිළිගැනේ; ප්‍රසන්න විතානගේ ඉතිහාසය සහ බලය එකතු කරයි — unconventional යනු මීට පෙර නොදුටු දේ වන අතර, ශ්‍රී ලාංකීය සම්මතය ම ණයට ගත් එකකි; රාමුවකට පෙන්විය හැකි දේ හැඩගස්වන්නේ වෙළඳපොළ සහ රාජ්‍යය යන දෙකමය. මෙය අධ්‍යයනය reception න්‍යාය සහ ජාතික සිනමාවේ දේශපාලනය සමඟ සම්බන්ධ කරයි.",
   },
 };
