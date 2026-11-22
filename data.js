@@ -64,7 +64,7 @@ const PEOPLE = [
   { id: "prasanna-jayakodi", name: "Prasanna Jayakodi", group: "industry" },
   { id: "majith-s-uyangoda", name: "Majith S. Uyangoda", group: "industry" },
   { id: "md-mahindapaala", name: "M.D. Mahindapaala", group: "industry" },
-  { id: "channa-deshapriya", name: "Channa Deshapriya", group: "industry", role: { en: "Cinematographer", si: "කැමරා ශිල්පී" } },
+  { id: "channa-deshapriya", name: "Channa Deshapriya", group: "industry", role: { en: "Cinematographer", si: "කැමරා ශිල්පී" }, photo: "assets/people/channa-deshapriya.png" },
 
   // Academics
   { id: "supun-hemachandra", name: "Supun Hemachandra", group: "academics" },
