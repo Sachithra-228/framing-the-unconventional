@@ -269,6 +269,46 @@ section.tight { padding-top: 8px; }
 .codes { display: flex; flex-wrap: wrap; gap: 6px; align-content: flex-start; }
 .codes span { font-size: 13px; padding: 4px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); }
 
+/* ---------- notepad (raw notes, private) ---------- */
+.notepad { margin-top: 20px; background: var(--surface); border: 1px dashed var(--line); border-radius: 16px; }
+.notepad[open] { border-style: solid; box-shadow: var(--shadow); }
+.notepad summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 14px; padding: 16px 22px; }
+.notepad summary::-webkit-details-marker { display: none; }
+.notepad summary::after { content: "+"; margin-left: auto; font: 400 24px/1 "Inter", sans-serif; color: var(--muted); }
+.notepad[open] summary::after { content: "−"; }
+.np-ic { width: 38px; height: 38px; border-radius: 10px; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); flex: none; }
+.np-tt b { display: block; font-size: 15px; }
+.np-tt small { display: block; color: var(--muted); font-size: 13px; line-height: 1.45; }
+.np-body { padding: 0 22px 22px; }
+.np-row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.np-lock p { margin: 0 0 10px; color: var(--muted); font-size: 14px; }
+.notepad input {
+  font: 14px/1.4 "Inter", "Noto Sans Sinhala", sans-serif; padding: 9px 12px; min-width: 0;
+  border: 1px solid var(--line); border-radius: 10px; background: var(--bg); color: var(--ink);
+}
+.notepad input:focus, .notepad textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: transparent; }
+.np-lock input { flex: 1 1 200px; max-width: 280px; }
+.np-err { color: var(--rec); font-size: 13px; margin: 8px 0 0 !important; min-height: 1.2em; }
+.np-name { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--muted); margin-bottom: 10px; }
+.np-name input { width: 220px; }
+.notepad textarea {
+  display: block; width: 100%; min-height: 380px; resize: vertical; margin: 0;
+  font: 15px/26px "Inter", "Noto Sans Sinhala", "Nirmala UI", system-ui, sans-serif; color: var(--ink);
+  padding: 14px 18px; border: 1px solid var(--line); border-radius: 12px;
+  background-color: var(--bg);
+  background-image: linear-gradient(to bottom, transparent 25px, var(--line) 25px);
+  background-size: 100% 26px; background-position: 0 14px; background-attachment: local;
+}
+.np-conflict { margin-top: 12px; padding: 12px 14px; border-radius: 10px; background: var(--warn-soft); font-size: 14px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.np-conflict span { flex: 1 1 220px; }
+.np-conflict[hidden], .np-lock[hidden], .np-edit[hidden] { display: none; }
+.np-bar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px 16px; margin-top: 12px; }
+.np-status { font-size: 13px; color: var(--muted); }
+.np-status.ok { color: var(--ok); }
+.np-status.warn { color: var(--warn); }
+.np-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.btn.sm { padding: 8px 14px; font-size: 13.5px; }
+
 /* empty state */
 .empty { text-align: center; padding: 40px 8px 16px; max-width: 640px; margin: 0 auto; }
 .empty-icon { position: relative; width: 120px; height: 80px; margin: 0 auto 18px; display: grid; place-items: center; }
@@ -422,4 +462,13 @@ footer { max-width: 1120px; margin: 0 auto; padding: 24px 16px 48px; color: var(
   .key-finding { padding: 18px; }
 
   footer { padding-bottom: 24px; }
+
+  /* notepad */
+  .notepad { margin: 16px -16px 0; border-radius: 0; border-left: 0; border-right: 0; }
+  .notepad summary { padding: 14px 16px; }
+  .np-body { padding: 0 16px 18px; }
+  .np-name input { flex: 1; width: auto; }
+  .notepad textarea { min-height: 300px; padding: 12px 14px; background-position: 0 12px; }
+  .np-actions { width: 100%; }
+  .np-actions .btn { flex: 1; justify-content: center; }
 }

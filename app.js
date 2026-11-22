@@ -43,7 +43,7 @@ const UI = {
     codes: "Codes",
     initialCodes: "Initial codes",
     emptyTitle: "Analysis coming soon",
-    emptyText: name => `The interview with ${name} will be analysed against the four research objectives:`,
+    emptyText: name => `The interview with ${name} will be analysed against the research objectives:`,
     themesEyebrow: "Emerging themes",
     themesTitle: "Themes so far",
     themesSub: "Built from the interview codes. Each theme shows how many people in each group support it.",
@@ -59,6 +59,29 @@ const UI = {
     studyEyebrow: "Research design",
     studyTitle: "About the study",
     crossGroup: "Across groups",
+    npTitle: "Notepad",
+    npHint: "Raw interview notes · private, never shown on the site",
+    npLockText: "Enter the team passcode to open the notes.",
+    npKey: "Passcode",
+    npUnlock: "Open",
+    npBadKey: "Wrong passcode.",
+    npName: "Your name",
+    npPlaceholder: name => `Type or paste the notes from the interview with ${name}…`,
+    npLoading: "Loading…",
+    npEmpty: "No notes yet.",
+    npUnsaved: "Unsaved changes…",
+    npSaving: "Saving…",
+    npSaved: (who, when) => `Saved${who ? ` by ${who}` : ""} · ${when}`,
+    npLocal: "Saved on this device only — online saving isn't set up yet.",
+    npError: "Couldn't save online — your text is kept on this device.",
+    npConflict: (who, when) => `${who || "Someone"} saved a newer version (${when}).`,
+    npKeepBoth: "Keep both",
+    npOverwrite: "Keep only mine",
+    npYourVersion: "your version",
+    npCopy: "Copy",
+    npCopied: "Copied",
+    npDownload: "Download .txt",
+    npSave: "Save",
   },
   si: {
     navHome: "මුල් පිටුව", navIndustry: "කර්මාන්ත", navAcademics: "ශාස්ත්‍රීය", navStudents: "නවක සිනමාකරුවන්", navThemes: "තේමා",
@@ -93,7 +116,7 @@ const UI = {
     codes: "කේත",
     initialCodes: "මූලික කේත",
     emptyTitle: "විශ්ලේෂණය ඉදිරියේදී",
-    emptyText: name => `${name} සමඟ කළ සම්මුඛ සාකච්ඡාව පහත පර්යේෂණ අරමුණු හතර අනුව විශ්ලේෂණය කෙරේ:`,
+    emptyText: name => `${name} සමඟ කළ සම්මුඛ සාකච්ඡාව පහත පර්යේෂණ අරමුණු අනුව විශ්ලේෂණය කෙරේ:`,
     themesEyebrow: "මතුවන තේමා",
     themesTitle: "මෙතෙක් හඳුනාගත් තේමා",
     themesSub: "සම්මුඛ සාකච්ඡා කේත ඇසුරින් ගොඩනගා ඇත. එක් එක් තේමාවට සහාය දක්වන පුද්ගලයන් ගණන කණ්ඩායම් අනුව මෙහි දැක්වේ.",
@@ -109,6 +132,29 @@ const UI = {
     studyEyebrow: "පර්යේෂණ සැලසුම",
     studyTitle: "අධ්‍යයනය ගැන",
     crossGroup: "කණ්ඩායම් හරහා",
+    npTitle: "සටහන් පොත",
+    npHint: "සම්මුඛ සාකච්ඡා අමු සටහන් · පුද්ගලිකයි, වෙබ් අඩවියේ කිසිවිට නොපෙන්වේ",
+    npLockText: "සටහන් විවෘත කිරීමට කණ්ඩායම් මුරපදය ඇතුළත් කරන්න.",
+    npKey: "මුරපදය",
+    npUnlock: "විවෘත කරන්න",
+    npBadKey: "මුරපදය වැරදියි.",
+    npName: "ඔබේ නම",
+    npPlaceholder: name => `${name} සමඟ කළ සම්මුඛ සාකච්ඡාවේ සටහන් මෙහි ටයිප් කරන්න හෝ අලවන්න…`,
+    npLoading: "පූරණය වෙමින්…",
+    npEmpty: "තවම සටහන් නැත.",
+    npUnsaved: "සුරැකීමට ඇත…",
+    npSaving: "සුරකිමින්…",
+    npSaved: (who, when) => `සුරැකිණි${who ? ` · ${who}` : ""} · ${when}`,
+    npLocal: "මෙම උපාංගයේ පමණක් සුරැකිණි — ඔන්ලයින් සුරැකීම තවම සකසා නැත.",
+    npError: "ඔන්ලයින් සුරැකීමට නොහැකි විය — ඔබේ පෙළ මෙම උපාංගයේ සුරැකී ඇත.",
+    npConflict: (who, when) => `${who || "වෙනත් අයෙක්"} නවතම පිටපතක් සුරැකීය (${when}).`,
+    npKeepBoth: "දෙකම තබාගන්න",
+    npOverwrite: "මගේ පිටපත පමණක්",
+    npYourVersion: "ඔබේ පිටපත",
+    npCopy: "පිටපත්",
+    npCopied: "පිටපත් කළා",
+    npDownload: "බාගන්න",
+    npSave: "සුරකින්න",
   },
 };
 const L = key => UI[LANG][key];
@@ -375,7 +421,9 @@ function renderPerson(pid) {
         </div>
       </div>
       <div class="pf-body">${body}</div>
+      ${renderNotepad(p)}
     </article>`;
+  mountNotepad(p);
 }
 
 /* ---------------- THEMES ---------------- */

@@ -40,6 +40,20 @@ assets/people/supun-hemachandra.jpg
 
 To use another file name or format, set `photo` on that person in `data.js`. If there's no photo, the card shows the person's initials.
 
+## Notepad (raw notes)
+
+Each person page has a **Notepad** at the bottom. Anyone with the team passcode can type or paste the raw interview notes there. The notes save automatically and are never shown on the public pages. Copy or download them later to write up the analysis.
+
+The notes are stored by [`api/notes.js`](api/notes.js), a Vercel function backed by Upstash Redis. One-time setup in the Vercel dashboard:
+
+1. **Storage → Create → Upstash (Redis)**, then connect it to this project. This adds `KV_REST_API_URL` and `KV_REST_API_TOKEN`.
+2. **Settings → Environment Variables**: add `NOTES_PASSCODE` set to the team passcode.
+3. Redeploy.
+
+Until the setup is done, the notepad still works, but the notes are saved only in that browser.
+
+If two people save the same notepad at once, the second person is asked to keep both versions or keep only theirs. The last 30 earlier versions are also kept in storage.
+
 ## Running locally
 
 Open `index.html` in a browser. You don't need a build step.
