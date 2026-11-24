@@ -60,7 +60,7 @@ const PEOPLE = [
   { id: "vimukthi-jayasundara", name: "Vimukthi Jayasundara", group: "industry", role: { en: "Filmmaker", si: "සිනමාකරු" }, photo: "assets/people/vimukthi-jayasundara.png" },
   { id: "prasanna-withanage", name: "Prasanna Withanage", group: "industry", role: { en: "Film Director", si: "චිත්‍රපට අධ්‍යක්ෂ" } },
   { id: "prasanna-jayakodi", name: "Prasanna Jayakodi", group: "industry" },
-  { id: "majith-s-uyangoda", name: "Majith S. Uyangoda", group: "industry" },
+  { id: "majith-s-uyangoda", name: "Majith S. Uyangoda", group: "industry", role: { en: "Cinematographer", si: "කැමරා ශිල්පී" } },
   { id: "md-mahindapaala", name: "M.D. Mahindapaala", group: "industry" },
   { id: "channa-deshapriya", name: "Channa Deshapriya", group: "industry", role: { en: "Cinematographer", si: "කැමරා ශිල්පී" } },
 
@@ -802,13 +802,226 @@ const INTERVIEWS = {
       { en: "Theory, research and analysis skills", si: "න්‍යාය, පර්යේෂණ සහ විශ්ලේෂණ කුසලතා" },
     ],
   },
+  "majith-s-uyangoda": {
+    number: 5,
+    tags: [
+      { en: "Frame as emotion", si: "හැඟීමක් ලෙස රාමුව" },
+      { en: "Concepts, not conventions", si: "සම්මත නොව සංකල්පනා" },
+      { en: "The vertical turn", si: "සිරස් (vertical) හැරවුම" },
+      { en: "Society shapes the frame", si: "සමාජය රාමුව හැඩගස්වයි" },
+      { en: "Natural-light experiments", si: "ස්වාභාවික ආලෝක අත්හදා බැලීම්" },
+      { en: "Director–DoP unity", si: "අධ්‍යක්ෂ–කැමරා ශිල්පී එකමුතුව" },
+      { en: "Forums for cinema", si: "සිනමාව සඳහා සංවාද වේදිකා" },
+    ],
+    objectives: {
+      O1: {
+        heading: { en: "A frame is a moving image in which emotion is felt", si: "රාමුවක් යනු හැඟීම දැනෙන, චලනය සහිත චිත්‍රයකි" },
+        said: [
+          {
+            en: "A frame cannot be defined simply, and there is no agreed definition of it anywhere. At its simplest it is what forms when a lens is put on a camera — and that changes from work to work.",
+            si: "රාමුවක් සරලව නිර්වචනය කළ නොහැකි අතර, ‘මෙයයි රාමුව’ කියා කොතැනකවත් සම්මතයක් නැත. සරලම ලෙස එය කැමරාවකට ලෙන්ස් එකක් දැමූ විට හැදෙන දෙයයි — එය වැඩෙන් වැඩට වෙනස් වේ.",
+          },
+          {
+            en: "If he had to answer in a few words: within cinematography, a frame is an image with movement, in which emotion and feeling can be felt.",
+            si: "කෙටියෙන් පිළිතුරු දිය යුතු නම්: සිනමාකරණය තුළ රාමුවක් යනු චලනය සහිත, ඉමෝෂනය සහ හැඟීම දැනෙන චිත්‍රයකි.",
+          },
+          {
+            en: "“Locking” a frame means capturing exactly the amount of the image that carries the emotion. To show a man laughing or crying, the whole man is not needed — only the part where the emotion is seen. He links this to the idea of balance, which contains several categories of its own.",
+            si: "රාමුවක් ‘ලොක්’ කිරීම යනු ඉමෝෂනය රැගෙන යන ප්‍රමාණය පමණක් හසු කරගැනීමයි. මිනිසෙක් සිනාසෙන හෝ අඬන බව පෙන්වීමට මුළු මිනිසාම අවශ්‍ය නැත — ඉමෝෂනය පෙනෙන කොටස පමණක් ප්‍රමාණවත්ය. ඔහු මෙය සමබරතාව (balance) යන අදහසට සම්බන්ධ කරයි; එහි ම ප්‍රවර්ග කිහිපයක් ඇත.",
+          },
+          {
+            en: "Cinematography drew its first inspiration from painting: light, darkness and shadow were learned from paintings, and a second of film is still twenty-four such images joined together.",
+            si: "සිනමාකරණයේ මුල් ආභාසය ලැබුණේ සිතුවම්වලිනි: ආලෝකය, අඳුර සහ සෙවනැල්ල ඉගෙන ගත්තේ සිතුවම් ඇසුරිනි; චිත්‍රපටයක තත්පරයක් තවමත් එවැනි රූප විසිහතරක එකතුවකි.",
+          },
+          {
+            en: "Whether a frame is conventional or not depends on the person who makes it and on the work.",
+            si: "රාමුවක් සම්ප්‍රදායික ද නැද්ද යන්න රඳා පවතින්නේ එය හදන කෙනා සහ වැඩය අනුවය.",
+          },
+        ],
+        interpretation: {
+          en: "As a working cinematographer, he defines the frame by its emotional purpose rather than by rules of composition. The frame is a decision about how much of the image is needed to make a feeling felt.",
+          si: "ක්‍රියාකාරී කැමරා ශිල්පියෙකු ලෙස, ඔහු රාමුව නිර්වචනය කරන්නේ සංයුති රීති අනුව නොව එහි හැඟීම්මය අරමුණ අනුවය. රාමුව යනු හැඟීමක් දැනවීමට රූපයෙන් කොපමණ ප්‍රමාණයක් අවශ්‍යද යන්න පිළිබඳ තීරණයකි.",
+        },
+      },
+      O2: {
+        heading: { en: "There are concepts, not conventions — and they are there to be broken", si: "ඇත්තේ සම්මත නොව සංකල්පනා ය — ඒවා බිඳීම සඳහා ය" },
+        said: [
+          {
+            en: "“Non-conventional” suggests breaking a rule from the book — but the book's “this is a wide shot, this is a close-up” keeps changing. There is a large gap between the frames of 1990s cinema and those of 2025, and a frame he made ten years ago differs from one he makes today.",
+            si: "‘සම්ප්‍රදායික නොවන’ යන්නෙන් පොතේ තිබෙන රීතියක් කැඩීමක් හැඟේ — නමුත් ‘මෙය වයිඩ් ෂොට් එකක්, මෙය ක්ලෝසප් එකක්’ යන පොතේ දේ නොනවත්වා වෙනස් වේ. 1990 දශකයේ සිනමාවේ රාමු සහ 2025 රාමු අතර විශාල පරතරයක් ඇති අතර, ඔහු අවුරුදු දහයකට පෙර හැදූ රාමුවක් සහ අද හදන රාමුවක් වෙනස්ය.",
+          },
+          {
+            en: "He thinks the word “conventional” should not be used. Cinema has concepts: three-point lighting with key, fill and backlight does not mean three lamps are needed — the same levels can be made with shadow, or with black and white cloth.",
+            si: "‘සම්ප්‍රදායික’ යන වචනය භාවිත කිරීම හොඳ නැතැයි ඔහු සිතයි. සිනමාවේ ඇත්තේ සංකල්පනා ය: key, fill සහ backlight සහිත ත්‍රී-ලයිට් ක්‍රමය යනු ලයිට් තුනක් අවශ්‍ය බව නොවේ — එම මට්ටම් සෙවනැල්ලෙන් හෝ කළු සහ සුදු රෙදි භාවිතයෙන් ද හැදිය හැකිය.",
+          },
+          {
+            en: "Earlier filmmakers' work should not be labelled conventional: it was made for the political, technical and social needs of its moment. In time, what his generation makes will be called conventional too.",
+            si: "පෙර සිනමාකරුවන්ගේ නිර්මාණ සම්ප්‍රදායික ලෙස ලේබල් නොකළ යුතුය: ඒවා හැදුණේ ඒ මොහොතේ දේශපාලනික, තාක්ෂණික සහ සමාජීය අවශ්‍යතා අනුවය. කාලයත් සමඟ ඔහුගේ පරම්පරාව කරන දේ ද සම්ප්‍රදායික යැයි කියනු ඇත.",
+          },
+          {
+            en: "Around 2010–2016 a generation of “stubborn” Sri Lankan filmmakers emerged who learned these concepts, then broke them to give priority to their own creation and their own feeling.",
+            si: "2010–2016 පමණ කාලයේ, මෙම සංකල්පනා ඉගෙන ගෙන, පසුව තමන්ගේ නිර්මාණයට සහ තමන්ට දැනෙන හැඟීමට මුල් තැන දීම සඳහා ඒවා බිඳ දැමූ ‘හිතුවක්කාර’ ශ්‍රී ලාංකීය සිනමාකරුවන් පිරිසක් බිහි විය.",
+          },
+          {
+            en: "His own experiments are mostly in music videos: a single-take video with no cut that still moves through wide, close-up and over-the-shoulder compositions, and <i>Obe Hina Wenne Kohomada</i>, shot entirely in natural light by following the sun from morning backlight through side light to evening backlight. Advertising leaves less freedom, because the work belongs to the client.",
+            si: "ඔහුගේ අත්හදා බැලීම් බොහොමයක් ඇත්තේ මියුසික් වීඩියෝවලය: කිසිදු කට් එකක් නැති තනි ෂොට් එකක් වුවද, වයිඩ්, ක්ලෝසප් සහ ඕවර්-ෂෝල්ඩර් සංයුති හරහා ගමන් කරන වීඩියෝවක්; සහ උදේ බැක්ලයිට් එකේ සිට සයිඩ් ලයිට් හරහා සවස බැක්ලයිට් එක දක්වා හිරු අනුගමනය කරමින්, සම්පූර්ණයෙන් ස්වාභාවික ආලෝකයෙන් රූගත කළ <i>ඔබ හිනා වෙන්නේ කොහොමද</i>. වෙළඳ දැන්වීම්වල නිදහස අඩුය, මන්ද වැඩය අයිති සේවාදායකයාටය.",
+          },
+        ],
+        interpretation: {
+          en: "He dissolves the opposition between rules and freedom: what the books call rules are concepts tied to a period, so freedom is not rebellion against a fixed tradition but the normal movement of each generation — grounded, like Ileka Ruwanpathirana's view, in first learning those concepts.",
+          si: "ඔහු රීති සහ නිදහස අතර ප්‍රතිවිරෝධය දිය කර හරියි: පොත්වල රීති ලෙස හඳුන්වන දේ යුගයකට බැඳුණු සංකල්පනා ය; එබැවින් නිදහස යනු ස්ථාවර සම්ප්‍රදායකට එරෙහි කැරැල්ලක් නොව, සෑම පරම්පරාවකම ස්වාභාවික ගමනයි — ඉලේකා රුවන්පතිරණගේ අදහස මෙන්ම, මුලින්ම එම සංකල්පනා ඉගෙනීම මත පදනම් වූවකි.",
+        },
+      },
+      O3: {
+        heading: { en: "Society, politics and devices clearly shape the frame", si: "සමාජය, දේශපාලනය සහ උපාංග රාමුව පැහැදිලිවම හැඩගස්වයි" },
+        said: [
+          {
+            en: "Social and political factors clearly affect the cinematic frame. Iranian filmmakers who cannot shoot freely outdoors make a hidden, indoor cinema; Korean, Japanese and Mexican films carry the colours, landscapes and social levels of the countries they come from — borrowing a Japanese look would not fit a Sri Lankan film.",
+            si: "සමාජීය සහ දේශපාලනික සාධක සිනමා රාමුවට පැහැදිලිවම බලපායි. එළිමහනේ නිදහසේ රූගත කළ නොහැකි ඉරාන සිනමාකරුවන් සඟවාගත්, ගෘහස්ථ සිනමාවක් කරති; කොරියානු, ජපන් සහ මෙක්සිකානු චිත්‍රපට ඔවුන්ගේ රටවල වර්ණ, භූ දර්ශන සහ සමාජ මට්ටම් රැගෙන යයි — ජපන් පෙනුමක් ණයට ගැනීම ශ්‍රී ලාංකීය චිත්‍රපටයකට නොගැළපේ.",
+          },
+          {
+            en: "Sri Lanka is an island whose landscape changes within a hundred kilometres, with Buddhist, Hindu, Catholic and Muslim cultures — the temple bell, the kovil's nadaswaram, the church hymn are all part of what a frame carries.",
+            si: "ශ්‍රී ලංකාව කිලෝමීටර සීයක් ඇතුළත භූ දර්ශනය වෙනස් වන දූපතකි; බෞද්ධ, හින්දු, කතෝලික සහ මුස්ලිම් සංස්කෘතීන් ඇත — පන්සලේ ඝණ්ටාරය, කෝවිලේ නලාව, පල්ලියේ ගීතිකාව යන සියල්ල රාමුවක් රැගෙන යන දෙයෙහි කොටසකි.",
+          },
+          {
+            en: "Politics reached the audience directly: during the war, when bombs went off in Colombo, the last buses disappeared, night life ended and the 10.30 pm show was lost. Now, in 2026, late shows are back — a country that has settled has given people space both to create and to enjoy.",
+            si: "දේශපාලනය ප්‍රේක්ෂකයාට සෘජුවම බලපෑවේය: යුද සමයේ කොළඹ බෝම්බ පිපිරෙන විට, අවසාන බස් රථ නැති වී, රාත්‍රී ජීවිතය නැති වී, රාත්‍රී 10.30 දර්ශනය අහිමි විය. දැන්, 2026 දී, රාත්‍රී දර්ශන නැවත ඇත — සන්සුන් වූ රටක් මිනිසුන්ට නිර්මාණය කිරීමට සහ රසවිඳීමට අවකාශයක් ලබා දී ඇත.",
+          },
+          {
+            en: "For a time Sri Lankan cinema split into art-house films seen mainly at festivals and films the mass audience could follow. After about 2013, new platforms and wider access brought a range of genres.",
+            si: "යම් කාලයක ශ්‍රී ලාංකීය සිනමාව, ප්‍රධාන වශයෙන් උළෙලවලදී පමණක් නැරඹූ කලාත්මක චිත්‍රපට සහ මහජනතාවට තේරුම් ගත හැකි චිත්‍රපට ලෙස බෙදී ගියේය. 2013 න් පමණ පසු නව වේදිකා සහ පුළුල් ප්‍රවේශය විවිධ ශානර බිහි කළේය.",
+          },
+          {
+            en: "The biggest current break with convention is the move to vertical framing — vertical series, shows and commercials made for phones that people watch in small gaps of time. Nobody set out to change the convention: viewers accepted it without noticing, and a generation born after 2020 may draw the sea on a vertical sheet.",
+            si: "වර්තමානයේ සම්ප්‍රදායෙන් සිදු වූ විශාලතම බිඳීම සිරස් (vertical) රාමුකරණයට වූ ගමනයි — මිනිසුන් කුඩා කාල පරතරවලදී දුරකථනයෙන් නරඹන සිරස් කතා මාලා, වැඩසටහන් සහ වෙළඳ දැන්වීම්. කිසිවෙකු සම්මතය වෙනස් කිරීමට උත්සාහ කළේ නැත: ප්‍රේක්ෂකයා නොදැනුවත්වම එය පිළිගත් අතර, 2020 න් පසු ඉපදුණු පරම්පරාවක් මුහුද සිරස් කඩදාසියක අඳින්නට පුළුවන.",
+          },
+        ],
+        interpretation: {
+          en: "He agrees with the industry voices that politics and society shape the frame, but adds two concrete layers: the material conditions of viewing (buses, curfews, night shows) and the device itself. For him, today's decisive context is technological — the phone has changed the shape of the frame faster than any filmmaker.",
+          si: "දේශපාලනය සහ සමාජය රාමුව හැඩගස්වන බවට ඔහු කර්මාන්ත හඬ සමඟ එකඟ වන අතර, ස්ථර දෙකක් එකතු කරයි: නැරඹීමේ භෞතික තත්ත්වයන් (බස්, ඇඳිරි නීති, රාත්‍රී දර්ශන) සහ උපාංගයම. ඔහුට අනුව අද තීරණාත්මක සන්දර්භය තාක්ෂණිකය — දුරකථනය කිසිම සිනමාකරුවෙකුට වඩා වේගයෙන් රාමුවේ හැඩය වෙනස් කර ඇත.",
+        },
+      },
+      O4: {
+        heading: { en: "Director and cinematographer must work as one unit", si: "අධ්‍යක්ෂ සහ කැමරා ශිල්පියා එක ඒකකයක් ලෙස වැඩ කළ යුතුය" },
+        said: [
+          {
+            en: "What he expects most from a director is good leadership and guidance. A director who leads clearly, shares the story and guides the team makes the work flow; without that, things can go wrong.",
+            si: "ඔහු අධ්‍යක්ෂවරයෙකුගෙන් වැඩිපුරම බලාපොරොත්තු වන්නේ හොඳ නායකත්වය සහ මඟපෙන්වීමයි. පැහැදිලිව නායකත්වය දෙන, කතාව බෙදාගන්නා සහ කණ්ඩායමට මඟ පෙන්වන අධ්‍යක්ෂවරයෙක් වැඩය සුමටව ගලා යාමට සලස්වයි; එය නැති විට දේවල් අවුල් විය හැකිය.",
+          },
+          {
+            en: "On set, director and cinematographer are not two people but one, working towards one creative purpose. He never works “100% on his own creativity”: the frame comes from the director's creative intent.",
+            si: "රූගත කිරීමේ ස්ථානයේ අධ්‍යක්ෂවරයා සහ කැමරා ශිල්පියා දෙදෙනෙක් නොව, එක් නිර්මාණාත්මක අරමුණක් සඳහා වැඩ කරන එක් අයෙකි. ඔහු කිසිදාක ‘සියයට සියයක් තමන්ගේ නිර්මාණශීලීත්වය’ මත වැඩ නොකරයි: රාමුව පැන නගින්නේ අධ්‍යක්ෂවරයාගේ නිර්මාණාත්මක අභිප්‍රාය තුළිනි.",
+          },
+          {
+            en: "Reading the script creates a picture in each of their heads; they discuss until both are on the same track. If the director is on one track and he is on another, the film fails. The final frame is the point where they agree.",
+            si: "පිටපත කියවන විට දෙදෙනාගේම හිසේ චිත්‍රයක් හැදේ; දෙදෙනාම එකම මාර්ගයේ සිටින තුරු ඔවුන් සාකච්ඡා කරයි. අධ්‍යක්ෂවරයා එක් මාර්ගයක සහ ඔහු තවත් මාර්ගයක සිටියොත් චිත්‍රපටය සාර්ථක නොවේ. අවසාන රාමුව යනු ඔවුන් එකඟ වන තැනයි.",
+          },
+          {
+            en: "A film needs “unity”: director, cinematographer, production, costume and art departments — a team of 25 to 50 — working to one shared rule, such as a single colour palette for costumes and vehicles. He compares it to the red-and-white stripes of a kovil wall.",
+            si: "චිත්‍රපටයකට ‘එකමුතුව’ (unity) අවශ්‍යයි: අධ්‍යක්ෂ, කැමරා ශිල්පී, නිෂ්පාදන, ඇඳුම් සහ කලා අංශ — 25 සිට 50 දක්වා කණ්ඩායමක් — ඇඳුම් සහ වාහන සඳහා එකම වර්ණ තලයක් වැනි එක් පොදු රීතියකට වැඩ කිරීම. ඔහු එය කෝවිල් තාප්පයක රතු-සුදු ඉරි සමඟ සසඳයි.",
+          },
+          {
+            en: "Some directors write and shoot their own films as director-cinematographers; that is a different pattern, and it can also succeed.",
+            si: "සමහර අධ්‍යක්ෂවරු තමන්ම ලියා, තමන්ම රූගත කරන අධ්‍යක්ෂ-කැමරා ශිල්පීන් වෙති; එය වෙනස් රටාවක් වන අතර, එය ද සාර්ථක විය හැකිය.",
+          },
+        ],
+        interpretation: {
+          en: "He gives the fullest account of collaboration so far. Framing is a negotiated agreement inside a hierarchy: the director leads and holds the vision, the cinematographer translates it, and the whole crew serves a shared visual unity.",
+          si: "සහයෝගීතාව පිළිබඳ මෙතෙක් ලැබුණු සම්පූර්ණතම විස්තරය ඔහු ලබා දෙයි. රාමුකරණය යනු ධුරාවලියක් තුළ සාකච්ඡා කර ලබාගන්නා එකඟතාවකි: අධ්‍යක්ෂවරයා නායකත්වය දී දැක්ම රඳවා ගනී, කැමරා ශිල්පියා එය පරිවර්තනය කරයි, සමස්ත කණ්ඩායමම පොදු දෘශ්‍ය එකමුතුවකට සේවය කරයි.",
+        },
+      },
+      O5: {
+        heading: { en: "Vertical screens, open forums and constant renewal", si: "සිරස් තිර, විවෘත සංවාද වේදිකා සහ නොනවතින අලුත් වීම" },
+        said: [
+          {
+            en: "He believes vertical framing is here to stay: large vertical screens may soon be built, vertical films will be submitted to festivals, and the form will be taught. Any medium can be used to make cinema.",
+            si: "සිරස් රාමුකරණය නොනැසී පවතිනු ඇතැයි ඔහු විශ්වාස කරයි: විශාල සිරස් තිර ඉක්මනින් හැදිය හැකිය, සිරස් චිත්‍රපට උළෙලවලට ඉදිරිපත් කෙරෙනු ඇති අතර, එම ආකෘතිය ඉගැන්වෙනු ඇත. ඕනෑම මාධ්‍යයකින් සිනමාව කළ හැකිය.",
+          },
+          {
+            en: "Sri Lankan cinema needs forums. Like forum theatre, where the audience can stop a play and propose changes, films should be discussed by a small group before mass release — by universities, societies or the private sector. Things change only when people talk.",
+            si: "ශ්‍රී ලාංකීය සිනමාවට සංවාද වේදිකා (forums) අවශ්‍යයි. ප්‍රේක්ෂකයාට නාට්‍යයක් නවතා වෙනස්කම් යෝජනා කළ හැකි ෆෝරම් තියටර් මෙන්, මහජනතාවට නිකුත් කිරීමට පෙර චිත්‍රපට කුඩා පිරිසක් විසින් සාකච්ඡා කළ යුතුය — විශ්වවිද්‍යාල, සමිති හෝ පෞද්ගලික අංශය මගින්. දේවල් වෙනස් වන්නේ මිනිසුන් කතා කරන විට පමණි.",
+          },
+          {
+            en: "Since about 2010 cinema in Sri Lanka has been getting better, and access has widened beyond one small group. Yet some village children have only ever seen a film on a school projector, and giving them access matters as much as teaching film.",
+            si: "2010 පමණ සිට ශ්‍රී ලංකාවේ සිනමාව හොඳ අතට හැරෙමින් ඇති අතර, ප්‍රවේශය එක් කුඩා කණ්ඩායමකින් ඔබ්බට පුළුල් වී ඇත. එහෙත් සමහර ගම්බද ළමුන් චිත්‍රපටයක් දැක ඇත්තේ පාසල් ප්‍රොජෙක්ටරයකින් පමණි; ඔවුන්ට ප්‍රවේශය ලබා දීම සිනමාව ඉගැන්වීම තරම්ම වැදගත්ය.",
+          },
+          {
+            en: "Cinema never grows old — it is we who grow old. So filmmakers must keep renewing themselves; the next generation of cinematographers will go somewhere he cannot predict.",
+            si: "සිනමාව කිසිදා පරණ වන්නේ නැත — පරණ වන්නේ අපිය. එබැවින් සිනමාකරුවන් නොනවත්වා අලුත් විය යුතුය; ඊළඟ පරම්පරාවේ කැමරා ශිල්පීන් ඔහුට පුරෝකථනය කළ නොහැකි තැනකට යනු ඇත.",
+          },
+        ],
+        interpretation: {
+          en: "His future is open and platform-driven: new screens, new audiences and new forms, kept healthy by open discussion and by filmmakers who refuse to stand still.",
+          si: "ඔහුගේ අනාගතය විවෘත සහ වේදිකා මත පදනම් වූවකි: නව තිර, නව ප්‍රේක්ෂකයින් සහ නව ආකෘති — විවෘත සාකච්ඡාව සහ එක තැන නොසිටින සිනමාකරුවන් මගින් සජීවීව තබාගත් අනාගතයකි.",
+        },
+      },
+      O6: {
+        heading: { en: "His position in the overall pattern", si: "සමස්ත රටාව තුළ ඔහුගේ ස්ථානය" },
+        said: [
+          {
+            en: "Like Channa Deshapriya, he sees today's new frame becoming tomorrow's convention — but goes further and rejects calling any past cinema “conventional” at all.",
+            si: "චන්න දේශප්‍රිය මෙන්ම, අද නව රාමුව හෙට සම්මතයක් වන බව ඔහු දකී — නමුත් තවත් ඉදිරියට ගොස්, අතීත කිසිදු සිනමාවක් ‘සම්ප්‍රදායික’ ලෙස හැඳින්වීම ම ප්‍රතික්ෂේප කරයි.",
+          },
+          {
+            en: "Like Prasanna Withanage, he reads Sri Lankan cinema historically and politically, adding the war's effect on night shows and audiences.",
+            si: "ප්‍රසන්න විතානගේ මෙන්ම, ඔහු ශ්‍රී ලාංකීය සිනමාව ඓතිහාසිකව සහ දේශපාලනිකව කියවන අතර, යුද්ධය රාත්‍රී දර්ශනවලට සහ ප්‍රේක්ෂකයාට කළ බලපෑම එකතු කරයි.",
+          },
+          {
+            en: "Like Ileka Ruwanpathirana, he holds that concepts must be learned before they are broken.",
+            si: "ඉලේකා රුවන්පතිරණ මෙන්ම, සංකල්පනා බිඳීමට පෙර ඒවා ඉගෙන ගත යුතු බව ඔහු දරයි.",
+          },
+          {
+            en: "He adds what no one else raised: the vertical, phone-based frame as the major break of the present, and the most detailed account so far of director–cinematographer collaboration.",
+            si: "අන් කිසිවෙකු මතු නොකළ දේ ඔහු එකතු කරයි: වර්තමානයේ ප්‍රධාන බිඳීම ලෙස දුරකථනය පදනම් කරගත් සිරස් රාමුව, සහ අධ්‍යක්ෂ–කැමරා ශිල්පී සහයෝගීතාව පිළිබඳ මෙතෙක් ලැබුණු වඩාත් විස්තරාත්මක විග්‍රහය.",
+          },
+        ],
+        interpretation: {
+          en: "With five voices, a cinematographer's view sharpens the pattern: unconventionality is not only relative and temporary — it is driven as much by technology and viewing habits as by artists. The frame changes because the screen and the society change.",
+          si: "හඬ පහක් සමඟ, කැමරා ශිල්පියෙකුගේ දැක්ම රටාව තියුණු කරයි: unconventional බව සාපේක්ෂ සහ තාවකාලික පමණක් නොවේ — එය කලාකරුවන් මෙන්ම තාක්ෂණය සහ නැරඹීමේ පුරුදු මගින් ද මෙහෙයවේ. රාමුව වෙනස් වන්නේ තිරය සහ සමාජය වෙනස් වන නිසාය.",
+        },
+      },
+    },
+    closing: {
+      heading: { en: "Cinema never grows old — we do", si: "සිනමාව පරණ වන්නේ නැත — පරණ වන්නේ අපිය" },
+      text: {
+        en: "No cinematic work is ever simply conventional; it is the creation of its moment. Those who come after will make their own — so we have to keep renewing ourselves.",
+        si: "කිසිදු සිනමා කෘතියක් සරලව සම්ප්‍රදායික නොවේ; එය එහි මොහොතේ නිර්මාණයයි. පසුව එන අය තමන්ගේම දේ නිර්මාණය කරනු ඇත — එබැවින් අප නොනවත්වා අලුත් විය යුතුය.",
+      },
+    },
+    codes: [
+      { en: "No agreed definition of a frame", si: "රාමුවට සම්මත නිර්වචනයක් නැත" },
+      { en: "Frame = moving image that carries emotion", si: "රාමුව = හැඟීම රැගෙන යන චලන චිත්‍රය" },
+      { en: "Locking only the emotional portion", si: "හැඟීම පෙනෙන කොටස පමණක් ලොක් කිරීම" },
+      { en: "Balance", si: "සමබරතාව" },
+      { en: "Inspiration from painting", si: "සිතුවම්වලින් ආභාසය" },
+      { en: "1990s vs 2025 frames", si: "1990 දශකය සහ 2025 රාමු" },
+      { en: "Concepts, not conventions", si: "සම්මත නොව සංකල්පනා" },
+      { en: "Three-point lighting as a concept", si: "සංකල්පනාවක් ලෙස ත්‍රී-ලයිට් ක්‍රමය" },
+      { en: "Past cinema made for its moment", si: "අතීත සිනමාව එහි මොහොතට හැදුණකි" },
+      { en: "“Stubborn” filmmakers (2010–2016)", si: "‘හිතුවක්කාර’ සිනමාකරුවන් (2010–2016)" },
+      { en: "Single-take and natural-light music videos", si: "තනි ෂොට් සහ ස්වාභාවික ආලෝක මියුසික් වීඩියෝ" },
+      { en: "Less freedom in advertising", si: "වෙළඳ දැන්වීම්වල අඩු නිදහස" },
+      { en: "National cinemas carry their society", si: "ජාතික සිනමාව තම සමාජය රැගෙන යයි" },
+      { en: "Multi-religious visual culture", si: "බහු ආගමික දෘශ්‍ය සංස්කෘතිය" },
+      { en: "War, last buses and lost night shows", si: "යුද්ධය, අවසාන බස් සහ අහිමි වූ රාත්‍රී දර්ශන" },
+      { en: "Art-house vs mass audience gap", si: "කලාත්මක සහ මහජන ප්‍රේක්ෂක පරතරය" },
+      { en: "The vertical turn", si: "සිරස් හැරවුම" },
+      { en: "Viewers accept change unknowingly", si: "ප්‍රේක්ෂකයා නොදැනුවත්වම වෙනස පිළිගැනීම" },
+      { en: "Director as leader and guide", si: "නායකයා සහ මඟපෙන්වන්නා ලෙස අධ්‍යක්ෂ" },
+      { en: "Director and DoP as one", si: "අධ්‍යක්ෂ සහ DoP එක් අයෙක් ලෙස" },
+      { en: "Unity across departments", si: "අංශ හරහා එකමුතුව" },
+      { en: "Forums before release", si: "නිකුතුවට පෙර සංවාද වේදිකා" },
+      { en: "Access for village children", si: "ගම්බද ළමුන්ට ප්‍රවේශය" },
+      { en: "Cinema never grows old", si: "සිනමාව කිසිදා පරණ නොවේ" },
+    ],
+  },
 };
 
 const THEMES = [
   {
     name: { en: "Framing as a foundation", si: "මූලිකාංගයක් ලෙස රාමුව" },
     desc: { en: "The frame is a fundamental element of cinema: it begins in the screenplay and is built through choices of what to include and exclude.", si: "රාමුව සිනමාවේ මූලික අංගයකි: එය තිර පිටපතේ සිටම ආරම්භ වන අතර, ඇතුළත් කරන සහ බැහැර කරන දේ පිළිබඳ තේරීම් හරහා ගොඩනැගේ." },
-    objs: ["O1"], who: ["vimukthi-jayasundara", "channa-deshapriya", "prasanna-withanage", "ileka-ruwanpathirana"],
+    objs: ["O1"], who: ["vimukthi-jayasundara", "channa-deshapriya", "prasanna-withanage", "ileka-ruwanpathirana", "majith-s-uyangoda"],
   },
   {
     name: { en: "Frame and context are interdependent", si: "රාමුව සහ සන්දර්භය අන්‍යෝන්‍ය වශයෙන් බැඳී ඇත" },
@@ -818,27 +1031,27 @@ const THEMES = [
   {
     name: { en: "Evolution of cinematic language", si: "සිනමා භාෂාවේ පරිණාමය" },
     desc: { en: "Cinematic rules change from era to era; cinema keeps searching for new ones.", si: "සිනමා රීති යුගයෙන් යුගයට වෙනස් වේ; සිනමාව නව රීති සොයා යයි." },
-    objs: ["O2"], who: ["vimukthi-jayasundara", "channa-deshapriya", "prasanna-withanage"],
+    objs: ["O2"], who: ["vimukthi-jayasundara", "channa-deshapriya", "prasanna-withanage", "majith-s-uyangoda"],
   },
   {
     name: { en: "Unconventional becomes convention", si: "Unconventional දේ සම්මතයක් බවට පත් වීම" },
     desc: { en: "New approaches are imitated and absorbed until they become the norm, so the next one has to be found.", si: "නව ප්‍රවේශ අනුකරණය වී සම්මතය බවට පත් වන තුරු අවශෝෂණය වේ; එබැවින් ඊළඟ එක සොයාගත යුතුය." },
-    objs: ["O2", "O5"], who: ["vimukthi-jayasundara", "channa-deshapriya"],
+    objs: ["O2", "O5"], who: ["vimukthi-jayasundara", "channa-deshapriya", "majith-s-uyangoda"],
   },
   {
     name: { en: "Artistic freedom", si: "කලාත්මක නිදහස" },
     desc: { en: "The freedom to go beyond existing rules in one's own, authored work.", si: "තමන්ගේම ස්වකීය නිර්මාණ තුළ පවතින රීතිවලින් ඔබ්බට යාමේ නිදහස." },
-    objs: ["O2"], who: ["vimukthi-jayasundara", "channa-deshapriya", "prasanna-withanage", "ileka-ruwanpathirana"],
+    objs: ["O2"], who: ["vimukthi-jayasundara", "channa-deshapriya", "prasanna-withanage", "ileka-ruwanpathirana", "majith-s-uyangoda"],
   },
   {
     name: { en: "Commercial constraint", si: "වාණිජ සීමා" },
     desc: { en: "In commercial cinema and advertising, expression stays tied to what audiences already like.", si: "වාණිජ සිනමාව සහ වෙළඳ දැන්වීම් තුළ ප්‍රකාශනය ප්‍රේක්ෂකයා දැනටමත් කැමති දේට බැඳී පවතී." },
-    objs: ["O2", "O3"], who: ["vimukthi-jayasundara", "channa-deshapriya", "prasanna-withanage"],
+    objs: ["O2", "O3"], who: ["vimukthi-jayasundara", "channa-deshapriya", "prasanna-withanage", "majith-s-uyangoda"],
   },
   {
     name: { en: "Political seeing", si: "දේශපාලනික දැක්ම" },
     desc: { en: "Looking beyond the accepted frame is itself political and can move society — and the state, in turn, can use the frame to serve an ideology.", si: "සම්මත රාමුවෙන් ඔබ්බට බැලීමම දේශපාලනික වන අතර, එයට සමාජය පෙළඹවිය හැකිය — අනෙක් අතට, රාජ්‍යයට ද මතවාදයක් සඳහා රාමුව භාවිත කළ හැකිය." },
-    objs: ["O3"], who: ["vimukthi-jayasundara", "prasanna-withanage"],
+    objs: ["O3"], who: ["vimukthi-jayasundara", "prasanna-withanage", "majith-s-uyangoda"],
   },
   {
     name: { en: "Multiple perspectives on war", si: "යුද්ධය පිළිබඳ විවිධ දෘෂ්ටිකෝණ" },
@@ -848,12 +1061,12 @@ const THEMES = [
   {
     name: { en: "Subjectivity of unconventionality", si: "Unconventional බවෙහි ආත්මීයත්වය" },
     desc: { en: "Whether something is unconventional depends on the critic and the viewer — and, for the maker, it can mean something else again.", si: "යමක් unconventional ද යන්න විචාරකයා සහ ප්‍රේක්ෂකයා මත රඳා පවතී — නිර්මාණකරුට එය තවත් දෙයක් විය හැකිය." },
-    objs: ["O1"], who: ["vimukthi-jayasundara", "channa-deshapriya", "ileka-ruwanpathirana"],
+    objs: ["O1"], who: ["vimukthi-jayasundara", "channa-deshapriya", "ileka-ruwanpathirana", "majith-s-uyangoda"],
   },
   {
     name: { en: "Renewal through a new generation", si: "නව පරම්පරාවක් හරහා අලුත් වීම" },
     desc: { en: "The future depends on emerging filmmakers continually renewing the frame, even for small audiences.", si: "අනාගතය රඳා පවතින්නේ කුඩා ප්‍රේක්ෂකාගාරයක් සඳහා වුවද, නවක සිනමාකරුවන් නොනවත්වා රාමුව අලුත් කිරීම මතය." },
-    objs: ["O5"], who: ["channa-deshapriya"],
+    objs: ["O5"], who: ["channa-deshapriya", "majith-s-uyangoda"],
   },
   {
     name: { en: "The frame reveals the inner world", si: "රාමුව අභ්‍යන්තර ලෝකය හෙළි කරයි" },
@@ -863,7 +1076,7 @@ const THEMES = [
   {
     name: { en: "Rules, not laws", si: "නීති නොව රීති" },
     desc: { en: "Cinema's conventions are rules that can be broken, unlike laws; new creations come from breaking them — by those who understand them.", si: "සිනමාවේ සම්මතයන් නීති නොව බිඳිය හැකි රීති ය; නව නිර්මාණ බිහි වන්නේ ඒවා අවබෝධ කරගත් අය ඒවා බිඳීමෙනි." },
-    objs: ["O2"], who: ["prasanna-withanage", "ileka-ruwanpathirana"],
+    objs: ["O2"], who: ["prasanna-withanage", "ileka-ruwanpathirana", "majith-s-uyangoda"],
   },
   {
     name: { en: "Borrowed conventions", si: "ණයට ගත් සම්මත" },
@@ -878,7 +1091,7 @@ const THEMES = [
   {
     name: { en: "Shared authorship of the frame", si: "රාමුවේ හවුල් කර්තෘත්වය" },
     desc: { en: "The frame comes from a chain of decisions — director, cinematographer and production; a film's success belongs to all of them.", si: "රාමුව බිහි වන්නේ තීරණ දාමයකිනි — අධ්‍යක්ෂ, කැමරා අධ්‍යක්ෂ සහ නිෂ්පාදනය; චිත්‍රපටයක සාර්ථකත්වය ඔවුන් සැමට හිමිය." },
-    objs: ["O4"], who: ["prasanna-withanage", "ileka-ruwanpathirana"],
+    objs: ["O4"], who: ["prasanna-withanage", "ileka-ruwanpathirana", "majith-s-uyangoda"],
   },
   {
     name: { en: "Visual grammar", si: "දෘශ්‍ය ව්‍යාකරණය" },
@@ -895,13 +1108,28 @@ const THEMES = [
     desc: { en: "The future needs a film school, theory, and research and analysis skills alongside industry practice.", si: "අනාගතයට කර්මාන්ත ප්‍රායෝගිකත්වයට සමගාමීව සිනමා පාසලක්, න්‍යාය සහ පර්යේෂණ හා විශ්ලේෂණ කුසලතා අවශ්‍යයි." },
     objs: ["O5"], who: ["ileka-ruwanpathirana"],
   },
+  {
+    name: { en: "The vertical turn", si: "සිරස් (vertical) හැරවුම" },
+    desc: { en: "Phones and platforms have turned the frame vertical — the biggest break with convention today, accepted by viewers without anyone deciding it.", si: "දුරකථන සහ වේදිකා රාමුව සිරස් කර ඇත — අද සම්ප්‍රදායෙන් සිදුවන විශාලතම බිඳීම; කිසිවෙකු තීරණය නොකළත් ප්‍රේක්ෂකයා එය පිළිගෙන ඇත." },
+    objs: ["O3", "O5"], who: ["majith-s-uyangoda"],
+  },
+  {
+    name: { en: "Frame as emotion", si: "හැඟීමක් ලෙස රාමුව" },
+    desc: { en: "A frame is defined by the feeling it carries: it locks only as much of the image as the emotion needs.", si: "රාමුවක් නිර්වචනය වන්නේ එය රැගෙන යන හැඟීමෙනි: ඉමෝෂනයට අවශ්‍ය ප්‍රමාණය පමණක් එය ලොක් කරයි." },
+    objs: ["O1"], who: ["majith-s-uyangoda"],
+  },
+  {
+    name: { en: "Forums for cinema", si: "සිනමාව සඳහා සංවාද වේදිකා" },
+    desc: { en: "Open discussion — through universities, societies and forums before release — is what moves cinema forward.", si: "විවෘත සාකච්ඡාව — විශ්වවිද්‍යාල, සමිති සහ නිකුතුවට පෙර සංවාද වේදිකා හරහා — සිනමාව ඉදිරියට ගෙන යයි." },
+    objs: ["O5"], who: ["majith-s-uyangoda"],
+  },
 ];
 
 const KEY_FINDING = {
-  from: "01 – 04",
-  title: { en: "Unconventionality is relative — to the viewer, to time, to power and to knowledge", si: "Unconventional බව සාපේක්ෂයි — ප්‍රේක්ෂකයාට, කාලයට, බලයට සහ දැනුමට" },
+  from: "01 – 05",
+  title: { en: "Unconventionality is relative — to the viewer, to time, to power, to knowledge and to the screen", si: "Unconventional බව සාපේක්ෂයි — ප්‍රේක්ෂකයාට, කාලයට, බලයට, දැනුමට සහ තිරයට" },
   text: {
-    en: "All four voices so far agree there is no fixed definition of “unconventional”. For Vimukthi Jayasundara it is decided by the critic and the viewer; Channa Deshapriya adds time — today's unconventional is later accepted as convention; Prasanna Withanage adds history and power — Sri Lankan convention was itself borrowed, and both the market and the state shape what a frame may show. The first academic voice, Ileka Ruwanpathirana, adds knowledge: conventions form a learned, largely Western visual grammar, a frame's meaning depends on its context, and breaking the rules is meaningful only when they are understood. This links the study to reception theory, to the politics of national cinema and to film education.",
-    si: "Unconventional යන්නට ස්ථාවර නිර්වචනයක් නැති බවට මෙතෙක් හඬ හතරම එකඟ වේ. විමුක්ති ජයසුන්දරට අනුව එය තීරණය කරන්නේ විචාරකයා සහ ප්‍රේක්ෂකයා ය; චන්න දේශප්‍රිය කාලය එකතු කරයි — අද සම්ප්‍රදායික නොවන දේ පසුව සම්මතයක් ලෙස පිළිගැනේ; ප්‍රසන්න විතානගේ ඉතිහාසය සහ බලය එකතු කරයි — ශ්‍රී ලාංකීය සම්මතය ම ණයට ගත් එකක් වන අතර, රාමුවකට පෙන්විය හැකි දේ හැඩගස්වන්නේ වෙළඳපොළ සහ රාජ්‍යය යන දෙකමය. පළමු ශාස්ත්‍රීය හඬ වන ඉලේකා රුවන්පතිරණ දැනුම එකතු කරයි — සම්මතයන් යනු පුහුණුවෙන් ප්‍රගුණ කරන, බොහෝ දුරට බටහිර දෘශ්‍ය ව්‍යාකරණයකි; රාමුවක අර්ථය එහි සන්දර්භය මත රඳා පවතී; රීති බිඳීම අර්ථවත් වන්නේ ඒවා අවබෝධ කරගත් විට පමණි. මෙය අධ්‍යයනය reception න්‍යාය, ජාතික සිනමාවේ දේශපාලනය සහ සිනමා අධ්‍යාපනය සමඟ සම්බන්ධ කරයි.",
+    en: "All five voices so far agree there is no fixed definition of “unconventional”. For Vimukthi Jayasundara it is decided by the critic and the viewer; Channa Deshapriya adds time — today's unconventional is later accepted as convention; Prasanna Withanage adds history and power — Sri Lankan convention was itself borrowed, and both the market and the state shape what a frame may show. The first academic voice, Ileka Ruwanpathirana, adds knowledge: conventions form a learned, largely Western visual grammar, and breaking them is meaningful only when they are understood. Majith S. Uyangoda adds the screen: the frame changes because devices and viewing habits change, as the vertical phone frame shows, and he would rather call past practice “concepts” than “conventions”. This links the study to reception theory, to the politics of national cinema, to film education and to media technology.",
+    si: "Unconventional යන්නට ස්ථාවර නිර්වචනයක් නැති බවට මෙතෙක් හඬ පහම එකඟ වේ. විමුක්ති ජයසුන්දරට අනුව එය තීරණය කරන්නේ විචාරකයා සහ ප්‍රේක්ෂකයා ය; චන්න දේශප්‍රිය කාලය එකතු කරයි — අද සම්ප්‍රදායික නොවන දේ පසුව සම්මතයක් ලෙස පිළිගැනේ; ප්‍රසන්න විතානගේ ඉතිහාසය සහ බලය එකතු කරයි — ශ්‍රී ලාංකීය සම්මතය ම ණයට ගත් එකක් වන අතර, රාමුවකට පෙන්විය හැකි දේ හැඩගස්වන්නේ වෙළඳපොළ සහ රාජ්‍යය යන දෙකමය. පළමු ශාස්ත්‍රීය හඬ වන ඉලේකා රුවන්පතිරණ දැනුම එකතු කරයි — සම්මතයන් යනු පුහුණුවෙන් ප්‍රගුණ කරන, බොහෝ දුරට බටහිර දෘශ්‍ය ව්‍යාකරණයක් වන අතර, ඒවා බිඳීම අර්ථවත් වන්නේ ඒවා අවබෝධ කරගත් විට පමණි. මජිත් එස්. උයන්ගොඩ තිරය එකතු කරයි — සිරස් දුරකථන රාමුවෙන් පෙනෙන පරිදි, උපාංග සහ නැරඹීමේ පුරුදු වෙනස් වන නිසා රාමුව වෙනස් වේ; ඔහු අතීත භාවිතය ‘සම්මත’ වෙනුවට ‘සංකල්පනා’ ලෙස හැඳින්වීමට කැමතිය. මෙය අධ්‍යයනය reception න්‍යාය, ජාතික සිනමාවේ දේශපාලනය, සිනමා අධ්‍යාපනය සහ මාධ්‍ය තාක්ෂණය සමඟ සම්බන්ධ කරයි.",
   },
 };
