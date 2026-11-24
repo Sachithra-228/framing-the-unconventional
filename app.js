@@ -18,7 +18,6 @@ const UI = {
     progress: (d, n) => `${d} of ${n} interviews analysed`,
     partEyebrow: "Participants",
     partTitle: "Three groups, one question",
-    partLede: "Choose a group to see the people interviewed and their analysis.",
     analysedOf: (d, n) => `${d}/${n} analysed`,
     people: n => `${n} people`,
     objEyebrow: "Research objectives",
@@ -48,10 +47,7 @@ const UI = {
     themesTitle: "Themes so far",
     themesSub: "Built from the interview codes. Each theme shows how many people in each group support it.",
     keyFinding: n => `Key finding · Interview ${n}`,
-    footer: "Research tracker · Updated",
     navStudy: "Study", tabStudy: "Study",
-    ctaExplore: "Explore participants",
-    ctaStudy: "About the study",
     statParticipants: "Participants", statGroups: "Groups", statObjectives: "Objectives", statAnalysed: "Analysed",
     stripTitle: (o, c) => `${o} objectives · ${c} chapters`,
     stripText: "Research objectives, chapter outline and working title.",
@@ -91,7 +87,6 @@ const UI = {
     progress: (d, n) => `සම්මුඛ සාකච්ඡා ${n} න් ${d} ක් විශ්ලේෂණය කර ඇත`,
     partEyebrow: "සහභාගිවන්නන්",
     partTitle: "කණ්ඩායම් තුනක්, එක් ප්‍රශ්නයක්",
-    partLede: "සම්මුඛ සාකච්ඡා කළ පුද්ගලයන් සහ ඔවුන්ගේ විශ්ලේෂණය බැලීමට කණ්ඩායමක් තෝරන්න.",
     analysedOf: (d, n) => `${d}/${n} විශ්ලේෂිත`,
     people: n => `පුද්ගලයන් ${n}`,
     objEyebrow: "පර්යේෂණ අරමුණු",
@@ -121,10 +116,7 @@ const UI = {
     themesTitle: "මෙතෙක් හඳුනාගත් තේමා",
     themesSub: "සම්මුඛ සාකච්ඡා කේත ඇසුරින් ගොඩනගා ඇත. එක් එක් තේමාවට සහාය දක්වන පුද්ගලයන් ගණන කණ්ඩායම් අනුව මෙහි දැක්වේ.",
     keyFinding: n => `ප්‍රධාන සොයාගැනීම · සම්මුඛ සාකච්ඡාව ${n}`,
-    footer: "පර්යේෂණ සටහන · යාවත්කාලීන කළේ",
     navStudy: "අධ්‍යයනය", tabStudy: "අධ්‍යයනය",
-    ctaExplore: "සහභාගිවන්නන් බලන්න",
-    ctaStudy: "අධ්‍යයනය ගැන",
     statParticipants: "සහභාගිවන්නන්", statGroups: "කණ්ඩායම්", statObjectives: "අරමුණු", statAnalysed: "විශ්ලේෂිත",
     stripTitle: (o, c) => `අරමුණු ${o} · පරිච්ඡේද ${c}`,
     stripText: "පර්යේෂණ අරමුණු, පරිච්ඡේද සැලැස්ම සහ මූලික මාතෘකාව.",
@@ -221,32 +213,17 @@ function renderHome() {
 
   $app.innerHTML = `
     <header class="hero">
-      <div class="h-text">
-        <div class="eyebrow">${L("heroEyebrow")}</div>
-        <h1>${STUDY.title}</h1>
-        <p class="sub">${t(STUDY.subtitle)}</p>
-        <div class="cta">
-          <button type="button" class="btn primary" id="go-groups">${L("ctaExplore")} <span aria-hidden="true">↓</span></button>
-          <a class="btn ghost" href="#/study">${L("ctaStudy")}</a>
-        </div>
-        <dl class="h-stats">
-          <div><dt>${PEOPLE.length}</dt><dd>${L("statParticipants")}</dd></div>
-          <div><dt>${GROUPS.length}</dt><dd>${L("statGroups")}</dd></div>
-          <div><dt>${OBJECTIVES.length}</dt><dd>${L("statObjectives")}</dd></div>
-          <div><dt>${done}<small>/${PEOPLE.length}</small></dt><dd>${L("statAnalysed")}</dd></div>
-        </dl>
-      </div>
-      <figure class="h-media">
-        <div class="vf">
-          <img src="${STUDY.heroImage}" alt="">
-          ${corners}
-          <div class="vf-top"><span class="rec"><span class="dot"></span>REC</span><span>INT · ${pad(done)}</span></div>
-          <div class="vf-bottom">
-            <span>${t(STUDY.heroCaption)}</span>
-            <div class="bar"><span style="width:${pct}%"></span></div>
-          </div>
-        </div>
-      </figure>
+      ${corners}
+      <div class="eyebrow">${L("heroEyebrow")}</div>
+      <h1>${STUDY.title}</h1>
+      <p class="sub">${t(STUDY.subtitle)}</p>
+      <dl class="h-stats">
+        <div><dt>${PEOPLE.length}</dt><dd>${L("statParticipants")}</dd></div>
+        <div><dt>${GROUPS.length}</dt><dd>${L("statGroups")}</dd></div>
+        <div><dt>${OBJECTIVES.length}</dt><dd>${L("statObjectives")}</dd></div>
+        <div><dt>${done}<small>/${PEOPLE.length}</small></dt><dd>${L("statAnalysed")}</dd></div>
+      </dl>
+      <div class="h-progress" aria-hidden="true"><span style="width:${pct}%"></span></div>
     </header>
 
     <section id="groups" class="home-groups">
@@ -255,7 +232,6 @@ function renderHome() {
           <div class="eyebrow">${L("partEyebrow")}</div>
           <h2>${L("partTitle")}</h2>
         </div>
-        <p class="lede">${L("partLede")}</p>
       </div>
       <div class="groups">${groupCards}</div>
     </section>
@@ -268,9 +244,6 @@ function renderHome() {
       </div>
       <span class="ss-go">${L("viewStudy")} <span class="arrow">→</span></span>
     </a>`;
-
-  document.getElementById("go-groups").addEventListener("click", () =>
-    document.getElementById("groups").scrollIntoView({ behavior: "smooth", block: "start" }));
 }
 
 /* ---------------- STUDY ---------------- */
@@ -470,7 +443,6 @@ function route(scrollTop = true) {
     b.classList.toggle("on", b.dataset.lang === LANG);
     b.setAttribute("aria-pressed", b.dataset.lang === LANG);
   });
-  document.getElementById("updated").textContent = t(STUDY.updated);
 
   if (kind === "group") renderGroup(id);
   else if (kind === "person") renderPerson(id);

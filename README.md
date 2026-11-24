@@ -4,7 +4,7 @@ Qualitative research tracker comparing filmmakers', industry professionals' and 
 
 ## Pages
 
-- **Home**: the hero with an interview still, the three participant groups, and a link to the study
+- **Home**: the study title and key numbers, the three participant groups, and a link to the study
 - **Study**: the working title, objectives O1–O6 and the chapter outline
 - **Group**: the people in Industry Professionals, Academics, or Film Students / Young Filmmakers
 - **Person**: one interviewee's photo and their analysis by objective, with codes
@@ -27,7 +27,6 @@ Everything is in [`data.js`](data.js):
 - `PEOPLE`: name, group and role of each participant
 - `INTERVIEWS`: analysis for each person, keyed by their `id`
 - `THEMES`: emerging themes and who supports them
-- `STUDY.heroImage`: the image on the landing page (swap it for any film still or set photo)
 
 ### Adding a photo
 

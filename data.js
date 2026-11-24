@@ -20,8 +20,6 @@ const STUDY = {
     "An Interpretive & Multi-perspective Analysis of Unconventional Frames in Contemporary Sri Lankan Cinema",
   updated: { en: "22 November 2026", si: "2026 නොවැම්බර් 22" },
   /* Image on the landing page. Swap for any still (a film frame, a set photo…). */
-  heroImage: "assets/people/vimukthi-jayasundara.png",
-  heroCaption: { en: "Vimukthi Jayasundara · Interview 01", si: "විමුක්ති ජයසුන්දර · සම්මුඛ සාකච්ඡාව 01" },
 };
 
 const GROUPS = [
