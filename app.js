@@ -299,7 +299,7 @@ function renderGroup(gid) {
       </div>
     </header>
 
-    <div class="people">
+    <div class="people" style="--cols:${ppl.length <= 5 ? ppl.length : 3}">
       ${ppl.map(p => `
         <a class="person" href="#/person/${p.id}">
           <div class="frame">${photo(p)}${corners}</div>
