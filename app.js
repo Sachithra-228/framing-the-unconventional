@@ -84,6 +84,10 @@ const UI = {
     studyEyebrow: "Research design",
     studyTitle: "About the study",
     crossGroup: "Across groups",
+    guideEyebrow: "Working documents",
+    guideTitle: "Analysis guide for Chapter 4",
+    guideLede: "Step-by-step method, templates, theme groups and what to write in each part of Chapter 4. Opens as a PDF.",
+    guidePages: "8 pages",
     npTitle: "Notepad",
     npHint: "Raw interview notes · private, never shown on the site",
     npLockText: "Enter the team passcode to open the notes.",
@@ -182,6 +186,10 @@ const UI = {
     studyEyebrow: "පර්යේෂණ සැලසුම",
     studyTitle: "අධ්‍යයනය ගැන",
     crossGroup: "කණ්ඩායම් හරහා",
+    guideEyebrow: "වැඩ ලේඛන",
+    guideTitle: "4 වන පරිච්ඡේදය සඳහා විශ්ලේෂණ මාර්ගෝපදේශය",
+    guideLede: "පියවරෙන් පියවර ක්‍රමවේදය, ආකෘති, තේමා කාණ්ඩ සහ 4 වන පරිච්ඡේදයේ එක් එක් කොටසේ ලිවිය යුතු දේ. PDF ලෙස විවෘත වේ.",
+    guidePages: "පිටු 8",
     npTitle: "සටහන් පොත",
     npHint: "සම්මුඛ සාකච්ඡා අමු සටහන් · පුද්ගලිකයි, වෙබ් අඩවියේ කිසිවිට නොපෙන්වේ",
     npLockText: "සටහන් විවෘත කිරීමට කණ්ඩායම් මුරපදය ඇතුළත් කරන්න.",
@@ -336,6 +344,20 @@ function renderStudy() {
             <h3>${c.n ? `<span>${c.n}</span>` : ""}${c.title}</h3>
             ${c.items.length ? `<ol>${c.items.map((it, i) => `<li>${c.n ? `<span class="num">${c.n}.${i + 1}</span>` : ""}${it}</li>`).join("")}</ol>` : ""}
           </div>`).join("")}
+      </div>
+    </section>
+
+    <section>
+      <div class="eyebrow">${L("guideEyebrow")}</div>
+      <h2>${L("guideTitle")}</h2>
+      <p class="lede">${L("guideLede")}</p>
+      <div class="guides">
+        ${[["en", "assets/docs/Analysis_Guide_EN.pdf", "English"], ["si", "assets/docs/Analysis_Guide_SI.pdf", "සිංහල"]].map(([lang, href, label]) => `
+          <a class="guide-card" href="${href}" target="_blank" rel="noopener">
+            <span class="g-ic" aria-hidden="true">PDF</span>
+            <span class="g-txt"><b lang="${lang}">${lang === "si" ? "විශ්ලේෂණ මාර්ගෝපදේශය" : "Analysis Guide"}</b><small>${label} · ${L("guidePages")}</small></span>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>`).join("")}
       </div>
     </section>`;
 }
