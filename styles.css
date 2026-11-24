@@ -339,10 +339,6 @@ section.tight { padding-top: 8px; }
   .sec-head .lede { text-align: left; }
   .pf-head { grid-template-columns: 220px 1fr; gap: 24px; }
 }
-@media (min-width: 641px) and (max-width: 900px) {
-  .brand-t { display: none; }
-}
-
 /* bottom tab bar — phones only */
 .tabbar { display: none; }
 
