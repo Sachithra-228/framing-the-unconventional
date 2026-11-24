@@ -45,7 +45,11 @@ const UI = {
     emptyText: name => `The interview with ${name} will be analysed against the research objectives:`,
     themesEyebrow: "Emerging themes",
     themesTitle: "Themes so far",
-    themesSub: "Built from the interview codes. Each theme shows how many people in each group support it.",
+    themesSub: "Patterns that came out of the interviews, most shared first. Pick an objective to narrow the list, or tap a name to read that interview.",
+    filterBy: "Filter by objective",
+    filterAll: "All themes",
+    noThemes: "No themes for this objective yet.",
+    sharedBy: (n, d) => `Shared by ${n} of ${d} people interviewed so far`,
     keyFinding: n => `Key finding · Interview ${n}`,
     navStudy: "Study", tabStudy: "Study",
     navReport: "Report", tabReport: "Report",
@@ -139,7 +143,11 @@ const UI = {
     emptyText: name => `${name} සමඟ කළ සම්මුඛ සාකච්ඡාව පහත පර්යේෂණ අරමුණු අනුව විශ්ලේෂණය කෙරේ:`,
     themesEyebrow: "මතුවන තේමා",
     themesTitle: "මෙතෙක් හඳුනාගත් තේමා",
-    themesSub: "සම්මුඛ සාකච්ඡා කේත ඇසුරින් ගොඩනගා ඇත. එක් එක් තේමාවට සහාය දක්වන පුද්ගලයන් ගණන කණ්ඩායම් අනුව මෙහි දැක්වේ.",
+    themesSub: "සම්මුඛ සාකච්ඡාවලින් මතු වූ රටා — වැඩිපුරම බෙදාගත් ඒවා මුලින්. ලැයිස්තුව පටු කිරීමට අරමුණක් තෝරන්න, නැතහොත් එම සම්මුඛ සාකච්ඡාව කියවීමට නමක් තට්ටු කරන්න.",
+    filterBy: "අරමුණ අනුව පෙරන්න",
+    filterAll: "සියලු තේමා",
+    noThemes: "මෙම අරමුණට තවම තේමා නැත.",
+    sharedBy: (n, d) => `මෙතෙක් සම්මුඛ සාකච්ඡා කළ ${d} දෙනාගෙන් ${n} දෙනෙක් බෙදාගනී`,
     keyFinding: n => `ප්‍රධාන සොයාගැනීම · සම්මුඛ සාකච්ඡාව ${n}`,
     navStudy: "අධ්‍යයනය", tabStudy: "අධ්‍යයනය",
     navReport: "වාර්තාව", tabReport: "වාර්තාව",
@@ -450,7 +458,35 @@ function renderPerson(pid) {
 }
 
 /* ---------------- THEMES ---------------- */
+let themeFilter = "all";   // objective code, or "all"
+
 function renderThemes() {
+  const done = PEOPLE.filter(isDone).length;
+  const support = th => th.who.map(personById).filter(Boolean);
+  const sorted = THEMES.slice().sort((x, y) => support(y).length - support(x).length);
+  const list = themeFilter === "all" ? sorted : sorted.filter(th => th.objs.includes(themeFilter));
+  const count = code => THEMES.filter(th => th.objs.includes(code)).length;
+  const chip = (f, label, n) => `<button type="button" class="chip${themeFilter === f ? " on" : ""}" data-f="${f}">${label}<span>${n}</span></button>`;
+
+  const card = th => {
+    const ppl = support(th);
+    const pct = Math.round((ppl.length / Math.max(done, 1)) * 100);
+    return `
+      <article class="th-card">
+        <div class="th-top">
+          <h3>${t(th.name)}</h3>
+          <span class="th-count" title="${L("sharedBy")(ppl.length, done)}">${ppl.length}</span>
+        </div>
+        <p class="th-desc">${t(th.desc)}</p>
+        <div class="th-strength" aria-hidden="true"><span style="width:${pct}%"></span></div>
+        <div class="th-meta">${L("sharedBy")(ppl.length, done)}</div>
+        <div class="th-people">
+          ${ppl.map(p => `<a class="th-person" href="#/person/${p.id}">${photo(p, "mini")}<span>${p.name}</span></a>`).join("")}
+        </div>
+        <div class="th-objs">${th.objs.map(o => `<span>${o} · ${t(OBJECTIVES.find(x => x.code === o).key)}</span>`).join("")}</div>
+      </article>`;
+  };
+
   $app.innerHTML = `
     ${crumbs([[L("home"), "#/"], [L("navThemes")]])}
     <header class="page-head">
@@ -458,29 +494,26 @@ function renderThemes() {
       <h1>${L("themesTitle")}</h1>
       <p class="sub">${L("themesSub")}</p>
     </header>
-    <div class="themes">
-      ${THEMES.map(th => `
-        <div class="theme">
-          <div class="tn">${t(th.name)}</div>
-          <div class="objs">${th.objs.map(o => `<span>${o}</span>`).join("")}</div>
-          <div class="td">${t(th.desc)}</div>
-          <div class="meters">
-            ${GROUPS.map(g => {
-              const total = peopleIn(g.id).length;
-              const n = th.who.map(personById).filter(x => x && x.group === g.id).length;
-              return `<div class="meter"><div class="m-top"><span>${t(g.short)}</span><b>${n}/${total}</b></div>
-                <div class="bar"><span style="width:${Math.round((n / total) * 100)}%"></span></div></div>`;
-            }).join("")}
-          </div>
-          <div class="names">${th.who.map(personById).filter(Boolean)
-            .map(x => `<a class="pill done" href="#/person/${x.id}">${x.name}</a>`).join("")}</div>
-        </div>`).join("")}
-    </div>
+
     <div class="key-finding">
       <div class="eyebrow">${L("keyFinding")(pad(KEY_FINDING.from))}</div>
       <h3>${t(KEY_FINDING.title)}</h3>
       <p>${t(KEY_FINDING.text)}</p>
+    </div>
+
+    <div class="th-filter" role="group" aria-label="${L("filterBy")}">
+      ${chip("all", L("filterAll"), THEMES.length)}
+      ${OBJECTIVES.filter(o => count(o.code)).map(o => chip(o.code, `${o.code} · ${t(o.key)}`, count(o.code))).join("")}
+    </div>
+
+    <div class="th-grid">
+      ${list.length ? list.map(card).join("") : `<p class="muted">${L("noThemes")}</p>`}
     </div>`;
+
+  document.querySelectorAll(".th-filter .chip").forEach(b => b.addEventListener("click", () => {
+    themeFilter = b.dataset.f;
+    renderThemes();
+  }));
 }
 
 /* ---------------- ROUTER ---------------- */
