@@ -239,7 +239,7 @@ function renderHome() {
     <a class="study-strip" href="#/study">
       <div class="ss-codes">${OBJECTIVES.map(o => `<span>${o.code}</span>`).join("")}</div>
       <div class="ss-text">
-        <b>${L("stripTitle")(OBJECTIVES.length, STRUCTURE.length)}</b>
+        <b>${L("stripTitle")(OBJECTIVES.length, STRUCTURE.filter(c => c.n).length)}</b>
         <span>${L("stripText")}</span>
       </div>
       <span class="ss-go">${L("viewStudy")} <span class="arrow">→</span></span>
@@ -275,8 +275,8 @@ function renderStudy() {
       <div class="chapters">
         ${STRUCTURE.map(c => `
           <div class="chapter" lang="en">
-            <h3><span>${c.n}</span>${c.title}</h3>
-            ${c.items.length ? `<ol>${c.items.map((it, i) => `<li><span class="num">${c.n}.${i + 1}</span>${it}</li>`).join("")}</ol>` : ""}
+            <h3>${c.n ? `<span>${c.n}</span>` : ""}${c.title}</h3>
+            ${c.items.length ? `<ol>${c.items.map((it, i) => `<li>${c.n ? `<span class="num">${c.n}.${i + 1}</span>` : ""}${it}</li>`).join("")}</ol>` : ""}
           </div>`).join("")}
       </div>
     </section>`;

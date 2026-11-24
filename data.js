@@ -133,11 +133,12 @@ const OBJECTIVES = [
 
 /* The dissertation is written in English, so chapter titles stay in English. */
 const STRUCTURE = [
-  { n: 1, title: "Introduction", items: ["Introduction to the Study", "What is Unconventional Framing?", "Background of the Study", "Aims of the Study", "Objectives of the Study", "Significance of the Study", "Research Outline"] },
-  { n: 2, title: "Literature Review", items: ["Literature on Unconventional Approaches", "Literature on Sri Lankan Cinema", "Literature on Framings and Perspectives", "Literature Gap", "Theoretical Framework and Theories"] },
-  { n: 3, title: "Methodology", items: ["Research Method", "Research Techniques", "Qualitative Interviews", "Thematic Analysis"] },
-  { n: 4, title: "Findings", items: ["Presentation of Research Findings", "Revisiting the Research Objectives", "Discussion of Findings Using Thematic Analysis"] },
-  { n: 5, title: "Conclusion", items: [] },
+  { n: 1, title: "Introduction", items: ["Introduction to the Study", "Background of the Study", "Understanding Unconventional Framing", "Problem Statement", "Research Aim", "Research Objectives", "Research Questions", "Significance of the Study", "Scope and Limitations", "Research Outline"] },
+  { n: 2, title: "Literature Review", items: ["Introduction", "Unconventional Approaches in Cinema", "Sri Lankan Cinema", "Framing, Composition and Camera Perspectives", "Critical Review of Previous Studies", "Theoretical Framework", "Conceptual Framework", "Research Gap", "Chapter Summary"] },
+  { n: 3, title: "Research Methodology", items: ["Introduction", "Research Approach and Design", "Research Methods", "Sampling and Participant Selection", "Film Selection Criteria", "Data Collection – Film Analysis and Interviews", "Research Instruments and Interview Questions", "Data Analysis – Thematic Analysis", "Trustworthiness and Credibility", "Ethical Considerations", "Chapter Summary"] },
+  { n: 4, title: "Findings and Discussion", items: ["Introduction", "Overview of Films and Participants", "Presentation of Research Findings", "Themes Identified Through Analysis", "Film Examples and Interview Evidence", "Discussion in Relation to Previous Literature", "Findings Linked to Research Questions and Objectives", "Chapter Summary"] },
+  { n: 5, title: "Conclusion and Recommendations", items: ["Introduction", "Summary of Research Findings", "Achievement of Research Objectives", "Contributions of the Study", "Practical Recommendations", "Limitations of the Study", "Recommendations for Future Research", "Final Conclusion"] },
+  { n: null, title: "End Matter", items: ["References", "Appendix A – Interview Questions", "Appendix B – Participant Information and Consent Form", "Appendix C – Film Analysis Framework", "Appendix D – Supporting Data / Coding Examples"] },
 ];
 
 /* =========================================================
