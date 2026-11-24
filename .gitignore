@@ -1,3 +1,9 @@
 .claude/
 .DS_Store
 Thumbs.db
+
+# raw interview audio (private)
+*.mp3
+*.m4a
+*.wav
+*audio*/
