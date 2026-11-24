@@ -38,6 +38,18 @@ const env = () => ({
   token: pick("KV_REST_API_TOKEN", "UPSTASH_REDIS_REST_TOKEN"),
 });
 
+const PROGRESS_KEY = "ftu:progress:";
+async function readProgress(cfg, key) {
+  const [flat] = await redis(cfg, [["HGETALL", key]]);
+  const items = {};
+  if (Array.isArray(flat)) for (let i = 0; i < flat.length; i += 2) {
+    try { items[flat[i]] = JSON.parse(flat[i + 1]); } catch { items[flat[i]] = {}; }
+  } else if (flat && typeof flat === "object") for (const [k, v] of Object.entries(flat)) {
+    try { items[k] = JSON.parse(v); } catch { items[k] = {}; }
+  }
+  return items;
+}
+
 const cleanId = v => (typeof v === "string" && /^[a-z0-9-]{1,60}$/.test(v) ? v : null);
 
 function sameSecret(a, b) {
@@ -79,6 +91,32 @@ module.exports = async function handler(req, res) {
     const missing = [!cfg.pass && "NOTES_PASSCODE", !cfg.url && "KV_REST_API_URL", !cfg.token && "KV_REST_API_TOKEN"].filter(Boolean);
     return send(res, 503, { error: "not_configured", missing });
   }
+  // Chapter-outline ticks (kind=progress): anyone can read, only the team (passcode) can change.
+  // Stored as a Redis hash so two people ticking different sections at once never overwrite each other.
+  const q0 = new URL(req.url, "http://x").searchParams;
+  if (q0.get("kind") === "progress") {
+    const id = cleanId(q0.get("id"));
+    if (!id) return send(res, 400, { error: "bad_id" });
+    const key = PROGRESS_KEY + id;
+    try {
+      if (req.method === "GET") return send(res, 200, { items: await readProgress(cfg, key) });
+      if (req.method !== "PUT") { res.setHeader("Allow", "GET, PUT"); return send(res, 405, { error: "method" }); }
+      if (!sameSecret(req.headers["x-notes-key"] || "", cfg.pass)) return send(res, 401, { error: "bad_key" });
+      let b;
+      try { b = await readBody(req); } catch { return send(res, 400, { error: "bad_json" }); }
+      if (typeof b.item !== "string" || !/^[A-Za-z0-9.]{1,12}$/.test(b.item) || typeof b.done !== "boolean") {
+        return send(res, 400, { error: "bad_item" });
+      }
+      const by = typeof b.by === "string" ? b.by.trim().slice(0, 60) : "";
+      await redis(cfg, [b.done
+        ? ["HSET", key, b.item, JSON.stringify({ by, at: new Date().toISOString() })]
+        : ["HDEL", key, b.item]]);
+      return send(res, 200, { items: await readProgress(cfg, key) });
+    } catch {
+      return send(res, 502, { error: "storage" });
+    }
+  }
+
   if (!sameSecret(req.headers["x-notes-key"] || "", cfg.pass)) return send(res, 401, { error: "bad_key" });
 
   try {

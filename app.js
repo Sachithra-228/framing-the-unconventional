@@ -88,6 +88,12 @@ const UI = {
     guideTitle: "Analysis guide for Chapter 4",
     guideLede: "Step-by-step method, templates, theme groups and what to write in each part of Chapter 4. Opens as a PDF.",
     guidePages: "8 pages",
+    progDone: (d, n) => `${d} of ${n} sections done`,
+    progHint: "Tick a section when it is written. Anyone can see progress; ticking needs the team passcode.",
+    progLock: "Enter the team passcode to update progress:",
+    progTicked: (who, when) => `Done${who ? ` by ${who}` : ""}${when ? ` · ${when}` : ""}`,
+    progOffline: "Progress can't be saved here — online saving isn't available on this copy of the site.",
+    progError: "Couldn't save that tick. Check your connection and try again.",
     npTitle: "Notepad",
     npHint: "Raw interview notes · private, never shown on the site",
     npLockText: "Enter the team passcode to open the notes.",
@@ -190,6 +196,12 @@ const UI = {
     guideTitle: "4 වන පරිච්ඡේදය සඳහා විශ්ලේෂණ මාර්ගෝපදේශය",
     guideLede: "පියවරෙන් පියවර ක්‍රමවේදය, ආකෘති, තේමා කාණ්ඩ සහ 4 වන පරිච්ඡේදයේ එක් එක් කොටසේ ලිවිය යුතු දේ. PDF ලෙස විවෘත වේ.",
     guidePages: "පිටු 8",
+    progDone: (d, n) => `කොටස් ${n} න් ${d} ක් අවසන්`,
+    progHint: "කොටසක් ලියා අවසන් වූ විට එය සලකුණු කරන්න. ප්‍රගතිය ඕනෑම කෙනෙකුට දැකිය හැකිය; සලකුණු කිරීමට කණ්ඩායම් මුරපදය අවශ්‍යයි.",
+    progLock: "ප්‍රගතිය යාවත්කාලීන කිරීමට කණ්ඩායම් මුරපදය ඇතුළත් කරන්න:",
+    progTicked: (who, when) => `අවසන්${who ? ` · ${who}` : ""}${when ? ` · ${when}` : ""}`,
+    progOffline: "මෙහි ප්‍රගතිය සුරැකිය නොහැක — මෙම පිටපතේ ඔන්ලයින් සුරැකීම නැත.",
+    progError: "එම සලකුණ සුරැකිය නොහැකි විය. සම්බන්ධතාව පරීක්ෂා කර නැවත උත්සාහ කරන්න.",
     npTitle: "සටහන් පොත",
     npHint: "සම්මුඛ සාකච්ඡා අමු සටහන් · පුද්ගලිකයි, වෙබ් අඩවියේ කිසිවිට නොපෙන්වේ",
     npLockText: "සටහන් විවෘත කිරීමට කණ්ඩායම් මුරපදය ඇතුළත් කරන්න.",
@@ -338,13 +350,7 @@ function renderStudy() {
     <section>
       <div class="eyebrow">${L("structEyebrow")}</div>
       <h2>${L("structTitle")}</h2>
-      <div class="chapters">
-        ${STRUCTURE.map(c => `
-          <div class="chapter" lang="en">
-            <h3>${c.n ? `<span>${c.n}</span>` : ""}${c.title}</h3>
-            ${c.items.length ? `<ol>${c.items.map((it, i) => `<li>${c.n ? `<span class="num">${c.n}.${i + 1}</span>` : ""}${it}</li>`).join("")}</ol>` : ""}
-          </div>`).join("")}
-      </div>
+      ${renderOutline()}
     </section>
 
     <section>
@@ -360,6 +366,7 @@ function renderStudy() {
           </a>`).join("")}
       </div>
     </section>`;
+  mountOutline();
 }
 
 /* ---------------- GROUP ---------------- */

@@ -359,6 +359,27 @@ section.tight { padding-top: 8px; }
 .guide b { color: var(--accent); margin-right: 6px; font-family: "Fraunces", serif; }
 
 /* ---------- themes ---------- */
+/* study: outline progress */
+.outline-bar { margin: 6px 0 16px; padding: 14px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+.ob-top { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 16px; }
+.ob-count { font-weight: 650; }
+.ob-hint { font-size: 12.5px; color: var(--muted); }
+.ob-track { height: 6px; margin-top: 10px; border-radius: 99px; background: var(--surface-2); overflow: hidden; }
+.ob-track span { display: block; height: 100%; background: var(--ok); border-radius: 99px; transition: width .3s ease; }
+.ob-lock { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 12px; font-size: 13.5px; color: var(--muted); }
+.ob-lock[hidden], .ob-msg[hidden] { display: none; }
+.ob-lock input { font: 14px/1.4 "Inter", sans-serif; padding: 7px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); min-width: 0; flex: 1 1 160px; max-width: 220px; }
+.ob-lock .np-err { flex-basis: 100%; margin: 0; }
+.ob-msg { margin-top: 10px; font-size: 13px; color: var(--warn); }
+.chapter h3 { display: flex; align-items: baseline; gap: 6px; }
+.ch-count { margin-left: auto; font: 600 12px/1 "Inter", sans-serif; color: var(--muted); background: var(--surface-2); border-radius: 99px; padding: 3px 8px; }
+.chapter.complete { border-color: color-mix(in srgb, var(--ok) 55%, var(--line)); }
+.chapter.complete .ch-count { background: var(--ok-soft); color: var(--ok); }
+.chapter li label { display: flex; align-items: flex-start; gap: 8px; width: 100%; cursor: pointer; }
+.chapter li input[type="checkbox"] { flex: none; width: 16px; height: 16px; margin: 3px 0 0; accent-color: var(--ok); cursor: pointer; }
+.chapter li.done .txt { text-decoration: line-through; text-decoration-thickness: 1.5px; color: var(--muted); }
+.chapter li.done .num { color: var(--ok); }
+
 /* study: guides */
 .guides { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; max-width: 760px; }
 .guide-card { display: flex; align-items: center; gap: 14px; padding: 16px 18px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; text-decoration: none; transition: border-color .15s ease, transform .15s ease; }
