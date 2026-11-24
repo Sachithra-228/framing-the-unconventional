@@ -7,3 +7,6 @@ Thumbs.db
 *.m4a
 *.wav
 *audio*/
+praveen*/
+# any other interview folder: keep transcripts private too
+*transcript*
