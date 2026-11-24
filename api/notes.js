@@ -1,8 +1,11 @@
 /*
-  Notepad API (Vercel serverless function) — raw interview notes, one per person.
+  Shared-text API (Vercel serverless function), used by
+    - the Notepad (kind "note"): raw interview notes, one per person
+    - the Report page (kind "doc"): a shared document stored as HTML
 
-  GET  /api/notes?id=<person-id>                 → { text, by, updatedAt }
-  PUT  /api/notes  { id, text, by, base, force } → { text, by, updatedAt }   (409 if someone saved in between)
+  GET  /api/notes?kind=<note|doc>&id=<id>[&meta=1]       → { text, by, updatedAt }  (meta=1: no text)
+  PUT  /api/notes  { kind, id, text, by, base, force }   → { by, updatedAt }        (409 if someone saved in between)
+  kind defaults to "note".
 
   Every request needs the header  x-notes-key: <NOTES_PASSCODE>.
   Storage is Upstash Redis (Vercel → Storage → Upstash). Needs these environment variables:
@@ -11,8 +14,11 @@
 */
 const crypto = require("crypto");
 
-const MAX_TEXT = 200000;
-const HISTORY = 30;
+// note: limit in characters; doc: limit in bytes (Upstash requests must stay small)
+const KINDS = {
+  note: { key: "ftu:note:", hist: "ftu:hist:", meta: "ftu:notemeta:", index: "ftu:notes", maxChars: 200000, history: 30 },
+  doc:  { key: "ftu:doc:",  hist: "ftu:dochist:", meta: "ftu:docmeta:", index: "ftu:docs", maxBytes: 800 * 1024, history: 10 },
+};
 
 // Vercel may add a custom prefix to the variable names (e.g. STORAGE_KV_REST_API_URL), so match by suffix.
 const pick = (...suffixes) => {
@@ -32,8 +38,6 @@ const env = () => ({
   token: pick("KV_REST_API_TOKEN", "UPSTASH_REDIS_REST_TOKEN"),
 });
 
-const noteKey = id => `ftu:note:${id}`;
-const histKey = id => `ftu:hist:${id}`;
 const cleanId = v => (typeof v === "string" && /^[a-z0-9-]{1,60}$/.test(v) ? v : null);
 
 function sameSecret(a, b) {
@@ -79,33 +83,54 @@ module.exports = async function handler(req, res) {
 
   try {
     if (req.method === "GET") {
-      const id = cleanId(new URL(req.url, "http://x").searchParams.get("id"));
+      const q = new URL(req.url, "http://x").searchParams;
+      const K = KINDS[q.get("kind") || "note"];
+      const id = cleanId(q.get("id"));
+      if (!K) return send(res, 400, { error: "bad_kind" });
       if (!id) return send(res, 400, { error: "bad_id" });
-      const [raw] = await redis(cfg, [["GET", noteKey(id)]]);
+      if (q.get("meta")) {
+        const [m] = await redis(cfg, [["GET", K.meta + id]]);
+        return send(res, 200, m ? JSON.parse(m) : { by: "", updatedAt: null });
+      }
+      const [raw] = await redis(cfg, [["GET", K.key + id]]);
       return send(res, 200, raw ? JSON.parse(raw) : { text: "", by: "", updatedAt: null });
     }
 
     if (req.method === "PUT") {
       let b;
       try { b = await readBody(req); } catch { return send(res, 400, { error: "bad_json" }); }
+      const K = KINDS[b.kind || "note"];
       const id = cleanId(b.id);
+      if (!K) return send(res, 400, { error: "bad_kind" });
       if (!id) return send(res, 400, { error: "bad_id" });
-      if (typeof b.text !== "string" || b.text.length > MAX_TEXT) return send(res, 400, { error: "bad_text" });
+      if (typeof b.text !== "string") return send(res, 400, { error: "bad_text" });
+      if ((K.maxChars && b.text.length > K.maxChars) || (K.maxBytes && Buffer.byteLength(b.text) > K.maxBytes)) {
+        return send(res, 413, { error: "too_large" });
+      }
       const by = typeof b.by === "string" ? b.by.trim().slice(0, 60) : "";
 
-      const [raw] = await redis(cfg, [["GET", noteKey(id)]]);
-      const cur = raw ? JSON.parse(raw) : null;
-      if (cur && !b.force && b.base !== cur.updatedAt) return send(res, 409, { error: "conflict", current: cur });
-
-      const next = { text: b.text, by, updatedAt: new Date().toISOString() };
-      const cmds = [["SET", noteKey(id), JSON.stringify(next)], ["SADD", "ftu:notes", id]];
-      // Keep earlier versions: whenever another person writes, or after a 10-minute gap.
-      if (cur && cur.text && cur.text !== b.text &&
-          (cur.by !== by || Date.now() - Date.parse(cur.updatedAt) > 10 * 60 * 1000)) {
-        cmds.push(["LPUSH", histKey(id), raw], ["LTRIM", histKey(id), "0", String(HISTORY - 1)]);
+      const [m] = await redis(cfg, [["GET", K.meta + id]]);
+      let meta = m ? JSON.parse(m) : null;
+      if (!meta) {   // notes saved before meta keys existed
+        const [raw0] = await redis(cfg, [["GET", K.key + id]]);
+        if (raw0) { const c = JSON.parse(raw0); meta = { by: c.by, updatedAt: c.updatedAt }; }
       }
-      await redis(cfg, cmds);
-      return send(res, 200, next);
+      if (meta && !b.force && b.base !== meta.updatedAt) {
+        const [raw1] = await redis(cfg, [["GET", K.key + id]]);
+        return send(res, 409, { error: "conflict", current: raw1 ? JSON.parse(raw1) : meta });
+      }
+
+      // Keep earlier versions: whenever another person writes, or after a 10-minute gap.
+      if (meta && (meta.by !== by || Date.now() - Date.parse(meta.updatedAt) > 10 * 60 * 1000)) {
+        const [raw] = await redis(cfg, [["GET", K.key + id]]);
+        if (raw && JSON.parse(raw).text !== b.text) {
+          await redis(cfg, [["LPUSH", K.hist + id, raw], ["LTRIM", K.hist + id, "0", String(K.history - 1)]]);
+        }
+      }
+      const next = { text: b.text, by, updatedAt: new Date().toISOString() };
+      const info = { by, updatedAt: next.updatedAt };
+      await redis(cfg, [["SET", K.key + id, JSON.stringify(next)], ["SET", K.meta + id, JSON.stringify(info)], ["SADD", K.index, id]]);
+      return send(res, 200, info);
     }
 
     res.setHeader("Allow", "GET, PUT");

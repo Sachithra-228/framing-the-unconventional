@@ -48,6 +48,31 @@ const UI = {
     themesSub: "Built from the interview codes. Each theme shows how many people in each group support it.",
     keyFinding: n => `Key finding · Interview ${n}`,
     navStudy: "Study", tabStudy: "Study",
+    navReport: "Report", tabReport: "Report",
+    rptEyebrow: "Shared document",
+    rptTitle: "Research report",
+    rptSub: "Upload the Word file once, then anyone with the team passcode can edit it here. Every change saves automatically, and you can download it as Word at any time.",
+    rptLockText: "Enter the team passcode to open the shared report.",
+    rptUpload: "Upload Word",
+    rptDownload: "Download Word",
+    rptFormat: "Formatting",
+    rptStyle: "Paragraph style",
+    rptNormal: "Normal text",
+    rptH: n => `Heading ${n}`,
+    rptBullets: "Bulleted list",
+    rptNumbers: "Numbered list",
+    rptEmpty: "No document yet. Click “Upload Word” to bring in your .docx file, or just start typing here.",
+    rptLocal: "Saved on this device only — online saving isn't set up yet.",
+    rptTooLarge: "Too large to save online (over 800 KB) — usually because of big images. Remove or shrink images and try again.",
+    rptReplaceConfirm: "Replace the current document with this Word file? (Earlier versions are kept in storage.)",
+    rptReading: "Reading the Word file…",
+    rptReadError: "Couldn't read that file. Please upload a .docx Word document.",
+    rptExportError: "Couldn't create the Word file. Check your connection and try again.",
+    rptNothingSaved: "Nothing saved yet",
+    rptLoadTheirs: "Use their version",
+    rptKeepMine: "Keep mine",
+    rptDownloadMine: "Download mine",
+    rptOtherEditing: who => `${who} is also editing — your next save will ask which version to keep.`,
     statParticipants: "Participants", statGroups: "Groups", statObjectives: "Objectives", statAnalysed: "Analysed",
     stripTitle: (o, c) => `${o} objectives · ${c} chapters`,
     stripText: "Research objectives, chapter outline and working title.",
@@ -117,6 +142,31 @@ const UI = {
     themesSub: "සම්මුඛ සාකච්ඡා කේත ඇසුරින් ගොඩනගා ඇත. එක් එක් තේමාවට සහාය දක්වන පුද්ගලයන් ගණන කණ්ඩායම් අනුව මෙහි දැක්වේ.",
     keyFinding: n => `ප්‍රධාන සොයාගැනීම · සම්මුඛ සාකච්ඡාව ${n}`,
     navStudy: "අධ්‍යයනය", tabStudy: "අධ්‍යයනය",
+    navReport: "වාර්තාව", tabReport: "වාර්තාව",
+    rptEyebrow: "හවුල් ලේඛනය",
+    rptTitle: "පර්යේෂණ වාර්තාව",
+    rptSub: "Word ගොනුව එක් වරක් උඩුගත කරන්න; ඉන්පසු කණ්ඩායම් මුරපදය ඇති ඕනෑම කෙනෙකුට එය මෙහිම සංස්කරණය කළ හැකිය. සෑම වෙනසක්ම ස්වයංක්‍රීයව සුරැකෙන අතර, ඕනෑම වේලාවක Word ලෙස බාගත හැකිය.",
+    rptLockText: "හවුල් වාර්තාව විවෘත කිරීමට කණ්ඩායම් මුරපදය ඇතුළත් කරන්න.",
+    rptUpload: "Word උඩුගත කරන්න",
+    rptDownload: "Word බාගන්න",
+    rptFormat: "හැඩතල",
+    rptStyle: "ඡේද ශෛලිය",
+    rptNormal: "සාමාන්‍ය පෙළ",
+    rptH: n => `ශීර්ෂය ${n}`,
+    rptBullets: "බුලට් ලැයිස්තුව",
+    rptNumbers: "අංක ලැයිස්තුව",
+    rptEmpty: "තවම ලේඛනයක් නැත. ඔබේ .docx ගොනුව ගෙන ඒමට “Word උඩුගත කරන්න” ක්ලික් කරන්න, නැතහොත් මෙහි ටයිප් කිරීම අරඹන්න.",
+    rptLocal: "මෙම උපාංගයේ පමණක් සුරැකිණි — ඔන්ලයින් සුරැකීම තවම සකසා නැත.",
+    rptTooLarge: "ඔන්ලයින් සුරැකීමට විශාල වැඩියි (800 KB ට වැඩි) — සාමාන්‍යයෙන් විශාල රූප නිසා. රූප ඉවත් කර හෝ කුඩා කර නැවත උත්සාහ කරන්න.",
+    rptReplaceConfirm: "වත්මන් ලේඛනය මෙම Word ගොනුවෙන් ප්‍රතිස්ථාපනය කරන්නද? (පෙර පිටපත් ගබඩාවේ තබා ඇත.)",
+    rptReading: "Word ගොනුව කියවමින්…",
+    rptReadError: "එම ගොනුව කියවිය නොහැකි විය. කරුණාකර .docx Word ලේඛනයක් උඩුගත කරන්න.",
+    rptExportError: "Word ගොනුව සෑදිය නොහැකි විය. සම්බන්ධතාව පරීක්ෂා කර නැවත උත්සාහ කරන්න.",
+    rptNothingSaved: "තවම කිසිවක් සුරැකී නැත",
+    rptLoadTheirs: "ඔවුන්ගේ පිටපත ගන්න",
+    rptKeepMine: "මගේ පිටපත තබන්න",
+    rptDownloadMine: "මගේ පිටපත බාගන්න",
+    rptOtherEditing: who => `${who} ද සංස්කරණය කරමින් සිටී — ඔබේ ඊළඟ සුරැකීමේදී තබාගත යුතු පිටපත ඇසනු ඇත.`,
     statParticipants: "සහභාගිවන්නන්", statGroups: "කණ්ඩායම්", statObjectives: "අරමුණු", statAnalysed: "විශ්ලේෂිත",
     stripTitle: (o, c) => `අරමුණු ${o} · පරිච්ඡේද ${c}`,
     stripText: "පර්යේෂණ අරමුණු, පරිච්ඡේද සැලැස්ම සහ මූලික මාතෘකාව.",
@@ -448,6 +498,7 @@ function route(scrollTop = true) {
   else if (kind === "person") renderPerson(id);
   else if (kind === "themes") renderThemes();
   else if (kind === "study") renderStudy();
+  else if (kind === "report") renderReport();
   else renderHome();
 
   document.querySelectorAll("nav a[data-r]").forEach(a => {
@@ -456,6 +507,7 @@ function route(scrollTop = true) {
       (r === "home" && !kind) ||
       (r === "themes" && kind === "themes") ||
       (r === "study" && kind === "study") ||
+      (r === "report" && kind === "report") ||
       (kind === "group" && r === id) ||
       (kind === "person" && personById(id) && r === personById(id).group);
     a.classList.toggle("on", Boolean(active));

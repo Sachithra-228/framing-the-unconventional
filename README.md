@@ -9,6 +9,7 @@ Qualitative research tracker comparing filmmakers', industry professionals' and 
 - **Group**: the people in Industry Professionals, Academics, or Film Students / Young Filmmakers
 - **Person**: one interviewee's photo and their analysis by objective, with codes
 - **Themes**: emerging themes and which participants support them, by group
+- **Report**: one shared document (the research report) that the team edits in the browser
 
 ## Languages
 
@@ -52,6 +53,15 @@ The notes are stored by [`api/notes.js`](api/notes.js), a Vercel function backed
 Until the setup is done, the notepad still works, but the notes are saved only in that browser.
 
 If two people save the same notepad at once, the second person is asked to keep both versions or keep only theirs. The last 30 earlier versions are also kept in storage.
+
+## Report (shared document)
+
+The **Report** page holds one shared document. Upload a Word (.docx) file once; after that, anyone with the team passcode can edit it in the browser. Every change saves automatically, other people's saves appear within about 12 seconds, and **Download Word** exports the current version as a .docx at any time.
+
+- It uses the same storage and passcode as the Notepad (`api/notes.js` with `kind: "doc"`).
+- Formatting kept: headings, bold, italic, underline, bulleted and numbered lists, tables and images. Page layout, headers and footers, comments and tracked changes from Word are not kept.
+- The document must stay under 800 KB, so keep images small.
+- If two people save at the same moment, the second person chooses: use the other version, keep theirs, or download theirs first. The last 10 earlier versions are also kept in storage.
 
 ## Running locally
 
