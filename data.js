@@ -67,7 +67,7 @@ const PEOPLE = [
   // Academics
   { id: "supun-hemachandra", name: "Supun Hemachandra", group: "academics" },
   { id: "tharaka-nayanapriya", name: "Tharaka Nayanapriya", group: "academics" },
-  { id: "boopathy-nalin", name: "Boopathy Nalin", group: "academics" },
+  { id: "boopathy-nalin", name: "Boopathy Nalin", group: "academics", role: { en: "Film educator & critic", si: "සිනමා අධ්‍යාපනඥ සහ විචාරක" } },
   { id: "ileka-ruwanpathirana", name: "Ileka Ruwanpathirana", group: "academics", role: { en: "Senior Lecturer, University of Kelaniya", si: "ජ්‍යෙෂ්ඨ කථිකාචාර්ය, කැලණිය විශ්වවිද්‍යාලය" } },
   { id: "hasantha-dissanayake", name: "Hasantha Dissanayake", group: "academics" },
 
@@ -1016,13 +1016,213 @@ const INTERVIEWS = {
       { en: "Cinema never grows old", si: "සිනමාව කිසිදා පරණ නොවේ" },
     ],
   },
+  "boopathy-nalin": {
+    number: 6,
+    tags: [
+      { en: "Visual politics", si: "දෘශ්‍ය දේශපාලනය" },
+      { en: "Hegemony of beauty", si: "සුන්දරත්වයේ බලාධිපත්‍යය" },
+      { en: "Rules have a history", si: "රීතිවලට ඉතිහාසයක් ඇත" },
+      { en: "Institutionalised radicalism", si: "ආයතනගත වූ රැඩිකල් බව" },
+      { en: "Asian visual traditions", si: "ආසියානු දෘශ්‍ය සම්ප්‍රදායන්" },
+      { en: "Urban aesthetics", si: "නාගරික සෞන්දර්යය" },
+      { en: "Visual literacy", si: "දෘශ්‍ය සාක්ෂරතාව" },
+    ],
+    objectives: {
+      O1: {
+        heading: { en: "The frame is cinema's strongest means of aesthetic expression", si: "රාමුව සිනමාවේ ප්‍රබලතම සෞන්දර්යාත්මක ප්‍රකාශන මාධ්‍යයයි" },
+        said: [
+          {
+            en: "The frame has been interpreted in many ways in theory. For him it is above all the most powerful means of intensifying expression and revealing it aesthetically.",
+            si: "රාමුව න්‍යායාත්මකව විවිධ ආකාරයෙන් අර්ථකථනය කර ඇත. ඔහුට අනුව එය ප්‍රධාන වශයෙන්ම ප්‍රකාශනය තීව්‍ර කිරීමට සහ එය සෞන්දර්යාත්මකව එළිදැක්වීමට ඇති ප්‍රබලතම මාධ්‍යයයි.",
+          },
+          {
+            en: "He does not fully accept the older idea that film is primarily visual: film is sight and sound together, and sometimes sound runs in parallel and decides as much as the image. He refers to the sound theorist Michel Chion on “visual domination”.",
+            si: "චිත්‍රපටය මූලිකවම දෘශ්‍ය එකක් ය යන පැරණි අදහසට ඔහු සම්පූර්ණයෙන් එකඟ නොවේ: චිත්‍රපටය යනු දර්ශනය සහ ශබ්දය දෙකම ය; සමහර විට ශබ්දය රූපයට සමාන්තරව ගමන් කරමින් රූපය තරමටම තීරණය කරයි. “දෘශ්‍ය ආධිපත්‍යය” පිළිබඳව ඔහු ශබ්ද න්‍යායාචාර්ය මිෂෙල් ෂියොන් (Michel Chion) සිහිපත් කරයි.",
+          },
+          {
+            en: "In narrative films the most important task of the image is to create what cannot be said in words or dialogue — a mood, an atmosphere — through lighting, composition and camera movement. That visual treatment is the most serious part of the work.",
+            si: "කතා සහිත චිත්‍රපටවල රූපයේ වැදගත්ම කාර්යය වන්නේ වචනයෙන් හෝ දෙබසින් කිව නොහැකි දේ — මනෝභාවයක්, වාතාවරණයක් — ආලෝකකරණය, සංයුතිය සහ කැමරා චලනය හරහා නිර්මාණය කිරීමයි. එම දෘශ්‍ය ප්‍රතිකාරය (visual treatment) වැඩයේ බරපතලම කොටසයි.",
+          },
+          {
+            en: "Something becomes conventional once institutions accept it — when festivals reward it and schools teach it. Handheld camera was radical in the 1960s; later schools taught how to shoot handheld, and it reached festival winners, Oscar nominees and Sri Lankan films.",
+            si: "යමක් සම්ප්‍රදායික වන්නේ ආයතන එය පිළිගත් විටය — උළෙල සම්මාන දෙන විට සහ පාසල් එය උගන්වන විට. 1960 දශකයේ හෑන්ඩ්හෙල්ඩ් කැමරාව රැඩිකල් විය; පසුව පාසල් එය උගන්වන්නට පටන් ගත් අතර, උළෙල සම්මාන ලැබූ චිත්‍රපට, ඔස්කාර් නාමයෝජිත චිත්‍රපට සහ ශ්‍රී ලාංකීය චිත්‍රපට දක්වා එය පැතිර ගියේය.",
+          },
+        ],
+        interpretation: {
+          en: "As a film historian and critic, he defines the frame by its aesthetic power and the unconventional by its relation to institutions: a frame is unconventional while it stands outside what festivals and schools have absorbed.",
+          si: "සිනමා ඉතිහාසඥයෙකු සහ විචාරකයෙකු ලෙස, ඔහු රාමුව එහි සෞන්දර්යාත්මක බලය අනුවත්, unconventional බව ආයතන සමඟ ඇති සම්බන්ධය අනුවත් නිර්වචනය කරයි: රාමුවක් unconventional වන්නේ උළෙල සහ පාසල් එය අවශෝෂණය කරගන්නා තුරු පමණි.",
+        },
+      },
+      O2: {
+        heading: { en: "Rules are not laws — they have a history, and knowing it is what lets you break them", si: "රීති නීති නොවේ — ඒවාට ඉතිහාසයක් ඇත; එය දැනගැනීමෙන් ඒවා බිඳිය හැකිය" },
+        said: [
+          {
+            en: "Cinema has rules, not laws, and they did not appear from nowhere: leading lines, the golden ratio and the rule of thirds came from Renaissance painting; Russian avant-garde montage and German Expressionism shaped the 1920s; later the new waves — Italian neorealism and, recently, the Romanian New Wave of directors such as Radu Jude — broke them again.",
+            si: "සිනමාවේ ඇත්තේ නීති නොව රීති ය; ඒවා නිකම්ම ආවේ නැත: leading lines, ගෝල්ඩන් රේෂියෝව සහ rule of thirds පුනරුදය කාලීන චිත්‍ර කලාවෙන් ආවේය; රුසියානු ඇවන්ගාඩ් මොන්ටාජ් සහ ජර්මානු ප්‍රකාශනවාදය 1920 දශකය හැඩගැස්වීය; පසුව නව රැළි — ඉතාලි නව යථාර්ථවාදය සහ මෑතදී රාඩු ජූඩ් වැනි අධ්‍යක්ෂවරුන්ගේ රුමේනියානු නව රැල්ල — නැවත ඒවා බිඳ දැමීය.",
+          },
+          {
+            en: "If you are serious about film, you must understand why each rule formed by going back to its social background: Eisenstein's montage grew alongside communist ideas and Marx's dialectics — two images collide to produce a third.",
+            si: "ඔබ සිනමාව ගැන බරපතල නම්, එක් එක් රීතිය හැදුණේ ඇයිද යන්න එහි සමාජ පසුබිමට ගොස් තේරුම් ගත යුතුය: අයිසන්ස්ටයින්ගේ මොන්ටාජ් වර්ධනය වූයේ කොමියුනිස්ට් අදහස් සහ මාක්ස්ගේ අපෝහකවාදය සමඟය — රූප දෙකක් ගැටී තුන්වන අර්ථයක් නිපදවයි.",
+          },
+          {
+            en: "Even mainstream cinema now breaks rules: in Nelson's <i>Jailer</i>, Rajinikanth's star power lets him stand out of focus, off-composition, in the background of a song. Underground cinema and films such as Apichatpong Weerasethakul's <i>Mekong Hotel</i>, shot overexposed on an amateur camera, go further and reject aesthetics altogether.",
+            si: "දැන් ප්‍රධාන ධාරාවේ සිනමාව පවා රීති බිඳියි: නෙල්සන්ගේ <i>Jailer</i> චිත්‍රපටයේ, රජනිකාන්ත්ගේ තරු බලය නිසා ගීතයක පසුබිමේ ඔහු ෆෝකස් නොවී, සංයුතියෙන් පිටත සිටීමට ඉඩ ලැබේ. භූගත සිනමාව සහ ඇමචූර් කැමරාවකින් over-exposed ලෙස රූගත කළ අපිචාට්පොං වීරසේතකුල්ගේ <i>Mekong Hotel</i> වැනි චිත්‍රපට තවත් ඉදිරියට ගොස් සෞන්දර්යය සම්පූර්ණයෙන්ම ප්‍රතික්ෂේප කරයි.",
+          },
+          {
+            en: "A radical film usually keeps one or two accepted rules and breaks the rest — like a radical musician who keeps the melody's discipline but plays off the beat.",
+            si: "රැඩිකල් චිත්‍රපටයක් සාමාන්‍යයෙන් පිළිගත් රීති එකක් හෝ දෙකක් රැක, ඉතිරිය බිඳියි — තනුවේ ශික්ෂණය රැකගෙන ඕෆ්-බීට් වාදනය කරන රැඩිකල් සංගීතඥයෙකු මෙන්.",
+          },
+        ],
+        interpretation: {
+          en: "Like Prasanna Withanage, he distinguishes rules from laws; like Ileka Ruwanpathirana, he grounds freedom in knowledge. His particular contribution is historical: rules are social products, so breaking them meaningfully requires knowing where they came from.",
+          si: "ප්‍රසන්න විතානගේ මෙන්ම ඔහු රීති සහ නීති වෙන් කරයි; ඉලේකා රුවන්පතිරණ මෙන්ම නිදහස දැනුම මත පදනම් කරයි. ඔහුගේ විශේෂ දායකත්වය ඓතිහාසිකය: රීති සමාජ නිෂ්පාදන ය; එබැවින් ඒවා අර්ථවත්ව බිඳීමට ඒවා පැමිණි තැන දැනගත යුතුය.",
+        },
+      },
+      O3: {
+        heading: { en: "The politics of aesthetics: who decides what is beautiful", si: "සෞන්දර්යයේ දේශපාලනය: සුන්දර දේ තීරණය කරන්නේ කවුද" },
+        said: [
+          {
+            en: "He is most interested in “visual politics” — not party politics, but the politics inside aesthetics. The way landscapes are shot carries a history: from Westerns and cowboy films, from the mountain (Heimat) films of Hitler's era to <i>The Sound of Music</i>, to Bollywood songs in the hills. There is a hegemony in the history of beauty, and he prefers films that break it.",
+            si: "ඔහු වඩාත් උනන්දු වන්නේ “දෘශ්‍ය දේශපාලනය” ගැනයි — පක්ෂ දේශපාලනය නොව, සෞන්දර්යය තුළ ඇති දේශපාලනය. භූ දර්ශන රූගත කරන ආකාරයට ඉතිහාසයක් ඇත: වෙස්ටර්න් සහ කව්බෝයි චිත්‍රපටවල සිට, හිට්ලර්ගේ යුගයේ කඳුකර (Heimat) චිත්‍රපටවල සිට <i>The Sound of Music</i> දක්වා, කඳුකරයේ බොලිවුඩ් ගීත දක්වා. සුන්දරත්වයේ ඉතිහාසය තුළ බලාධිපත්‍යයක් ඇති අතර, ඔහු එය බිඳින චිත්‍රපටවලට කැමතිය.",
+          },
+          {
+            en: "Sri Lankan visual treatment is largely Eurocentric — Rembrandt or Caravaggio lighting — and even popular Buddhist painting followed a Western style. He calls for a mix with Asian traditions instead: Kandyan temple murals, Santiniketan painters such as Nandalal Bose. This is not nationalism, he stresses.",
+            si: "ශ්‍රී ලාංකීය දෘශ්‍ය ප්‍රතිකාරය බොහෝ දුරට යුරෝකේන්ද්‍රීය ය — රෙම්බ්‍රාන්ට් හෝ කැරවාජියෝ ආලෝකකරණය — ජනප්‍රිය බෞද්ධ චිත්‍ර කලාව පවා බටහිර ශෛලියක් අනුගමනය කළේය. ඒ වෙනුවට ආසියානු සම්ප්‍රදායන් සමඟ මිශ්‍රණයක් ඔහු ඉල්ලා සිටී: මහනුවර යුගයේ විහාර සිතුවම්, නන්දලාල් බෝස් වැනි ශාන්තිනිකේතන් චිත්‍ර ශිල්පීන්. මෙය ජාතිකවාදයක් නොවන බව ඔහු අවධාරණය කරයි.",
+          },
+          {
+            en: "For him the most radical break in Sri Lankan cinema is Asoka Handagama's <i>Me Mage Sandai</i>: static, shot by shot, no pan, tilt or camera movement, shot by Channa Deshapriya and inspired by Kandyan temple murals, whose long horizontal strips work like long takes compressed into single frames.",
+            si: "ඔහුට අනුව ශ්‍රී ලාංකීය සිනමාවේ රැඩිකල්ම බිඳීම අශෝක හඳගමගේ <i>මේ මගේ සඳයි</i> ය: ස්ථිතික, ෂොට් එකෙන් ෂොට් එකට, පෑන්, ටිල්ට් හෝ කැමරා චලනයක් නැතිව, චන්න දේශප්‍රිය විසින් රූගත කළ, මහනුවර විහාර සිතුවම්වලින් ආභාසය ලැබූ — එම සිතුවම්වල දිගු තිරස් තීරු තනි රාමුවලට හැකිළූ දිගු ෂොට් (long takes) මෙන් ක්‍රියා කරයි.",
+          },
+          {
+            en: "He traces Sri Lanka's groundbreaking points: the camera leaving the studio and naturalistic lighting with Lester James Peries; radical handheld in <i>Sath Samudura</i>, then Nihal Singha, Dharmasena Pathiraja and Sugathapala Senarath Yapa; slow pace and poetic realism with Prasanna Vithanage, with interior lighting by cinematographers such as M.D. Mahindapala; and the saturated “Bollywood beauty” of mainstream films such as <i>Rosa Wasanthaya</i>.",
+            si: "ඔහු ශ්‍රී ලංකාවේ මංසන්ධි ලක්ෂ්‍ය සොයා යයි: ලෙස්ටර් ජේම්ස් පීරිස් සමඟ කැමරාව ස්ටූඩියෝවෙන් එළියට යාම සහ ස්වාභාවිකවාදී ආලෝකකරණය; <i>සත් සමුදුර</i> හි රැඩිකල් හෑන්ඩ්හෙල්ඩ්, ඉන්පසු නිහාල් සිංහ, ධර්මසේන පතිරාජ සහ සුගතපාල සෙනරත් යාපා; ප්‍රසන්න විතානගේ සමඟ මන්දගාමී රිද්මය සහ කාව්‍යාත්මක යථාර්ථවාදය, එම්.ඩී. මහින්දපාල වැනි කැමරා ශිල්පීන්ගේ ගෘහස්ථ ආලෝකකරණය සමඟ; සහ <i>රෝස වසන්තය</i> වැනි ප්‍රධාන ධාරාවේ චිත්‍රපටවල සන්තෘප්ත “බොලිවුඩ් සුන්දරත්වය”.",
+          },
+          {
+            en: "After <i>Purahanda Kaluwara</i> and <i>Me Mage Sandai</i>, the beautified dry-zone “border village” and a pale, brownish palette became an art-house trend that short filmmakers copied, where saturated green or yellow was not allowed. Vimukthi Jayasundara broke it in <i>Ahasin Wetei</i>, setting the state's struggle with young insurgents against tourism.",
+            si: "<i>පුරහඳ කළුවර</i> සහ <i>මේ මගේ සඳයි</i> න් පසු, සුන්දර කළ වියළි කලාපීය “මායිම් ගම්මානය” සහ පඬු, දුඹුරු වර්ණ තලය කෙටි චිත්‍රපට කරන්නන් ද අනුකරණය කළ කලාත්මක චිත්‍රපට ප්‍රවණතාවක් බවට පත් විය; එහි සන්තෘප්ත කොළ හෝ කහ පාට සඳහා ඉඩක් නොවීය. විමුක්ති ජයසුන්දර <i>අහසින් වැටේ</i> හිදී, රාජ්‍යය සහ තරුණ කැරලිකරුවන් අතර අරගලය සංචාරක ව්‍යාපාරය සමඟ ගැටෙන ලෙස තබමින් එය බිඳ දැමීය.",
+          },
+          {
+            en: "He strongly disagrees with Sarachchandra's warning against shooting the “concrete jungle”: we live in cities and must find their aesthetics. Recent films such as <i>Walampuri</i> and <i>Bahuchithawadiya</i> bring a new urban aesthetic — the dark, lumpen areas of the city — for the first time since Pathiraja.",
+            si: "“කොන්ක්‍රීට් වනාන්තරය” රූගත නොකරන්නැයි සරච්චන්ද්‍රයන් කළ අවවාදයට ඔහු දැඩිව විරුද්ධ ය: අප ජීවත් වන්නේ නගරවල නිසා ඒවායේ සෞන්දර්යය සොයාගත යුතුය. <i>වලම්පුරි</i> සහ <i>බහුචිත්තවාදියා</i> වැනි මෑත චිත්‍රපට පතිරාජගෙන් පසු පළමු වරට නගරයේ අඳුරු, ලුම්පන් ප්‍රදේශ ඇතුළු නව නාගරික සෞන්දර්යයක් ගෙන එයි.",
+          },
+        ],
+        interpretation: {
+          en: "He gives the context a new angle: not only politics and the market, but the politics of beauty itself. What Sri Lankan cinema treats as beautiful — Eurocentric lighting, Bollywood colour, the pale village — is inherited, and unconventional framing means exposing and breaking that inheritance.",
+          si: "ඔහු සන්දර්භයට නව කෝණයක් ලබා දෙයි: දේශපාලනය සහ වෙළඳපොළ පමණක් නොව, සුන්දරත්වයේම දේශපාලනය. ශ්‍රී ලාංකීය සිනමාව සුන්දර ලෙස සලකන දේ — යුරෝකේන්ද්‍රීය ආලෝකකරණය, බොලිවුඩ් වර්ණ, පඬු පැහැති ගම්මානය — උරුම කරගත් ඒවා ය; unconventional රාමුකරණය යනු එම උරුමය හෙළිදරව් කර බිඳීමයි.",
+        },
+      },
+      O4: {
+        heading: { en: "Writer, director and cinematographer must sit together", si: "තිර රචකයා, අධ්‍යක්ෂවරයා සහ කැමරා ශිල්පියා එකට වාඩි විය යුතුය" },
+        said: [
+          {
+            en: "Speaking as a screenwriter, he has been lucky: the directors he works with involve him closely in pre-production and give him room.",
+            si: "තිර රචකයෙකු ලෙස කතා කරමින්, ඔහු වාසනාවන්ත බව පවසයි: ඔහු සමඟ වැඩ කරන අධ්‍යක්ෂවරුන් පූර්ව නිෂ්පාදන කටයුතුවලදී ඔහුව සමීපව සම්බන්ධ කර ගෙන ඔහුට ඉඩ ලබා දෙති.",
+          },
+          {
+            en: "A professional screenwriter has no right to write shots, cuts or camera movements; only writer-directors do that. But a writer can describe in a way that implies the frame — “through the tears in her eyes we see the reflection of a Bodhi tree” is, in effect, an extreme close-up.",
+            si: "වෘත්තීය තිර රචකයෙකුට ෂොට්, කට් හෝ කැමරා චලන ලිවීමට අයිතියක් නැත; එය කරන්නේ ලේඛක-අධ්‍යක්ෂවරුන් පමණි. නමුත් රචකයෙකුට රාමුව ඇඟවෙන ලෙස විස්තර කළ හැකිය — “ඇගේ ඇස්වල කඳුළු අතරින් බෝධියක ඡායාව පෙනේ” යන්න ඇත්තෙන්ම extreme close-up එකකි.",
+          },
+          {
+            en: "Many Sri Lankan films are made by writer-directors. Where there are three people, it is very important that writer, director and cinematographer sit together and talk — but the final decision on a shot must belong to the director and cinematographer; the writer can only suggest.",
+            si: "බොහෝ ශ්‍රී ලාංකීය චිත්‍රපට ලේඛක-අධ්‍යක්ෂවරුන් විසින් නිර්මාණය කෙරේ. තිදෙනෙකු සිටින තැන, රචකයා, අධ්‍යක්ෂවරයා සහ කැමරා ශිල්පියා එකට වාඩි වී කතා කිරීම ඉතා වැදගත්ය — නමුත් ෂොට් එකක් පිළිබඳ අවසන් තීරණය අධ්‍යක්ෂවරයාට සහ කැමරා ශිල්පියාට අයත් විය යුතුය; රචකයාට කළ හැක්කේ යෝජනා කිරීම පමණි.",
+          },
+        ],
+        interpretation: {
+          en: "He adds the screenwriter to the framing relationship: the frame begins in the writing, but authority over it belongs to the director–cinematographer pair.",
+          si: "ඔහු රාමුකරණ සම්බන්ධතාවට තිර රචකයා එකතු කරයි: රාමුව ලේඛනයේ සිටම ආරම්භ වුවද, ඒ පිළිබඳ බලය අධ්‍යක්ෂ–කැමරා ශිල්පී යුගලයට අයත්ය.",
+        },
+      },
+      O5: {
+        heading: { en: "Serious discussion, visual literacy and an Asian–Western mix", si: "බරපතල සාකච්ඡාව, දෘශ්‍ය සාක්ෂරතාව සහ ආසියානු–බටහිර මිශ්‍රණයක්" },
+        said: [
+          {
+            en: "Much of what is called experimental in Sri Lanka is a small break from the ordinary; truly radical experimental cinema is something like Andy Warhol's eight-hour <i>Empire</i>. Serious experiment means going deeply into the subject without fear — “not a madman with a camera”.",
+            si: "ශ්‍රී ලංකාවේ පර්යේෂණාත්මක (experimental) යැයි කියන බොහෝ දේ සාමාන්‍යයෙන් කුඩා බිඳීමකි; සැබෑ රැඩිකල් පර්යේෂණාත්මක සිනමාව ඇන්ඩි වෝහෝල්ගේ පැය අටක <i>Empire</i> වැනි දෙයකි. බරපතල පර්යේෂණයක් යනු බියෙන් තොරව විෂයයට ගැඹුරින් ඇතුළු වීමයි — “කැමරාවක් අතැති පිස්සෙක්” නොවේ.",
+          },
+          {
+            en: "Interesting ideas appear on Facebook and online platforms and are forgotten the next day. Sri Lanka lacks written, serious discussion of cinema's aesthetics; most criticism — his own included — is ideological, and there are no academic journals at that level, unlike the film magazines of the past.",
+            si: "රසවත් අදහස් ෆේස්බුක් සහ අන්තර්ජාල වේදිකාවල පළ වී පසුදා අමතක වේ. ශ්‍රී ලංකාවට සිනමාවේ සෞන්දර්යය පිළිබඳ ලිඛිත, බරපතල සාකච්ඡාව අඩුය; බොහෝ විචාර — ඔහුගේම ද ඇතුළුව — දෘෂ්ටිවාදී ය; අතීතයේ සිනමා සඟරා මෙන් එම මට්ටමේ ශාස්ත්‍රීය සඟරා නැත.",
+          },
+          {
+            en: "The biggest weakness of Sri Lankan filmmakers is that they know only cinema — not photography, painting or exhibitions. They cannot name five contemporary painters or still photographers such as Lionel Wendt. They should study visual history back to cave painting, as Werner Herzog's <i>Cave of Forgotten Dreams</i> does.",
+            si: "ශ්‍රී ලාංකීය සිනමාකරුවන්ගේ විශාලතම දුර්වලතාව වන්නේ ඔවුන් දන්නේ සිනමාව පමණක් වීමයි — ඡායාරූපකරණය, චිත්‍ර කලාව හෝ ප්‍රදර්ශන නොවේ. සමකාලීන චිත්‍ර ශිල්පීන් පස් දෙනෙකු හෝ ලයනල් වෙන්ඩ්ට් වැනි ඡායාරූප ශිල්පීන් නම් කිරීමට ඔවුන්ට නොහැකිය. වර්නර් හර්සොග්ගේ <i>Cave of Forgotten Dreams</i> මෙන් ගල් යුගයේ සිතුවම් දක්වා දෘශ්‍ය ඉතිහාසය ඔවුන් හැදෑරිය යුතුය.",
+          },
+          {
+            en: "If filmmakers study this, they will become radical without trying. Western cinema must be learned, but combined with Buddhist, national and Asian visual traditions it could produce a genuinely new mix.",
+            si: "සිනමාකරුවන් මේවා හැදෑරුවොත්, උත්සාහ නොකරම ඔවුන් රැඩිකල් වනු ඇත. බටහිර සිනමාව ඉගෙන ගත යුතුමය; නමුත් එය බෞද්ධ, ජාතික සහ ආසියානු දෘශ්‍ය සම්ප්‍රදායන් සමඟ එකතු කළහොත් සැබෑ නව මිශ්‍රණයක් බිහි විය හැකිය.",
+          },
+        ],
+        interpretation: {
+          en: "His future is built on knowledge: a cinema that studies the whole of visual history, writes about itself seriously, and joins Western craft with Asian visual traditions.",
+          si: "ඔහුගේ අනාගතය දැනුම මත ගොඩනැගේ: සමස්ත දෘශ්‍ය ඉතිහාසයම හදාරන, තමන් ගැනම බරපතල ලෙස ලියන, බටහිර ශිල්පය ආසියානු දෘශ්‍ය සම්ප්‍රදායන් සමඟ එක් කරන සිනමාවක්.",
+        },
+      },
+      O6: {
+        heading: { en: "His position in the overall pattern", si: "සමස්ත රටාව තුළ ඔහුගේ ස්ථානය" },
+        said: [
+          {
+            en: "He confirms several industry points from outside: he names <i>Me Mage Sandai</i> and Channa Deshapriya's camerawork, as Channa did, and like Channa notes that short filmmakers copied its look.",
+            si: "ඔහු කර්මාන්ත හඬවල කරුණු කිහිපයක් පිටතින් තහවුරු කරයි: චන්න මෙන්ම ඔහු <i>මේ මගේ සඳයි</i> සහ චන්න දේශප්‍රියගේ කැමරා කර්මය නම් කරන අතර, චන්න මෙන්ම කෙටි චිත්‍රපට කරන්නන් එහි පෙනුම අනුකරණය කළ බව සඳහන් කරයි.",
+          },
+          {
+            en: "He shares Prasanna Withanage's distinction between rules and laws and his historical lineage of Sri Lankan cinema, and credits Prasanna and M.D. Mahindapala with poetic realism and interior lighting.",
+            si: "රීති සහ නීති අතර වෙනස සහ ශ්‍රී ලාංකීය සිනමාවේ ඓතිහාසික පරම්පරාව යන අදහස් ඔහු ප්‍රසන්න විතානගේ සමඟ බෙදාගන්නා අතර, කාව්‍යාත්මක යථාර්ථවාදය සහ ගෘහස්ථ ආලෝකකරණය සඳහා ප්‍රසන්න සහ එම්.ඩී. මහින්දපාල ට ගෞරවය දෙයි.",
+          },
+          {
+            en: "Like Ileka Ruwanpathirana, he sees convention as a largely Western grammar and ties freedom to knowledge — but goes further, calling for Asian visual traditions and wider visual literacy.",
+            si: "ඉලේකා රුවන්පතිරණ මෙන්, ඔහු සම්මතය බොහෝ දුරට බටහිර ව්‍යාකරණයක් ලෙස දකින අතර නිදහස දැනුමට බැඳ තබයි — නමුත් ආසියානු දෘශ්‍ය සම්ප්‍රදායන් සහ පුළුල් දෘශ්‍ය සාක්ෂරතාවක් ඉල්ලා සිටිමින් ඊට වඩා ඉදිරියට යයි.",
+          },
+          {
+            en: "He adds what no one else raised: the politics of beauty, and a theory of how the radical becomes conventional once festivals and schools institutionalise it.",
+            si: "අන් කිසිවෙකු මතු නොකළ දේ ඔහු එකතු කරයි: සුන්දරත්වයේ දේශපාලනය, සහ උළෙල සහ පාසල් එය ආයතනගත කළ පසු රැඩිකල් දේ සම්ප්‍රදායික වන ආකාරය පිළිබඳ න්‍යායක්.",
+          },
+        ],
+        interpretation: {
+          en: "With two academics, the academic view is taking shape: unconventionality is read through history, theory and knowledge, and the main constraint is not only the market but inherited ideas of beauty and the institutions that teach them.",
+          si: "ශාස්ත්‍රඥයන් දෙදෙනෙකු සමඟ ශාස්ත්‍රීය දැක්ම හැඩගැසෙමින් පවතී: unconventional බව කියවෙන්නේ ඉතිහාසය, න්‍යාය සහ දැනුම ඔස්සේ ය; ප්‍රධාන සීමාව වෙළඳපොළ පමණක් නොව, උරුම කරගත් සුන්දරත්ව අදහස් සහ ඒවා උගන්වන ආයතන ද වේ.",
+        },
+      },
+    },
+    closing: {
+      heading: { en: "Study it all, and you will become radical without trying", si: "සියල්ල හදාරන්න — උත්සාහ නොකරම රැඩිකල් වනු ඇත" },
+      text: {
+        en: "Radical filmmakers studied film history thoroughly before they broke its rules. Learn painting, photography and the whole of visual history — Western and Asian — and the new will follow.",
+        si: "රැඩිකල් සිනමාකරුවන් සිනමාවේ රීති බිඳීමට පෙර එහි ඉතිහාසය හොඳින් හැදෑරූහ. චිත්‍ර කලාව, ඡායාරූපකරණය සහ — බටහිර මෙන්ම ආසියානු — සමස්ත දෘශ්‍ය ඉතිහාසය ඉගෙන ගන්න; අලුත් දේ ඉබේම පැමිණේ.",
+      },
+    },
+    codes: [
+      { en: "Frame = strongest means of aesthetic expression", si: "රාමුව = ප්‍රබලතම සෞන්දර්යාත්මක ප්‍රකාශනය" },
+      { en: "Sight and sound, not image alone", si: "රූපය පමණක් නොව දර්ශනය සහ ශබ්දය" },
+      { en: "Creating what dialogue cannot say", si: "දෙබසින් කිව නොහැකි දේ නිර්මාණය කිරීම" },
+      { en: "Visual politics, not party politics", si: "පක්ෂ දේශපාලනය නොව දෘශ්‍ය දේශපාලනය" },
+      { en: "Hegemony in the history of beauty", si: "සුන්දරත්ව ඉතිහාසයේ බලාධිපත්‍යය" },
+      { en: "Rules, not laws — with a social history", si: "නීති නොව රීති — සමාජ ඉතිහාසයක් සහිතව" },
+      { en: "Montage and dialectics", si: "මොන්ටාජ් සහ අපෝහකවාදය" },
+      { en: "Keep two rules, break the rest", si: "රීති දෙකක් රැක ඉතිරිය බිඳීම" },
+      { en: "Mainstream also breaks rules (Jailer)", si: "ප්‍රධාන ධාරාව ද රීති බිඳියි (Jailer)" },
+      { en: "Radical becomes convention when institutionalised", si: "ආයතනගත වූ විට රැඩිකල් දේ සම්මත වීම" },
+      { en: "Handheld: radical → taught", si: "හෑන්ඩ්හෙල්ඩ්: රැඩිකල් → උගන්වන දෙයක්" },
+      { en: "Me Mage Sandai and Kandyan murals", si: "මේ මගේ සඳයි සහ මහනුවර විහාර සිතුවම්" },
+      { en: "Eurocentric lighting", si: "යුරෝකේන්ද්‍රීය ආලෝකකරණය" },
+      { en: "Asian visual traditions", si: "ආසියානු දෘශ්‍ය සම්ප්‍රදායන්" },
+      { en: "Groundbreaking points in Sri Lankan cinema", si: "ශ්‍රී ලාංකීය සිනමාවේ මංසන්ධි ලක්ෂ්‍ය" },
+      { en: "Bollywood beauty in the mainstream", si: "ප්‍රධාන ධාරාවේ බොලිවුඩ් සුන්දරත්වය" },
+      { en: "Border-village, pale-palette art-house trend", si: "මායිම් ගම්මාන, පඬු වර්ණ කලාත්මක ප්‍රවණතාව" },
+      { en: "Urban aesthetics vs the “concrete jungle”", si: "නාගරික සෞන්දර්යය සහ “කොන්ක්‍රීට් වනාන්තරය”" },
+      { en: "Writer can imply, not dictate, the shot", si: "රචකයාට ෂොට් එක ඇඟවිය හැක, නියම කළ නොහැක" },
+      { en: "Final shot decision: director + DoP", si: "අවසන් ෂොට් තීරණය: අධ්‍යක්ෂ + DoP" },
+      { en: "Serious experiment, not a madman with a camera", si: "කැමරාවක් අතැති පිස්සෙක් නොව බරපතල පර්යේෂණය" },
+      { en: "Lack of written aesthetic criticism", si: "ලිඛිත සෞන්දර්ය විචාරයේ හිඟය" },
+      { en: "Visual literacy beyond cinema", si: "සිනමාවෙන් ඔබ්බට දෘශ්‍ය සාක්ෂරතාව" },
+    ],
+  },
 };
 
 const THEMES = [
   {
     name: { en: "Framing as a foundation", si: "මූලිකාංගයක් ලෙස රාමුව" },
     desc: { en: "The frame is a fundamental element of cinema: it begins in the screenplay and is built through choices of what to include and exclude.", si: "රාමුව සිනමාවේ මූලික අංගයකි: එය තිර පිටපතේ සිටම ආරම්භ වන අතර, ඇතුළත් කරන සහ බැහැර කරන දේ පිළිබඳ තේරීම් හරහා ගොඩනැගේ." },
-    objs: ["O1"], who: ["vimukthi-jayasundara", "channa-deshapriya", "prasanna-withanage", "ileka-ruwanpathirana", "majith-s-uyangoda"],
+    objs: ["O1"], who: ["vimukthi-jayasundara", "channa-deshapriya", "prasanna-withanage", "ileka-ruwanpathirana", "majith-s-uyangoda", "boopathy-nalin"],
   },
   {
     name: { en: "Frame and context are interdependent", si: "රාමුව සහ සන්දර්භය අන්‍යෝන්‍ය වශයෙන් බැඳී ඇත" },
@@ -1032,17 +1232,17 @@ const THEMES = [
   {
     name: { en: "Evolution of cinematic language", si: "සිනමා භාෂාවේ පරිණාමය" },
     desc: { en: "Cinematic rules change from era to era; cinema keeps searching for new ones.", si: "සිනමා රීති යුගයෙන් යුගයට වෙනස් වේ; සිනමාව නව රීති සොයා යයි." },
-    objs: ["O2"], who: ["vimukthi-jayasundara", "channa-deshapriya", "prasanna-withanage", "majith-s-uyangoda"],
+    objs: ["O2"], who: ["vimukthi-jayasundara", "channa-deshapriya", "prasanna-withanage", "majith-s-uyangoda", "boopathy-nalin"],
   },
   {
     name: { en: "Unconventional becomes convention", si: "Unconventional දේ සම්මතයක් බවට පත් වීම" },
-    desc: { en: "New approaches are imitated and absorbed until they become the norm, so the next one has to be found.", si: "නව ප්‍රවේශ අනුකරණය වී සම්මතය බවට පත් වන තුරු අවශෝෂණය වේ; එබැවින් ඊළඟ එක සොයාගත යුතුය." },
-    objs: ["O2", "O5"], who: ["vimukthi-jayasundara", "channa-deshapriya", "majith-s-uyangoda"],
+    desc: { en: "New approaches are imitated and absorbed — and taught by schools and rewarded by festivals — until they become the norm, so the next one has to be found.", si: "නව ප්‍රවේශ අනුකරණය වී — පාසල් විසින් උගන්වා, උළෙල විසින් සම්මාන දී — සම්මතය බවට පත් වන තුරු අවශෝෂණය වේ; එබැවින් ඊළඟ එක සොයාගත යුතුය." },
+    objs: ["O2", "O5"], who: ["vimukthi-jayasundara", "channa-deshapriya", "majith-s-uyangoda", "boopathy-nalin"],
   },
   {
     name: { en: "Artistic freedom", si: "කලාත්මක නිදහස" },
     desc: { en: "The freedom to go beyond existing rules in one's own, authored work.", si: "තමන්ගේම ස්වකීය නිර්මාණ තුළ පවතින රීතිවලින් ඔබ්බට යාමේ නිදහස." },
-    objs: ["O2"], who: ["vimukthi-jayasundara", "channa-deshapriya", "prasanna-withanage", "ileka-ruwanpathirana", "majith-s-uyangoda"],
+    objs: ["O2"], who: ["vimukthi-jayasundara", "channa-deshapriya", "prasanna-withanage", "ileka-ruwanpathirana", "majith-s-uyangoda", "boopathy-nalin"],
   },
   {
     name: { en: "Commercial constraint", si: "වාණිජ සීමා" },
@@ -1052,7 +1252,7 @@ const THEMES = [
   {
     name: { en: "Political seeing", si: "දේශපාලනික දැක්ම" },
     desc: { en: "Looking beyond the accepted frame is itself political and can move society — and the state, in turn, can use the frame to serve an ideology.", si: "සම්මත රාමුවෙන් ඔබ්බට බැලීමම දේශපාලනික වන අතර, එයට සමාජය පෙළඹවිය හැකිය — අනෙක් අතට, රාජ්‍යයට ද මතවාදයක් සඳහා රාමුව භාවිත කළ හැකිය." },
-    objs: ["O3"], who: ["vimukthi-jayasundara", "prasanna-withanage", "majith-s-uyangoda"],
+    objs: ["O3"], who: ["vimukthi-jayasundara", "prasanna-withanage", "majith-s-uyangoda", "boopathy-nalin"],
   },
   {
     name: { en: "Multiple perspectives on war", si: "යුද්ධය පිළිබඳ විවිධ දෘෂ්ටිකෝණ" },
@@ -1072,17 +1272,17 @@ const THEMES = [
   {
     name: { en: "The frame reveals the inner world", si: "රාමුව අභ්‍යන්තර ලෝකය හෙළි කරයි" },
     desc: { en: "Unconventional frames can convey a character's inner state, or a whole social condition, without dialogue.", si: "Unconventional රාමුවලට දෙබසකින් තොරව චරිතයක අභ්‍යන්තර තත්ත්වය හෝ සමස්ත සමාජ තත්ත්වයක් සන්නිවේදනය කළ හැකිය." },
-    objs: ["O1", "O3"], who: ["prasanna-withanage"],
+    objs: ["O1", "O3"], who: ["prasanna-withanage", "boopathy-nalin"],
   },
   {
     name: { en: "Rules, not laws", si: "නීති නොව රීති" },
     desc: { en: "Cinema's conventions are rules that can be broken, unlike laws; new creations come from breaking them — by those who understand them.", si: "සිනමාවේ සම්මතයන් නීති නොව බිඳිය හැකි රීති ය; නව නිර්මාණ බිහි වන්නේ ඒවා අවබෝධ කරගත් අය ඒවා බිඳීමෙනි." },
-    objs: ["O2"], who: ["prasanna-withanage", "ileka-ruwanpathirana", "majith-s-uyangoda"],
+    objs: ["O2"], who: ["prasanna-withanage", "ileka-ruwanpathirana", "majith-s-uyangoda", "boopathy-nalin"],
   },
   {
     name: { en: "Borrowed conventions", si: "ණයට ගත් සම්මත" },
     desc: { en: "Framing conventions were shaped elsewhere — by Tamil and Hindi cinema, and by a largely Western visual grammar; unconventional work defines itself by breaking from them.", si: "රාමුකරණ සම්මත හැඩගැසුණේ වෙනත් තැන්වලය — දෙමළ සහ හින්දි සිනමාව මෙන්ම බොහෝ දුරට බටහිර දෘශ්‍ය ව්‍යාකරණයක් මගින්; unconventional නිර්මාණ තමන්ව නිර්වචනය කරන්නේ ඒවායෙන් බිඳී යාමෙනි." },
-    objs: ["O3"], who: ["prasanna-withanage", "ileka-ruwanpathirana"],
+    objs: ["O3"], who: ["prasanna-withanage", "ileka-ruwanpathirana", "boopathy-nalin"],
   },
   {
     name: { en: "Authenticity over style", si: "ශෛලියට වඩා ස්වකීයත්වය" },
@@ -1092,12 +1292,12 @@ const THEMES = [
   {
     name: { en: "Shared authorship of the frame", si: "රාමුවේ හවුල් කර්තෘත්වය" },
     desc: { en: "The frame comes from a chain of decisions — director, cinematographer and production; a film's success belongs to all of them.", si: "රාමුව බිහි වන්නේ තීරණ දාමයකිනි — අධ්‍යක්ෂ, කැමරා අධ්‍යක්ෂ සහ නිෂ්පාදනය; චිත්‍රපටයක සාර්ථකත්වය ඔවුන් සැමට හිමිය." },
-    objs: ["O4"], who: ["prasanna-withanage", "ileka-ruwanpathirana", "majith-s-uyangoda"],
+    objs: ["O4"], who: ["prasanna-withanage", "ileka-ruwanpathirana", "majith-s-uyangoda", "boopathy-nalin"],
   },
   {
     name: { en: "Visual grammar", si: "දෘශ්‍ය ව්‍යාකරණය" },
     desc: { en: "Visual language has a grammar, learned through training; convention means its accepted use, unconventional means challenging it.", si: "දෘශ්‍ය භාෂාවට පුහුණුවෙන් ප්‍රගුණ කරන ව්‍යාකරණයක් ඇත; conventional යනු එහි පිළිගත් භාවිතය වන අතර, unconventional යනු එයට අභියෝග කිරීමයි." },
-    objs: ["O1", "O2"], who: ["ileka-ruwanpathirana"],
+    objs: ["O1", "O2"], who: ["ileka-ruwanpathirana", "boopathy-nalin"],
   },
   {
     name: { en: "Constraints of a small industry", si: "කුඩා කර්මාන්තයක සීමා" },
@@ -1107,7 +1307,7 @@ const THEMES = [
   {
     name: { en: "Need for film education", si: "සිනමා අධ්‍යාපනයේ අවශ්‍යතාව" },
     desc: { en: "The future needs a film school, theory, and research and analysis skills alongside industry practice.", si: "අනාගතයට කර්මාන්ත ප්‍රායෝගිකත්වයට සමගාමීව සිනමා පාසලක්, න්‍යාය සහ පර්යේෂණ හා විශ්ලේෂණ කුසලතා අවශ්‍යයි." },
-    objs: ["O5"], who: ["ileka-ruwanpathirana"],
+    objs: ["O5"], who: ["ileka-ruwanpathirana", "boopathy-nalin"],
   },
   {
     name: { en: "The vertical turn", si: "සිරස් (vertical) හැරවුම" },
@@ -1122,15 +1322,30 @@ const THEMES = [
   {
     name: { en: "Forums for cinema", si: "සිනමාව සඳහා සංවාද වේදිකා" },
     desc: { en: "Open discussion — through universities, societies and forums before release — is what moves cinema forward.", si: "විවෘත සාකච්ඡාව — විශ්වවිද්‍යාල, සමිති සහ නිකුතුවට පෙර සංවාද වේදිකා හරහා — සිනමාව ඉදිරියට ගෙන යයි." },
-    objs: ["O5"], who: ["majith-s-uyangoda"],
+    objs: ["O5"], who: ["majith-s-uyangoda", "boopathy-nalin"],
+  },
+  {
+    name: { en: "Politics of aesthetics", si: "සෞන්දර්යයේ දේශපාලනය" },
+    desc: { en: "What counts as beautiful — how landscapes, light and colour are filmed — has a history and a hegemony that unconventional framing can expose and break.", si: "සුන්දර යැයි සැලකෙන දේ — භූ දර්ශන, ආලෝකය සහ වර්ණ රූගත කරන ආකාරය — ඉතිහාසයක් සහ බලාධිපත්‍යයක් ඇති අතර, unconventional රාමුකරණයට එය හෙළිදරව් කර බිඳිය හැකිය." },
+    objs: ["O3"], who: ["boopathy-nalin"],
+  },
+  {
+    name: { en: "Asian visual traditions", si: "ආසියානු දෘශ්‍ය සම්ප්‍රදායන්" },
+    desc: { en: "Temple murals and Asian painting offer an alternative to Eurocentric composition and lighting — a new mix rather than nationalism.", si: "විහාර සිතුවම් සහ ආසියානු චිත්‍ර කලාව යුරෝකේන්ද්‍රීය සංයුතියට සහ ආලෝකකරණයට විකල්පයක් සපයයි — ජාතිකවාදයක් නොව නව මිශ්‍රණයක්." },
+    objs: ["O3", "O5"], who: ["boopathy-nalin"],
+  },
+  {
+    name: { en: "Urban aesthetics", si: "නාගරික සෞන්දර්යය" },
+    desc: { en: "The city — including its dark, unplanned corners — deserves its own aesthetics, against the idea that only the village is beautiful.", si: "නගරයට — එහි අඳුරු, සැලසුම් නොකළ කොටස් ද ඇතුළුව — තමන්ගේම සෞන්දර්යයක් තිබිය යුතුය; සුන්දර වන්නේ ගම පමණක් ය යන අදහසට එරෙහිව." },
+    objs: ["O3"], who: ["boopathy-nalin"],
   },
 ];
 
 const KEY_FINDING = {
-  from: "01 – 05",
+  from: "01 – 06",
   title: { en: "Unconventionality is relative — to the viewer, to time, to power, to knowledge and to the screen", si: "Unconventional බව සාපේක්ෂයි — ප්‍රේක්ෂකයාට, කාලයට, බලයට, දැනුමට සහ තිරයට" },
   text: {
-    en: "All five voices so far agree there is no fixed definition of “unconventional”. For Vimukthi Jayasundara it is decided by the critic and the viewer; Channa Deshapriya adds time — today's unconventional is later accepted as convention; Prasanna Withanage adds history and power — Sri Lankan convention was itself borrowed, and both the market and the state shape what a frame may show. The first academic voice, Ileka Ruwanpathirana, adds knowledge: conventions form a learned, largely Western visual grammar, and breaking them is meaningful only when they are understood. Majith S. Uyangoda adds the screen: the frame changes because devices and viewing habits change, as the vertical phone frame shows, and he would rather call past practice “concepts” than “conventions”. This links the study to reception theory, to the politics of national cinema, to film education and to media technology.",
-    si: "Unconventional යන්නට ස්ථාවර නිර්වචනයක් නැති බවට මෙතෙක් හඬ පහම එකඟ වේ. විමුක්ති ජයසුන්දරට අනුව එය තීරණය කරන්නේ විචාරකයා සහ ප්‍රේක්ෂකයා ය; චන්න දේශප්‍රිය කාලය එකතු කරයි — අද සම්ප්‍රදායික නොවන දේ පසුව සම්මතයක් ලෙස පිළිගැනේ; ප්‍රසන්න විතානගේ ඉතිහාසය සහ බලය එකතු කරයි — ශ්‍රී ලාංකීය සම්මතය ම ණයට ගත් එකක් වන අතර, රාමුවකට පෙන්විය හැකි දේ හැඩගස්වන්නේ වෙළඳපොළ සහ රාජ්‍යය යන දෙකමය. පළමු ශාස්ත්‍රීය හඬ වන ඉලේකා රුවන්පතිරණ දැනුම එකතු කරයි — සම්මතයන් යනු පුහුණුවෙන් ප්‍රගුණ කරන, බොහෝ දුරට බටහිර දෘශ්‍ය ව්‍යාකරණයක් වන අතර, ඒවා බිඳීම අර්ථවත් වන්නේ ඒවා අවබෝධ කරගත් විට පමණි. මජිත් එස්. උයන්ගොඩ තිරය එකතු කරයි — සිරස් දුරකථන රාමුවෙන් පෙනෙන පරිදි, උපාංග සහ නැරඹීමේ පුරුදු වෙනස් වන නිසා රාමුව වෙනස් වේ; ඔහු අතීත භාවිතය ‘සම්මත’ වෙනුවට ‘සංකල්පනා’ ලෙස හැඳින්වීමට කැමතිය. මෙය අධ්‍යයනය reception න්‍යාය, ජාතික සිනමාවේ දේශපාලනය, සිනමා අධ්‍යාපනය සහ මාධ්‍ය තාක්ෂණය සමඟ සම්බන්ධ කරයි.",
+    en: "All six voices so far agree there is no fixed definition of “unconventional”. For Vimukthi Jayasundara it is decided by the critic and the viewer; Channa Deshapriya adds time — today's unconventional is later accepted as convention; Prasanna Withanage adds history and power — Sri Lankan convention was itself borrowed, and both the market and the state shape what a frame may show. The first academic voice, Ileka Ruwanpathirana, adds knowledge: conventions form a learned, largely Western visual grammar, and breaking them is meaningful only when they are understood. Majith S. Uyangoda adds the screen: the frame changes because devices and viewing habits change, as the vertical phone frame shows, and he would rather call past practice “concepts” than “conventions”. Boopathy Nalin adds the politics of beauty: what is treated as beautiful — Eurocentric lighting, Bollywood colour, the pale “border village” — is inherited, and the radical becomes convention once festivals and schools institutionalise it. This links the study to reception theory, to the politics of national cinema and of aesthetics, to film education and to media technology.",
+    si: "Unconventional යන්නට ස්ථාවර නිර්වචනයක් නැති බවට මෙතෙක් හඬ හයම එකඟ වේ. විමුක්ති ජයසුන්දරට අනුව එය තීරණය කරන්නේ විචාරකයා සහ ප්‍රේක්ෂකයා ය; චන්න දේශප්‍රිය කාලය එකතු කරයි — අද සම්ප්‍රදායික නොවන දේ පසුව සම්මතයක් ලෙස පිළිගැනේ; ප්‍රසන්න විතානගේ ඉතිහාසය සහ බලය එකතු කරයි — ශ්‍රී ලාංකීය සම්මතය ම ණයට ගත් එකක් වන අතර, රාමුවකට පෙන්විය හැකි දේ හැඩගස්වන්නේ වෙළඳපොළ සහ රාජ්‍යය යන දෙකමය. පළමු ශාස්ත්‍රීය හඬ වන ඉලේකා රුවන්පතිරණ දැනුම එකතු කරයි — සම්මතයන් යනු පුහුණුවෙන් ප්‍රගුණ කරන, බොහෝ දුරට බටහිර දෘශ්‍ය ව්‍යාකරණයක් වන අතර, ඒවා බිඳීම අර්ථවත් වන්නේ ඒවා අවබෝධ කරගත් විට පමණි. මජිත් එස්. උයන්ගොඩ තිරය එකතු කරයි — සිරස් දුරකථන රාමුවෙන් පෙනෙන පරිදි, උපාංග සහ නැරඹීමේ පුරුදු වෙනස් වන නිසා රාමුව වෙනස් වේ; ඔහු අතීත භාවිතය ‘සම්මත’ වෙනුවට ‘සංකල්පනා’ ලෙස හැඳින්වීමට කැමතිය. භූපති නලින් සුන්දරත්වයේ දේශපාලනය එකතු කරයි — සුන්දර ලෙස සලකන දේ (යුරෝකේන්ද්‍රීය ආලෝකකරණය, බොලිවුඩ් වර්ණ, පඬු පැහැති “මායිම් ගම්මානය”) උරුම කරගත් ඒවා වන අතර, උළෙල සහ පාසල් එය ආයතනගත කළ විට රැඩිකල් දේ සම්මතයක් වේ. මෙය අධ්‍යයනය reception න්‍යාය, ජාතික සිනමාවේ දේශපාලනය, සිනමා අධ්‍යාපනය සහ මාධ්‍ය තාක්ෂණය සමඟ සම්බන්ධ කරයි.",
   },
 };
