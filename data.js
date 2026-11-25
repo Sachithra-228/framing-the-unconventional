@@ -61,7 +61,7 @@ const PEOPLE = [
   { id: "prasanna-withanage", name: "Prasanna Withanage", group: "industry", role: { en: "Film Director", si: "චිත්‍රපට අධ්‍යක්ෂ" } },
   { id: "prasanna-jayakodi", name: "Prasanna Jayakodi", group: "industry", role: { en: "Filmmaker", si: "සිනමාකරු" } },
   { id: "majith-s-uyangoda", name: "Majith S. Uyangoda", group: "industry", role: { en: "Cinematographer", si: "කැමරා ශිල්පී" } },
-  { id: "md-mahindapaala", name: "M.D. Mahindapaala", group: "industry" },
+  { id: "md-mahindapaala", name: "M.D. Mahindapaala", group: "industry", role: { en: "Cinematographer & film educator", si: "කැමරා ශිල්පී සහ සිනමා අධ්‍යාපනඥ" } },
   { id: "channa-deshapriya", name: "Channa Deshapriya", group: "industry", role: { en: "Cinematographer", si: "කැමරා ශිල්පී" } },
 
   // Academics
@@ -2692,6 +2692,193 @@ const INTERVIEWS = {
       { en: "CinemaScope questioned for inward films", si: "ඇතුළතට බලන චිත්‍රපට සඳහා CinemaScope ප්‍රශ්න කරයි" },
     ],
   },
+  "md-mahindapaala": {
+    number: 15,
+    tags: [
+      { en: "Feeling and emotion first", si: "හැඟීම සහ චිත්තවේගය මුලින්" },
+      { en: "Beyond the four edges", si: "සතර දාරවලින් ඔබ්බට" },
+      { en: "Rules from painters", si: "චිත්‍ර ශිල්පීන්ගෙන් ආ රීති" },
+      { en: "Planned and unplanned meaning", si: "සැලසුම් කළ සහ නොකළ අර්ථ" },
+      { en: "Easy technology, thin imagination", si: "පහසු තාක්ෂණය, තුනී පරිකල්පනය" },
+    ],
+    objectives: {
+      O1: {
+        heading: { en: "The frame exists to carry feeling and to push the viewer's imagination past its edges", si: "රාමුව පවතින්නේ හැඟීම ගෙන යාමට සහ ප්‍රේක්ෂකයාගේ පරිකල්පනය එහි දාරවලින් ඔබ්බට තල්ලු කිරීමට ය" },
+        said: [
+          {
+            en: "A senior cinematographer, photographer, teacher and author, he starts from the technical fact: a shot is the smallest unit of a film, and unlike a still photograph the cinema frame changes second by second, through movement inside it and the movement of the camera. It is the place where the director arranges everything — actors, performance, background, costume and props — which is what mise-en-scène means, a word taken from the theatre.",
+            si: "ජ්‍යෙෂ්ඨ කැමරා ශිල්පියෙකු, ඡායාරූප ශිල්පියෙකු, ගුරුවරයෙකු සහ ලේඛකයෙකු වන ඔහු තාක්ෂණික කරුණෙන් ආරම්භ කරයි: ෂොට් එක චිත්‍රපටයේ කුඩාම ඒකකයයි; නිශ්චල ඡායාරූපයකට වෙනස්ව සිනමා රාමුව තත්පරයෙන් තත්පරයට වෙනස් වේ — එය තුළ චලනය සහ කැමරාවේ චලනය හරහා. අධ්‍යක්ෂවරයා සියල්ල — නළුනිළියන්, රංගනය, පසුබිම, ඇඳුම් සහ ප්‍රොප්ස් — සකස් කරන තැන එයයි; එය නාට්‍ය කලාවෙන් ගත් වචනයක් වන මිසොන්සෙන් යන්නෙන් අදහස් වේ.",
+          },
+          {
+            en: "Its purpose is to direct the viewer's eye to what the maker wants seen, and he lists the tools: movement, bright colour, light, focus and size. But he stresses that the real purpose is the one he takes from Vittorio Storaro: to capture the feelings and emotions of the characters, the situation and the atmosphere, and to build a visual world for the story.",
+            si: "එහි අරමුණ නිර්මාණකරුට පෙන්වීමට අවශ්‍ය දෙය වෙත ප්‍රේක්ෂකයාගේ ඇස යොමු කිරීමයි; ඔහු මෙවලම් ලැයිස්තුගත කරයි: චලනය, දීප්තිමත් වර්ණ, ආලෝකය, ෆෝකස් සහ ප්‍රමාණය. නමුත් සැබෑ අරමුණ විටොරියෝ ස්ටොරාරෝගෙන් ගත් එය බව ඔහු අවධාරණය කරයි: චරිතවල, තත්වයේ සහ වටපිටාවේ හැඟීම් සහ චිත්තවේග ග්‍රහණය කිරීම සහ කතාව සඳහා දෘශ්‍ය ලෝකයක් ගොඩනැගීම.",
+          },
+          {
+            en: "He tells of the Indian filmmaker Mani Kaul, who said the cinematographer's biggest challenge is that we live through five senses — a cold tile underfoot, a smell, a sound — and must give that feeling through the frame. Asked to film Kashmir, Kaul could not do it with wide, close or tracking shots; he chose small things instead — fish in a tank, a leaf moving, a curtain stirring. For him, composing a frame means selecting.",
+            si: "ඔහු ඉන්දියානු සිනමාකරු මනි කෞල් ගැන කියයි: කැමරා ශිල්පියාගේ විශාලතම අභියෝගය නම් අප ජීවත් වන්නේ ඉන්ද්‍රිය පහකින් — පාද යට සිසිල් ටයිල්, සුවඳක්, ශබ්දයක් — බවත් ඒ හැඟීම රාමුව හරහා ලබා දිය යුතු බවත් ය. කාශ්මීරය රූගත කරන්නට ඉල්ලූ විට, කෞල්ට එය දුර, සමීප හෝ ට්‍රැකින් ෂොට් වලින් කළ නොහැකි විය; ඒ වෙනුවට ඔහු කුඩා දේවල් තෝරා ගත්තේය — ටැංකියක මාළු, චලනය වන කොළයක්, සෙලවෙන තිරයක්. ඔහුට රාමුවක් සැකසීම යනු තෝරා ගැනීමයි.",
+          },
+          {
+            en: "On convention, he says the idea of “conventional” or “unconventional” does not come into his head when he works; what he asks is whether the frame can give the feeling. The rules of composition, he says, came from painters — cave artists tens of thousands of years ago, then photographers, then cinema, which is only about a hundred and fifty years old — and an “unconventional” frame is simply the opposite of what painters and cinematographers laid down. He gives the example that cinema first moved the camera to follow human sight, pans and tracking shots from a train, and that the opposite became unconventional.",
+            si: "සම්මතය ගැන, ඔහු කියන්නේ වැඩ කරන විට “සම්ප්‍රදායික” හෝ “unconventional” යන අදහස තමාගේ හිසට නොපැමිණෙන බවත්, ඔහු අසන්නේ රාමුවට හැඟීම ලබා දිය හැකිද යන්න බවත් ය. සංයුතියේ රීති පැමිණියේ චිත්‍ර ශිල්පීන්ගෙන් — වසර දස දහස් ගණනකට පෙර ගුහා කලාකරුවන්, ඉන්පසු ඡායාරූප ශිල්පීන්, ඉන්පසු වසර 150ක් පමණක් පැරණි සිනමාව — සහ “unconventional” රාමුව යනු චිත්‍ර ශිල්පීන් සහ සිනමා කැමරා ශිල්පීන් දුන් දේට ප්‍රතිවිරුද්ධ දෙයක් පමණක් බව ඔහු කියයි. සිනමාව මුලින් කැමරාව මිනිස් දැක්මට අනුව චලනය කළ බවත් — පෑන්, දුම්රියකින් ට්‍රැකින් ෂොට් — ඊට ප්‍රතිවිරුද්ධය unconventional වූ බවත් ඔහු උදාහරණයක් දෙයි.",
+          },
+          {
+            en: "The central idea in his answers is that the frame must push the viewer's imagination beyond its four edges. He compares it to reading a novel, where each reader pictures a different house for the same <i>Gamperaliya</i> mansion. Cinema was once not counted as a classical art because it only recorded what was in front of the camera; great directors such as Bergman, Tarkovsky and Satyajit Ray made it an art by letting the viewer think past the frame, as the offscreen killing in David Lean's <i>Ryan's Daughter</i> is felt through sound, not image.",
+            si: "ඔහුගේ පිළිතුරුවල මධ්‍යම අදහස නම් රාමුව ප්‍රේක්ෂකයාගේ පරිකල්පනය එහි සතර දාරවලින් ඔබ්බට තල්ලු කළ යුතු බවයි. ඔහු එය නවකතාවක් කියවීමට සසඳයි, එහිදී එකම <i>ගම්පෙරළිය</i> මහ ගෙදර සඳහා සෑම පාඨකයෙකුම වෙනස් ගෙයක් මවා ගනී. සිනමාව වරෙක සම්භාව්‍ය කලාවක් ලෙස නොසැලකුණේ එය කැමරාව ඉදිරිපිට තිබූ දේ පමණක් වාර්තා කළ නිසා ය; බර්ග්මාන්, තර්කොව්ස්කි සහ සත්‍යජිත් රායි වැනි උසස් අධ්‍යක්ෂවරු ප්‍රේක්ෂකයාට රාමුවෙන් ඔබ්බට සිතීමට ඉඩ දීමෙන් එය කලාවක් කළහ; ඩේවිඩ් ලීන්ගේ <i>Ryan's Daughter</i> හි රාමුවෙන් පිටත සිදු වන ඝාතනය රූපයෙන් නොව ශබ්දයෙන් දැනෙන්නාක් මෙනි.",
+          },
+        ],
+        interpretation: {
+          en: "He defines the frame by purpose — feeling, and imagination beyond the edge — rather than by category, and sets unconventionality as nothing more than a reversal of rules inherited from painting. His idea of the frame extending past its edges is a distinctive contribution.",
+          si: "ඔහු රාමුව නිර්වචනය කරන්නේ වර්ගයකින් නොව අරමුණෙනි — හැඟීම සහ දාරයෙන් ඔබ්බට පරිකල්පනය — සහ unconventional බව චිත්‍ර කලාවෙන් ලද රීතිවල ප්‍රතිවිරුද්ධය පමණක් ලෙස ගනී. රාමුව එහි දාරවලින් ඔබ්බට විහිදෙන ඔහුගේ අදහස සුවිශේෂී දායකත්වයකි.",
+        },
+      },
+      O2: {
+        heading: { en: "Rules are inherited and come naturally; what matters is feeling, and the film medium records everything", si: "රීති උරුමයක් ලෙස පැමිණ ස්වභාවිකව එයි; වැදගත් වන්නේ හැඟීමයි; චිත්‍රපට මාධ්‍යය සියල්ල වාර්තා කරයි" },
+        said: [
+          {
+            en: "For a cameraman, the rules — balance, rule of thirds, the triangle composition, where the eye goes in a tonal contrast — come naturally; he does not think about them while shooting. He would rather ask whether the frame gives the feeling, and he cannot say, of his own films, where a conventional or unconventional frame was used.",
+            si: "කැමරා ශිල්පියෙකුට රීති — සමබරතාව, rule of thirds, ත්‍රිකෝණ සංයුතිය, ටෝන් වෙනසකදී ඇස යන තැන — ස්වභාවිකව පැමිණේ; රූගත කරන විට ඔහු ඒවා ගැන නොසිතයි. ඔහු වඩාත් කැමති රාමුවෙන් හැඟීම ලැබෙනවාද යැයි ඇසීමටයි; තමාගේම චිත්‍රපටවල සම්ප්‍රදායික හෝ unconventional රාමුවක් භාවිත වූ තැන ඔහුට කිව නොහැක.",
+          },
+          {
+            en: "Rules also change with technology. Dharmasena Pathiraja's <i>Ahas Gawwa</i>, influenced by Godard's <i>Breathless</i>, used a shaking handheld camera and little lighting, which was unconventional then; with new cameras that work in low light and are held in the hand, it is ordinary now.",
+            si: "රීති තාක්ෂණය සමඟ ද වෙනස් වේ. ගොඩාර්ගේ <i>Breathless</i> වලින් ආභාසය ලැබූ ධර්මසේන පතිරාජගේ <i>අහස් ගව්ව</i> සෙලවෙන අතින් ගත් කැමරාවක් සහ අඩු ආලෝකයක් භාවිත කළ අතර එය එකල unconventional විය; අඩු ආලෝකයේ වැඩ කරන සහ අතින් රැගෙන යන නව කැමරා සමඟ අද එය සාමාන්‍ය ය.",
+          },
+          {
+            en: "He also describes a medium so sensitive that anything lands on it: celluloid records the crew's mood, a sick team member, the producer's loss; a lamp lifted or a shadow thrown in front of it changes the film and its meaning. Such meaning can be planned or unplanned, and that is part of why he does not classify frames.",
+            si: "ඔහු සියල්ල ග්‍රහණය කරන තරම් සංවේදී මාධ්‍යයක් ද විස්තර කරයි: සෙලියුලොයිඩ් පටය කාර්ය මණ්ඩලයේ මනෝභාවය, අසනීප වූ සාමාජිකයෙකු, නිෂ්පාදකයාගේ අලාභයක් පවා වාර්තා කරයි; ඉදිරියෙන් ලාම්පුවක් ඔසවා හෝ සෙවණැල්ලක් දැමීමෙන් චිත්‍රපටය සහ එහි අර්ථය වෙනස් වේ. එවැනි අර්ථ සැලසුම් කළ හෝ නොකළ හැකි අතර, ඔහු රාමු වර්ග නොකරන්නේ එබැවිනි.",
+          },
+        ],
+        interpretation: {
+          en: "He treats the rules as heritage that a cameraman has already absorbed, and freedom as serving the feeling; his point about the film medium's sensitivity gives accident a respectable place, in contrast to Samith Bodhipaksa's call for planned frames.",
+          si: "ඔහු රීති කැමරා ශිල්පියෙකු දැනටමත් උකහා ගත් උරුමයක් ලෙසත්, නිදහස හැඟීමට සේවය කිරීම ලෙසත් සලකයි; චිත්‍රපට මාධ්‍යයේ සංවේදීතාව පිළිබඳ ඔහුගේ කරුණ අහඹුවට ගෞරවනීය තැනක් ලබා දෙයි — සමිත් බෝධිපක්ෂගේ සැලසුම් කළ රාමු සඳහා කැඳවීමට ප්‍රතිවිරුද්ධව.",
+        },
+      },
+      O3: {
+        heading: { en: "Social and political upheaval shaped the styles of earlier directors; he himself looks to the human interior", si: "සමාජීය සහ දේශපාලනික කැලඹීම් පෙර අධ්‍යක්ෂවරුන්ගේ ශෛලීන් හැඩගැස්වීය; ඔහුම බලන්නේ මිනිසාගේ අභ්‍යන්තරයටයි" },
+        said: [
+          {
+            en: "Critics, he says, read the unstable camera of Pathiraja's <i>Ahas Gawwa</i> as matching the disorder of its jobless, aimless young men, so that social and economic conditions were part of the style. He lists directors who dealt with later conditions: Prasanna Vithanage, Asoka Handagama, Vimukthi Jayasundara, and war-background films such as <i>Purahanda Kaluwara</i> and <i>Ira Madiyama</i>.",
+            si: "විචාරකයන්, ඔහු කියන පරිදි, පතිරාජගේ <i>අහස් ගව්ව</i> හි අස්ථාවර කැමරාව එහි රැකියා විරහිත, අරමුණු විරහිත තරුණයන්ගේ අවුල් සහගත බවට ගැළපෙන ලෙස කියවයි; එබැවින් සමාජීය සහ ආර්ථික තත්වයන් ශෛලියේ කොටසක් විය. ඔහු පසුකාලීන තත්වයන් සමඟ කටයුතු කළ අධ්‍යක්ෂවරුන් දක්වයි: ප්‍රසන්න විතානගේ, අශෝක හඳගම, විමුක්ති ජයසුන්දර සහ <i>පුරහඳ කළුවර</i> සහ <i>ඉර මැදියම</i> වැනි යුද පසුබිම් චිත්‍රපට.",
+          },
+          {
+            en: "He recalls the opening of <i>Purahanda Kaluwara</i>, shot on an Anuradhapura road at dawn with a telephoto lens to compress space, the road closed by police: a dog that ran across the road unplanned was read by critics as meaning an empty road, and rain on the car window running like tears down an actor's face was not planned either. His point is that such things arrive by chance and gain meaning afterwards.",
+            si: "ඔහු <i>පුරහඳ කළුවර</i> ආරම්භය සිහිපත් කරයි: අනුරාධපුර මාර්ගයක අළුයම ඉඩ සංකෝචනය කිරීමට ටෙලිෆොටෝ කාචයක් සමඟ, පොලිසිය මාර්ගය වසා රූගත කළ; සැලසුම් නොකර පාර හරහා දිව ගිය බල්ලා විචාරකයන් විසින් හිස් මාර්ගය යන අර්ථයෙන් කියවූ අතර, මෝටර් රථයේ වීදුරුවේ වැස්ස නළුවෙකුගේ මුහුණේ කඳුළු මෙන් ගලා යාම ද සැලසුම් කළ දෙයක් නොවීය. ඔහුගේ කරුණ නම් එවැනි දේ අහම්බෙන් පැමිණ පසුව අර්ථයක් ලබා ගන්නා බවයි.",
+          },
+          {
+            en: "For his own work he says he does not set out to reflect society; as with Bergman, his centre is the human interior, the drama inside people. He cites Lester James Peries's <i>Gamperaliya</i> as a film on the social change of its time.",
+            si: "තමාගේම නිර්මාණ සඳහා සමාජය පිළිබිඹු කිරීමට තමන් අදහස් නොකරන බව ඔහු කියයි; බර්ග්මාන් මෙන් ඔහුගේ කේන්ද්‍රය මිනිසාගේ අභ්‍යන්තරය, මිනිසුන් තුළ ඇති නාට්‍යයයි. ඔහු ලෙස්ටර් ජේම්ස් පීරිස්ගේ <i>ගම්පෙරළිය</i> එහි කාලයේ සමාජ වෙනස පිළිබඳ චිත්‍රපටයක් ලෙස දක්වයි.",
+          },
+        ],
+        interpretation: {
+          en: "Context shapes style for him mostly through other directors and through chance, not through his own deliberate frames; this fits with Samith Bodhipaksa's and Praveen Katukithule's reading of Pathiraja's era.",
+          si: "ඔහුට සන්දර්භය ශෛලිය හැඩගස්වන්නේ බොහෝ විට අනෙක් අධ්‍යක්ෂවරුන් හරහා සහ අහම්බය හරහා ය, ඔහුගේම හිතාමතා රාමු හරහා නොවේ; මෙය පතිරාජගේ යුගය පිළිබඳ සමිත් බෝධිපක්ෂ සහ ප්‍රවීන් කටුකිතුලේගේ කියවීමට ගැළපේ.",
+        },
+      },
+      O4: {
+        heading: { en: "Framing is collective work: director, cinematographer, art director and light", si: "රාමුකරණය සාමූහික වැඩකි: අධ්‍යක්ෂ, කැමරා ශිල්පී, කලා අධ්‍යක්ෂ සහ ආලෝකය" },
+        said: [
+          {
+            en: "Planning the frame and composing the shot is the director's job, he says, along with arranging everything within it. But in reality the cinematographer joins in, especially through lighting, and he calls it a collective action in which the best director gets the most out of the cinematographer.",
+            si: "රාමුව සැලසුම් කිරීම සහ ෂොට් එක සැකසීම, එය තුළ සියල්ල සකස් කිරීම සමඟ, අධ්‍යක්ෂවරයාගේ කාර්යය බව ඔහු කියයි. නමුත් ප්‍රායෝගිකව කැමරා ශිල්පියා විශේෂයෙන් ආලෝකකරණය හරහා එක් වන අතර, ඔහු එය සාමූහික ක්‍රියාවක් ලෙස හඳුන්වයි; එහි හොඳම අධ්‍යක්ෂවරයා කැමරා ශිල්පියාගෙන් උපරිමය ලබා ගනී.",
+          },
+          {
+            en: "With Prasanna Vithanage, for <i>Anantha Rathriya</i> the director, the cinematographer and the art director searched together for an old mansion; for <i>Akasa Kusum</i> they needed a house beside a lake and had to look for it. Bringing the director's concept to life cannot be done by the cinematographer alone: it needs the art director, the light, the practical lamps in the frame.",
+            si: "ප්‍රසන්න විතානගේ සමඟ <i>අනන්ත රාත්‍රිය</i> සඳහා අධ්‍යක්ෂවරයා, කැමරා ශිල්පියා සහ කලා අධ්‍යක්ෂවරයා එක්ව පැරණි වලව්වක් සෙව්වෝය; <i>ආකාස කුසුම්</i> සඳහා ඔවුන්ට වැවක් අසල ගෙයක් අවශ්‍ය වූ අතර ඒ සඳහා සෙවීමට සිදු විය. අධ්‍යක්ෂවරයාගේ සංකල්පය ජීවමාන කිරීම කැමරා ශිල්පියාට තනිවම කළ නොහැක: කලා අධ්‍යක්ෂවරයා, ආලෝකය සහ රාමුවේ ඇති ප්‍රායෝගික ලාම්පු අවශ්‍ය වේ.",
+          },
+          {
+            en: "A lighting example: for night scenes in a childhood sequence the director wanted a warm, golden feel; shooting under warm lights would feel artificial, so lamps shown in the frame — the practicals — were chosen to give the golden colour a reason the viewer would believe. Likewise a window's beam falling on one side of an actress's face gives her a new look, made by the window and the lighting rather than the camera.",
+            si: "ආලෝකකරණ උදාහරණයක්: ළමා කාලයේ දර්ශනයක රාත්‍රී දර්ශන සඳහා අධ්‍යක්ෂවරයා උණුසුම්, රන්වන් හැඟීමක් අවශ්‍ය කළේය; උණුසුම් ආලෝක යටතේ රූගත කිරීම කෘත්‍රිම ලෙස දැනෙනු ඇත; එබැවින් රාමුවේ පෙනෙන ලාම්පු — ප්‍රැක්ටිකල්ස් — තෝරා ගත්තේ ප්‍රේක්ෂකයා විශ්වාස කරන හේතුවක් රන්වන් පාටට ලබා දීමට ය. එලෙසම ජනේලයකින් එන ආලෝක කදම්භය නිළියකගේ මුහුණේ එක් පැත්තකට වැටීමෙන් ඇයට නව පෙනුමක් ලැබෙන අතර, එය නිර්මාණය වන්නේ කැමරාවෙන් නොව ජනේලයෙන් සහ ආලෝකකරණයෙනි.",
+          },
+          {
+            en: "He regrets the monitor culture of the digital era: in film days the cameraman alone saw the image, and now everyone gathers round the monitor and suggests things. He still prefers to work on the viewer's imagination, not on the monitor's opinions.",
+            si: "ඩිජිටල් යුගයේ මොනිටර් සංස්කෘතිය ගැන ඔහු කනගාටු වෙයි: පට චිත්‍රපට කාලයේ රූපය දුටුවේ කැමරා ශිල්පියා පමණි; දැන් සියල්ලෝ මොනිටරය වටා රැස්ව යෝජනා කරති. ඔහු තවමත් කැමති මොනිටරයේ අදහස් මත නොව ප්‍රේක්ෂකයාගේ පරිකල්පනය මත වැඩ කිරීමටයි.",
+          },
+        ],
+        interpretation: {
+          en: "He describes shared authorship of the frame, led by the director's concept but made by the cinematographer, the art director and the light together — consistent with Prasanna Withanage, Boopathy Nalin, Hasantha Dissanayake and Samith Bodhipaksa.",
+          si: "ඔහු රාමුවේ හවුල් කර්තෘත්වය විස්තර කරයි — අධ්‍යක්ෂවරයාගේ සංකල්පයෙන් මෙහෙයවා කැමරා ශිල්පියා, කලා අධ්‍යක්ෂවරයා සහ ආලෝකය එක්ව සාදන — ප්‍රසන්න විතානගේ, භූපති නලින්, හසන්ත දිසානායක සහ සමිත් බෝධිපක්ෂට අනුකූලව.",
+        },
+      },
+      O5: {
+        heading: { en: "Easy technology and a passive audience: the future depends on imagination", si: "පහසු තාක්ෂණය සහ උදාසීන ප්‍රේක්ෂකයා: අනාගතය රඳා පවතින්නේ පරිකල්පනය මත" },
+        said: [
+          {
+            en: "In his view technology has made everything easier, yet the quality of cinema has dropped worldwide, and he wonders about the future when computers write music and novels. A film that only shows everything, like a teledrama, leaves the viewer passive; he sees directors such as Vimukthi Jayasundara still pushing viewers to think beyond the frame.",
+            si: "ඔහුගේ දැක්මට අනුව තාක්ෂණය සියල්ල පහසු කර ඇත; නමුත් ලෝකය පුරා සිනමාවේ ගුණාත්මකභාවය පහත වැටී ඇත; පරිගණක සංගීතය සහ නවකතා ලියන විට අනාගතය ගැන ඔහු කල්පනා කරයි. ටෙලි නාට්‍යයක් මෙන් සියල්ල පෙන්වන චිත්‍රපටයක් ප්‍රේක්ෂකයා උදාසීන කරයි; විමුක්ති ජයසුන්දර වැනි අධ්‍යක්ෂවරු තවමත් ප්‍රේක්ෂකයන්ව රාමුවෙන් ඔබ්බට සිතීමට පොලඹවන බව ඔහු දකී.",
+          },
+          {
+            en: "He says imagination is the main thing in any art, and a maker who sets up an unconventional frame but gives the viewer nothing to imagine, or no mood or feeling, has achieved nothing. A good filmmaker always asks how to set the viewer's imagination working through the frame.",
+            si: "ඔහු කියන්නේ ඕනෑම කලාවක ප්‍රධාන දේ පරිකල්පනය බවත්, unconventional රාමුවක් සකස් කළත් ප්‍රේක්ෂකයාට සිතීමට, මනෝභාවයක් හෝ හැඟීමක් නොදෙන නිර්මාණකරුවා කිසිවක් ඉටු කර නැති බවත් ය. හොඳ සිනමාකරුවෙක් සැමවිටම අසන්නේ රාමුව හරහා ප්‍රේක්ෂකයාගේ පරිකල්පනය ක්‍රියාත්මක කරවන්නේ කෙසේද යන්නයි.",
+          },
+        ],
+        interpretation: {
+          en: "His future is a call for imagination over technology and over labels; it differs from Praveen Katukithule's optimism about cheaper tools and agrees with Tharaka Nayanapriya's caution about what technology does to quality.",
+          si: "ඔහුගේ අනාගතය තාක්ෂණයට සහ ලේබල්වලට වඩා පරිකල්පනය සඳහා වූ කැඳවීමකි; ලාභදායී මෙවලම් ගැන ප්‍රවීන් කටුකිතුලේගේ ශුභවාදයට වෙනස් වන අතර තාක්ෂණය ගුණාත්මකභාවයට කරන දේ ගැන තාරක නයනප්‍රියගේ ප්‍රවේශමට ගැළපේ.",
+        },
+      },
+      O6: {
+        heading: { en: "His position in the overall pattern", si: "සමස්ත රටාව තුළ ඔහුගේ ස්ථානය" },
+        said: [
+          {
+            en: "As a senior cinematographer, teacher and author he gives the longest historical view of the frame, from cave painters through photography to cinema, which matches Boopathy Nalin's history of composition and Supun Hemachandra's grounding in rules.",
+            si: "ජ්‍යෙෂ්ඨ කැමරා ශිල්පියෙකු, ගුරුවරයෙකු සහ ලේඛකයෙකු ලෙස ඔහු ගුහා චිත්‍ර ශිල්පීන්ගේ සිට ඡායාරූපකරණය හරහා සිනමාව දක්වා රාමුව පිළිබඳ දීර්ඝතම ඓතිහාසික දැක්ම ලබා දෙයි; එය භූපති නලින්ගේ සංයුතියේ ඉතිහාසයට සහ සුපුන් හේමචන්ද්‍රගේ රීති පාදක කරගත් දැක්මට ගැළපේ.",
+          },
+          {
+            en: "Like Prasanna Jayakodi, he refuses the conventional/unconventional label and puts feeling first; he shares Nerun Kalpajith's, Praveen Katukithule's and Sahan Ransika's emphasis on emotion; and he agrees with Samith Bodhipaksa on the role of Pathiraja and the importance of the moment, but differs on whether accident matters.",
+            si: "ප්‍රසන්න ජයකොඩි මෙන් ඔහු සම්ප්‍රදායික/unconventional ලේබලය ප්‍රතික්ෂේප කර හැඟීමට මුල් තැන දෙයි; ඔහු නෙරුන් කල්පජිත්, ප්‍රවීන් කටුකිතුලේ සහ සහන් රන්සිකාගේ චිත්තවේගය පිළිබඳ අවධාරණය බෙදාගනී; පතිරාජගේ කාර්යභාරය සහ මොහොතේ වැදගත්කම ගැන සමිත් බෝධිපක්ෂ සමඟ එකඟ වන නමුත්, අහඹුව වැදගත්ද යන්න ගැන වෙනස් වේ.",
+          },
+          {
+            en: "He adds two things not heard elsewhere: that the frame's purpose is to carry the viewer's imagination past its four edges, and that the film medium records everything, so unplanned detail is part of meaning.",
+            si: "වෙනත් තැන්වල නොඇසූ කරුණු දෙකක් ඔහු එකතු කරයි: රාමුවේ අරමුණ ප්‍රේක්ෂකයාගේ පරිකල්පනය එහි සතර දාරවලින් ඔබ්බට ගෙන යාම බව, සහ චිත්‍රපට මාධ්‍යය සියල්ල වාර්තා කරන බැවින් සැලසුම් නොකළ විස්තර අර්ථයේ කොටසක් බව.",
+          },
+        ],
+        interpretation: {
+          en: "Among industry professionals he is the most historical and the most imagination-centred voice, and with Prasanna Jayakodi he questions the very categories the study uses.",
+          si: "කර්මාන්ත වෘත්තිකයන් අතර ඔහු වඩාත්ම ඓතිහාසික සහ පරිකල්පන-කේන්ද්‍රීය හඬයි; ප්‍රසන්න ජයකොඩි සමඟ ඔහු අධ්‍යයනය භාවිත කරන වර්ගීකරණ ප්‍රශ්න කරයි.",
+        },
+      },
+    },
+    closing: {
+      heading: { en: "The frame is a doorway for the viewer's imagination", si: "රාමුව ප්‍රේක්ෂකයාගේ පරිකල්පනය සඳහා දොරටුවකි" },
+      text: {
+        en: "A frame exists to carry the feelings and emotions of the story and to let the viewer imagine past its four edges. Whether it is called conventional or unconventional matters little: if it does not set the viewer's imagination working, it has done nothing.",
+        si: "රාමුව පවතින්නේ කතාවේ හැඟීම් සහ චිත්තවේග ගෙන යාමට සහ ප්‍රේක්ෂකයාට එහි සතර දාරවලින් ඔබ්බට සිතීමට ඉඩ දීමටය. එය සම්ප්‍රදායික හෝ unconventional ලෙස හැඳින්වීම අල්ප වශයෙන් වැදගත් ය: එය ප්‍රේක්ෂකයාගේ පරිකල්පනය ක්‍රියාත්මක නොකරන්නේ නම්, එයින් කිසිවක් ඉටු වී නැත.",
+      },
+    },
+    codes: [
+      { en: "Shot = smallest unit of film", si: "ෂොට් = චිත්‍රපටයේ කුඩාම ඒකකය" },
+      { en: "Cinema frame changes second by second", si: "සිනමා රාමුව තත්පරයෙන් තත්පරයට වෙනස් වේ" },
+      { en: "Mise-en-scène from the theatre", si: "නාට්‍ය කලාවෙන් ආ මිසොන්සෙන්" },
+      { en: "Frame directs the viewer's eye", si: "රාමුව ප්‍රේක්ෂකයාගේ ඇස යොමු කරයි" },
+      { en: "Movement, colour, light, focus, size", si: "චලනය, වර්ණය, ආලෝකය, ෆෝකස්, ප්‍රමාණය" },
+      { en: "Capture feelings and emotions", si: "හැඟීම් සහ චිත්තවේග ග්‍රහණය කරන්න" },
+      { en: "Build a visual world for the story", si: "කතාව සඳහා දෘශ්‍ය ලෝකයක් ගොඩනගන්න" },
+      { en: "Composing a frame = selecting", si: "රාමුවක් සැකසීම = තෝරා ගැනීම" },
+      { en: "Mani Kaul: giving the five senses through the frame", si: "මනි කෞල්: රාමුව හරහා ඉන්ද්‍රිය පහ ලබා දීම" },
+      { en: "Does not think in conventional/unconventional terms", si: "සම්ප්‍රදායික/unconventional ලෙස නොසිතයි" },
+      { en: "Rules inherited from painters", si: "චිත්‍ර ශිල්පීන්ගෙන් ලද රීති" },
+      { en: "Unconventional = opposite of the rules", si: "Unconventional = රීතිවල ප්‍රතිවිරුද්ධය" },
+      { en: "Rules come naturally to a cameraman", si: "කැමරා ශිල්පියෙකුට රීති ස්වභාවිකව එයි" },
+      { en: "Technology changes what is conventional", si: "තාක්ෂණය සම්මතය වෙනස් කරයි" },
+      { en: "Ahas Gawwa: handheld, Godard's influence", si: "අහස් ගව්ව: අතින් රූගත, ගොඩාර්ගේ ආභාසය" },
+      { en: "Frame should push imagination past its four edges", si: "රාමුව පරිකල්පනය සතර දාරවලින් ඔබ්බට තල්ලු කළ යුතුය" },
+      { en: "Novel-reading analogy: each reader pictures a different house", si: "නවකතා කියවීමේ උපමාව: සෑම පාඨකයෙකුම වෙනස් ගෙයක් මවයි" },
+      { en: "Sound carries what the image does not show", si: "රූපය නොපෙන්වන දේ ශබ්දය ගෙන යයි" },
+      { en: "Medium so sensitive that everything is recorded", si: "සියල්ල වාර්තා වන තරම් සංවේදී මාධ්‍යය" },
+      { en: "Purahanda Kaluwara: unplanned dog and rain on glass", si: "පුරහඳ කළුවර: සැලසුම් නොකළ බල්ලා සහ වීදුරුවේ වැස්ස" },
+      { en: "Unplanned details gain meaning", si: "සැලසුම් නොකළ විස්තර අර්ථයක් ලබයි" },
+      { en: "Style matched jobless, aimless youth", si: "ශෛලිය රැකියා විරහිත, අරමුණු විරහිත තරුණයන්ට ගැළපුණි" },
+      { en: "Post-war and socio-economic films", si: "යුද්ධයෙන් පසු සහ සමාජ-ආර්ථික චිත්‍රපට" },
+      { en: "Human interior over society", si: "සමාජයට වඩා මිනිසාගේ අභ්‍යන්තරය" },
+      { en: "Framing is collective work", si: "රාමුකරණය සාමූහික වැඩකි" },
+      { en: "Director, cinematographer, art director, light", si: "අධ්‍යක්ෂ, කැමරා ශිල්පී, කලා අධ්‍යක්ෂ, ආලෝකය" },
+      { en: "Practical lamps justify warm colour", si: "ප්‍රැක්ටිකල් ලාම්පු උණුසුම් පාට සාධාරණීකරණය කරයි" },
+      { en: "Window light on one side of the face", si: "මුහුණේ එක් පැත්තකට ජනේල ආලෝකය" },
+      { en: "Monitor culture: everyone has an opinion", si: "මොනිටර් සංස්කෘතිය: සැමට අදහසක් ඇත" },
+      { en: "Easy technology, lower quality", si: "පහසු තාක්ෂණය, පහත ගුණාත්මකභාවය" },
+      { en: "Showing everything makes viewers passive", si: "සියල්ල පෙන්වීම ප්‍රේක්ෂකයා උදාසීන කරයි" },
+      { en: "Imagination is the main thing in any art", si: "ඕනෑම කලාවක ප්‍රධාන දේ පරිකල්පනයයි" },
+    ],
+  },
 };
 
 const THEMES = [
@@ -2708,12 +2895,12 @@ const THEMES = [
   {
     name: { en: "Evolution of cinematic language", si: "සිනමා භාෂාවේ පරිණාමය" },
     desc: { en: "Cinematic rules change from era to era; cinema keeps searching for new ones.", si: "සිනමා රීති යුගයෙන් යුගයට වෙනස් වේ; සිනමාව නව රීති සොයා යයි." },
-    objs: ["O2"], who: ["vimukthi-jayasundara", "channa-deshapriya", "prasanna-withanage", "majith-s-uyangoda", "boopathy-nalin", "praveen-katukithule"],
+    objs: ["O2"], who: ["vimukthi-jayasundara", "channa-deshapriya", "prasanna-withanage", "majith-s-uyangoda", "boopathy-nalin", "praveen-katukithule", "md-mahindapaala"],
   },
   {
     name: { en: "Unconventional becomes convention", si: "Unconventional දේ සම්මතයක් බවට පත් වීම" },
     desc: { en: "New approaches are imitated and absorbed — and taught by schools and rewarded by festivals — until they become the norm, so the next one has to be found.", si: "නව ප්‍රවේශ අනුකරණය වී — පාසල් විසින් උගන්වා, උළෙල විසින් සම්මාන දී — සම්මතය බවට පත් වන තුරු අවශෝෂණය වේ; එබැවින් ඊළඟ එක සොයාගත යුතුය." },
-    objs: ["O2", "O5"], who: ["vimukthi-jayasundara", "channa-deshapriya", "majith-s-uyangoda", "boopathy-nalin", "hasantha-dissanayake", "nerun-kalpajith", "praveen-katukithule", "samith-bodhipaksa", "supun-hemachandra"],
+    objs: ["O2", "O5"], who: ["vimukthi-jayasundara", "channa-deshapriya", "majith-s-uyangoda", "boopathy-nalin", "hasantha-dissanayake", "nerun-kalpajith", "praveen-katukithule", "samith-bodhipaksa", "supun-hemachandra", "md-mahindapaala"],
   },
   {
     name: { en: "Artistic freedom", si: "කලාත්මක නිදහස" },
@@ -2728,7 +2915,7 @@ const THEMES = [
   {
     name: { en: "Political seeing", si: "දේශපාලනික දැක්ම" },
     desc: { en: "Looking beyond the accepted frame is itself political and can move society — and the state, in turn, can use the frame to serve an ideology.", si: "සම්මත රාමුවෙන් ඔබ්බට බැලීමම දේශපාලනික වන අතර, එයට සමාජය පෙළඹවිය හැකිය — අනෙක් අතට, රාජ්‍යයට ද මතවාදයක් සඳහා රාමුව භාවිත කළ හැකිය." },
-    objs: ["O3"], who: ["vimukthi-jayasundara", "prasanna-withanage", "majith-s-uyangoda", "boopathy-nalin", "praveen-katukithule", "sahan-ransika", "samith-bodhipaksa", "tharaka-nayanapriya", "prasanna-jayakodi"],
+    objs: ["O3"], who: ["vimukthi-jayasundara", "prasanna-withanage", "majith-s-uyangoda", "boopathy-nalin", "praveen-katukithule", "sahan-ransika", "samith-bodhipaksa", "tharaka-nayanapriya", "prasanna-jayakodi", "md-mahindapaala"],
   },
   {
     name: { en: "Multiple perspectives on war", si: "යුද්ධය පිළිබඳ විවිධ දෘෂ්ටිකෝණ" },
@@ -2738,7 +2925,7 @@ const THEMES = [
   {
     name: { en: "Subjectivity of unconventionality", si: "Unconventional බවෙහි ආත්මීයත්වය" },
     desc: { en: "Whether something is unconventional depends on the critic and the viewer — and, for the maker, it can mean something else again.", si: "යමක් unconventional ද යන්න විචාරකයා සහ ප්‍රේක්ෂකයා මත රඳා පවතී — නිර්මාණකරුට එය තවත් දෙයක් විය හැකිය." },
-    objs: ["O1"], who: ["vimukthi-jayasundara", "channa-deshapriya", "ileka-ruwanpathirana", "majith-s-uyangoda", "hasantha-dissanayake", "nerun-kalpajith", "praveen-katukithule", "samith-bodhipaksa", "tharaka-nayanapriya", "prasanna-jayakodi"],
+    objs: ["O1"], who: ["vimukthi-jayasundara", "channa-deshapriya", "ileka-ruwanpathirana", "majith-s-uyangoda", "hasantha-dissanayake", "nerun-kalpajith", "praveen-katukithule", "samith-bodhipaksa", "tharaka-nayanapriya", "prasanna-jayakodi", "md-mahindapaala"],
   },
   {
     name: { en: "Renewal through a new generation", si: "නව පරම්පරාවක් හරහා අලුත් වීම" },
@@ -2748,7 +2935,7 @@ const THEMES = [
   {
     name: { en: "The frame reveals the inner world", si: "රාමුව අභ්‍යන්තර ලෝකය හෙළි කරයි" },
     desc: { en: "Unconventional frames can convey a character's inner state, or a whole social condition, without dialogue.", si: "Unconventional රාමුවලට දෙබසකින් තොරව චරිතයක අභ්‍යන්තර තත්ත්වය හෝ සමස්ත සමාජ තත්ත්වයක් සන්නිවේදනය කළ හැකිය." },
-    objs: ["O1", "O3"], who: ["prasanna-withanage", "boopathy-nalin", "hasantha-dissanayake", "prasanna-jayakodi"],
+    objs: ["O1", "O3"], who: ["prasanna-withanage", "boopathy-nalin", "hasantha-dissanayake", "prasanna-jayakodi", "md-mahindapaala"],
   },
   {
     name: { en: "Rules, not laws", si: "නීති නොව රීති" },
@@ -2758,7 +2945,7 @@ const THEMES = [
   {
     name: { en: "Borrowed conventions", si: "ණයට ගත් සම්මත" },
     desc: { en: "Framing conventions were shaped elsewhere — by Tamil and Hindi cinema, and by a largely Western visual grammar; unconventional work defines itself by breaking from them.", si: "රාමුකරණ සම්මත හැඩගැසුණේ වෙනත් තැන්වලය — දෙමළ සහ හින්දි සිනමාව මෙන්ම බොහෝ දුරට බටහිර දෘශ්‍ය ව්‍යාකරණයක් මගින්; unconventional නිර්මාණ තමන්ව නිර්වචනය කරන්නේ ඒවායෙන් බිඳී යාමෙනි." },
-    objs: ["O3"], who: ["prasanna-withanage", "ileka-ruwanpathirana", "boopathy-nalin", "praveen-katukithule", "supun-hemachandra"],
+    objs: ["O3"], who: ["prasanna-withanage", "ileka-ruwanpathirana", "boopathy-nalin", "praveen-katukithule", "supun-hemachandra", "md-mahindapaala"],
   },
   {
     name: { en: "Authenticity over style", si: "ශෛලියට වඩා ස්වකීයත්වය" },
@@ -2768,12 +2955,12 @@ const THEMES = [
   {
     name: { en: "Shared authorship of the frame", si: "රාමුවේ හවුල් කර්තෘත්වය" },
     desc: { en: "The frame comes from a chain of decisions — writer, director, cinematographer and crew — agreed through discussion and even argument; a film's success belongs to all of them.", si: "රාමුව බිහි වන්නේ තීරණ දාමයකිනි — රචක, අධ්‍යක්ෂ, කැමරා අධ්‍යක්ෂ සහ කාර්ය මණ්ඩලය — සාකච්ඡාවෙන් සහ තර්කයෙන් පවා එකඟ වී; චිත්‍රපටයක සාර්ථකත්වය ඔවුන් සැමට හිමිය." },
-    objs: ["O4"], who: ["prasanna-withanage", "ileka-ruwanpathirana", "majith-s-uyangoda", "boopathy-nalin", "hasantha-dissanayake", "nerun-kalpajith", "praveen-katukithule", "samith-bodhipaksa", "supun-hemachandra"],
+    objs: ["O4"], who: ["prasanna-withanage", "ileka-ruwanpathirana", "majith-s-uyangoda", "boopathy-nalin", "hasantha-dissanayake", "nerun-kalpajith", "praveen-katukithule", "samith-bodhipaksa", "supun-hemachandra", "md-mahindapaala"],
   },
   {
     name: { en: "Visual grammar", si: "දෘශ්‍ය ව්‍යාකරණය" },
     desc: { en: "Visual language has a grammar, learned through training; convention means its accepted use, unconventional means challenging it.", si: "දෘශ්‍ය භාෂාවට පුහුණුවෙන් ප්‍රගුණ කරන ව්‍යාකරණයක් ඇත; conventional යනු එහි පිළිගත් භාවිතය වන අතර, unconventional යනු එයට අභියෝග කිරීමයි." },
-    objs: ["O1", "O2"], who: ["ileka-ruwanpathirana", "boopathy-nalin", "hasantha-dissanayake", "praveen-katukithule", "supun-hemachandra", "tharaka-nayanapriya"],
+    objs: ["O1", "O2"], who: ["ileka-ruwanpathirana", "boopathy-nalin", "hasantha-dissanayake", "praveen-katukithule", "supun-hemachandra", "tharaka-nayanapriya", "md-mahindapaala"],
   },
   {
     name: { en: "Constraints of a small industry", si: "කුඩා කර්මාන්තයක සීමා" },
@@ -2793,7 +2980,7 @@ const THEMES = [
   {
     name: { en: "Frame as emotion", si: "හැඟීමක් ලෙස රාමුව" },
     desc: { en: "A frame is defined by the feeling it carries: it locks only as much of the image as the emotion needs.", si: "රාමුවක් නිර්වචනය වන්නේ එය රැගෙන යන හැඟීමෙනි: ඉමෝෂනයට අවශ්‍ය ප්‍රමාණය පමණක් එය ලොක් කරයි." },
-    objs: ["O1"], who: ["majith-s-uyangoda", "nerun-kalpajith", "praveen-katukithule", "sahan-ransika", "samith-bodhipaksa", "prasanna-jayakodi"],
+    objs: ["O1"], who: ["majith-s-uyangoda", "nerun-kalpajith", "praveen-katukithule", "sahan-ransika", "samith-bodhipaksa", "prasanna-jayakodi", "md-mahindapaala"],
   },
   {
     name: { en: "Forums for cinema", si: "සිනමාව සඳහා සංවාද වේදිකා" },
@@ -2818,7 +3005,7 @@ const THEMES = [
   {
     name: { en: "Mise-en-scène", si: "මිසොන්සෙන් (Mise-en-scène)" },
     desc: { en: "The frame is a fully designed space — light, set, art direction and blocking — where even a crack in a wall is a decision.", si: "රාමුව යනු සම්පූර්ණයෙන් සැලසුම් කළ අවකාශයකි — ආලෝකය, කට්ටලය, කලා අධ්‍යක්ෂණය සහ blocking — බිත්තියක ඉරිතැලීමක් පවා තීරණයකි." },
-    objs: ["O1"], who: ["hasantha-dissanayake", "praveen-katukithule", "samith-bodhipaksa", "supun-hemachandra"],
+    objs: ["O1"], who: ["hasantha-dissanayake", "praveen-katukithule", "samith-bodhipaksa", "supun-hemachandra", "md-mahindapaala"],
   },
   {
     name: { en: "National cinematic signatures", si: "ජාතික සිනමා අනන්‍යතා" },
@@ -2853,7 +3040,7 @@ const THEMES = [
   {
     name: { en: "Planned versus accidental unconventionality", si: "සැලසුම් කළ සහ අහඹු unconventional බව" },
     desc: { en: "An unconventional frame must carry meaning and be chosen on purpose; in Sri Lanka many unconventional frames arise instead from budget, location and time, or from footage shot as events happened.", si: "unconventional රාමුවක් අර්ථයක් රැගත යුතු අතර හිතාමතා තෝරා ගත යුතුය; ශ්‍රී ලංකාවේ බොහෝ unconventional රාමු පැන නගින්නේ අයවැය, ස්ථානය සහ කාලය නිසා හෝ සිදුවීම් සිදුවන විට රූගත කළ දර්ශනවලිනි." },
-    objs: ["O1", "O3"], who: ["samith-bodhipaksa"],
+    objs: ["O1", "O3"], who: ["samith-bodhipaksa", "md-mahindapaala"],
   },
   {
     name: { en: "Reading the text, missing the context", si: "පෙළ කියවමින් සන්දර්භය මග හැරීම" },
@@ -2885,13 +3072,23 @@ const THEMES = [
     desc: { en: "Smartphones, social media, teledramas and the economic crisis have weakened the cinema audience since about 2020, pushing some makers towards festivals and away from the local market.", si: "ස්මාර්ට් දුරකථන, සමාජ මාධ්‍ය, ටෙලි නාට්‍ය සහ ආර්ථික අර්බුදය 2020 පමණ සිට සිනමා ප්‍රේක්ෂකයා දුර්වල කර ඇති අතර සමහර නිර්මාණකරුවන් දේශීය වෙළඳපොළෙන් ඈත්ව උළෙල වෙත යොමු කරයි." },
     objs: ["O3", "O5"], who: ["prasanna-jayakodi"],
   },
+  {
+    name: { en: "The frame reaches beyond its edges", si: "රාමුව එහි දාරවලින් ඔබ්බට විහිදේ" },
+    desc: { en: "The purpose of the frame is to send the viewer's imagination past its four edges, using what is left out and what is carried by sound; a frame that gives the viewer nothing to imagine has achieved nothing.", si: "රාමුවේ අරමුණ ඉවත තැබූ දේ සහ ශබ්දයෙන් ගෙන යන දේ භාවිත කර ප්‍රේක්ෂකයාගේ පරිකල්පනය එහි සතර දාරවලින් ඔබ්බට යැවීමයි; ප්‍රේක්ෂකයාට පරිකල්පනය කිරීමට කිසිවක් නොදෙන රාමුවකින් කිසිවක් ඉටු නොවේ." },
+    objs: ["O1", "O5"], who: ["md-mahindapaala"],
+  },
+  {
+    name: { en: "Easy technology, thinner imagination", si: "පහසු තාක්ෂණය, තුනී පරිකල්පනය" },
+    desc: { en: "Digital tools and monitor culture have made filmmaking easier but, in this view, have lowered quality and left viewers passive; the future depends on keeping the viewer's imagination at work.", si: "ඩිජිටල් මෙවලම් සහ මොනිටර් සංස්කෘතිය සිනමා නිර්මාණය පහසු කර ඇත; නමුත් මෙම දැක්මට අනුව ගුණාත්මකභාවය පහත හෙළා ප්‍රේක්ෂකයන් උදාසීන කර ඇත; අනාගතය රඳා පවතින්නේ ප්‍රේක්ෂකයාගේ පරිකල්පනය ක්‍රියාත්මකව තබා ගැනීම මත ය." },
+    objs: ["O5"], who: ["md-mahindapaala", "tharaka-nayanapriya"],
+  },
 ];
 
 const KEY_FINDING = {
-  from: "01 – 14",
+  from: "01 – 15",
   title: { en: "Unconventionality is relative — to the viewer, to time, to power, to knowledge and to the screen", si: "Unconventional බව සාපේක්ෂයි — ප්‍රේක්ෂකයාට, කාලයට, බලයට, දැනුමට සහ තිරයට" },
   text: {
-    en: "All fourteen voices so far agree there is no fixed definition of “unconventional”. For Vimukthi Jayasundara it is decided by the critic and the viewer; Channa Deshapriya adds time — today's unconventional is later accepted as convention; Prasanna Withanage adds history and power — Sri Lankan convention was itself borrowed, and both the market and the state shape what a frame may show. The first academic voice, Ileka Ruwanpathirana, adds knowledge: conventions form a learned, largely Western visual grammar, and breaking them is meaningful only when they are understood. Majith S. Uyangoda adds the screen: the frame changes because devices and viewing habits change, as the vertical phone frame shows, and he would rather call past practice “concepts” than “conventions”. Boopathy Nalin adds the politics of beauty: what is treated as beautiful — Eurocentric lighting, Bollywood colour, the pale “border village” — is inherited, and the radical becomes convention once festivals and schools institutionalise it. Hasantha Dissanayake shows this happening in Sri Lanka: the 2000s festival style — a lone figure, a worn wall, a wide shot — hardened into a formula that newer filmmakers copy. The first young filmmaker, Nerun Kalpajith, learned framing mostly online and by doing, sees unconventionality as relative to each viewer's experience, and values honest human feeling over technique — a counterpoint to the academics' insistence on theory. Praveen Katukithule sharpens the definition: convention is simply familiarity — what we have already seen — and creative freedom always sits above the rules; he expects a portrait-minded generation to pull even horizontal cinema's composition towards the centre. This links the study to reception theory, to the politics of national cinema and of aesthetics, to film education and to media technology.",
-    si: "Unconventional යන්නට ස්ථාවර නිර්වචනයක් නැති බවට මෙතෙක් හඬ දහහතරම එකඟ වේ. විමුක්ති ජයසුන්දරට අනුව එය තීරණය කරන්නේ විචාරකයා සහ ප්‍රේක්ෂකයා ය; චන්න දේශප්‍රිය කාලය එකතු කරයි — අද සම්ප්‍රදායික නොවන දේ පසුව සම්මතයක් ලෙස පිළිගැනේ; ප්‍රසන්න විතානගේ ඉතිහාසය සහ බලය එකතු කරයි — ශ්‍රී ලාංකීය සම්මතය ම ණයට ගත් එකක් වන අතර, රාමුවකට පෙන්විය හැකි දේ හැඩගස්වන්නේ වෙළඳපොළ සහ රාජ්‍යය යන දෙකමය. පළමු ශාස්ත්‍රීය හඬ වන ඉලේකා රුවන්පතිරණ දැනුම එකතු කරයි — සම්මතයන් යනු පුහුණුවෙන් ප්‍රගුණ කරන, බොහෝ දුරට බටහිර දෘශ්‍ය ව්‍යාකරණයක් වන අතර, ඒවා බිඳීම අර්ථවත් වන්නේ ඒවා අවබෝධ කරගත් විට පමණි. මජිත් එස්. උයන්ගොඩ තිරය එකතු කරයි — සිරස් දුරකථන රාමුවෙන් පෙනෙන පරිදි, උපාංග සහ නැරඹීමේ පුරුදු වෙනස් වන නිසා රාමුව වෙනස් වේ; ඔහු අතීත භාවිතය ‘සම්මත’ වෙනුවට ‘සංකල්පනා’ ලෙස හැඳින්වීමට කැමතිය. භූපති නලින් සුන්දරත්වයේ දේශපාලනය එකතු කරයි — සුන්දර ලෙස සලකන දේ (යුරෝකේන්ද්‍රීය ආලෝකකරණය, බොලිවුඩ් වර්ණ, පඬු පැහැති “මායිම් ගම්මානය”) උරුම කරගත් ඒවා වන අතර, උළෙල සහ පාසල් එය ආයතනගත කළ විට රැඩිකල් දේ සම්මතයක් වේ. හසන්ත දිසානායක ශ්‍රී ලංකාවේ මෙය සිදුවන ආකාරය පෙන්වයි: 2000 දශකයේ උළෙල ශෛලිය — තනි මිනිසෙක්, දිරාපත් බිත්තියක්, වයිඩ් ෂොට් එකක් — නවක සිනමාකරුවන් අනුකරණය කරන සූත්‍රයක් බවට ඝන විය. පළමු නවක සිනමාකරුවා වන නෙරුන් කල්පජිත් රාමුකරණය බොහෝ දුරට ඉගෙන ගත්තේ අන්තර්ජාලයෙන් සහ ප්‍රායෝගිකව කිරීමෙනි; unconventional බව එක් එක් නරඹන්නාගේ අත්දැකීමට සාපේක්ෂ ලෙස දකින අතර, ශිල්ප ක්‍රමයට වඩා අවංක මිනිස් හැඟීම අගය කරයි — න්‍යාය අවධාරණය කරන ශාස්ත්‍රඥයන්ට ප්‍රතිවිරුද්ධව. ප්‍රවීන් කටුකිතුළ නිර්වචනය තියුණු කරයි: සම්මතය යනු සරලවම හුරු බවයි — අප දැනටමත් දැක ඇති දේ; නිර්මාණාත්මක නිදහස සැමවිටම රීතිවලට ඉහළින් ඇත; සිරස්-මනසක් ඇති පරම්පරාවක් තිරස් සිනමාවේ සංයුතිය පවා මැදට ඇද ගනු ඇතැයි ඔහු බලාපොරොත්තු වේ. මෙය අධ්‍යයනය reception න්‍යාය, ජාතික සිනමාවේ දේශපාලනය, සිනමා අධ්‍යාපනය සහ මාධ්‍ය තාක්ෂණය සමඟ සම්බන්ධ කරයි.",
+    en: "All fifteen voices agree there is no fixed definition of “unconventional”. For Vimukthi Jayasundara it is decided by the critic and the viewer; Channa Deshapriya adds time — today's unconventional is later accepted as convention; Prasanna Withanage adds history and power — Sri Lankan convention was itself borrowed, and both the market and the state shape what a frame may show. The first academic voice, Ileka Ruwanpathirana, adds knowledge: conventions form a learned, largely Western visual grammar, and breaking them is meaningful only when they are understood. Majith S. Uyangoda adds the screen: the frame changes because devices and viewing habits change, as the vertical phone frame shows, and he would rather call past practice “concepts” than “conventions”. Boopathy Nalin adds the politics of beauty: what is treated as beautiful — Eurocentric lighting, Bollywood colour, the pale “border village” — is inherited, and the radical becomes convention once festivals and schools institutionalise it. Hasantha Dissanayake shows this happening in Sri Lanka: the 2000s festival style — a lone figure, a worn wall, a wide shot — hardened into a formula that newer filmmakers copy. The first young filmmaker, Nerun Kalpajith, learned framing mostly online and by doing, sees unconventionality as relative to each viewer's experience, and values honest human feeling over technique — a counterpoint to the academics' insistence on theory. Praveen Katukithule sharpens the definition: convention is simply familiarity — what we have already seen — and creative freedom always sits above the rules; he expects a portrait-minded generation to pull even horizontal cinema's composition towards the centre. This links the study to reception theory, to the politics of national cinema and of aesthetics, to film education and to media technology.",
+    si: "Unconventional යන්නට ස්ථාවර නිර්වචනයක් නැති බවට මෙතෙක් හඬ පහළොවම එකඟ වේ. විමුක්ති ජයසුන්දරට අනුව එය තීරණය කරන්නේ විචාරකයා සහ ප්‍රේක්ෂකයා ය; චන්න දේශප්‍රිය කාලය එකතු කරයි — අද සම්ප්‍රදායික නොවන දේ පසුව සම්මතයක් ලෙස පිළිගැනේ; ප්‍රසන්න විතානගේ ඉතිහාසය සහ බලය එකතු කරයි — ශ්‍රී ලාංකීය සම්මතය ම ණයට ගත් එකක් වන අතර, රාමුවකට පෙන්විය හැකි දේ හැඩගස්වන්නේ වෙළඳපොළ සහ රාජ්‍යය යන දෙකමය. පළමු ශාස්ත්‍රීය හඬ වන ඉලේකා රුවන්පතිරණ දැනුම එකතු කරයි — සම්මතයන් යනු පුහුණුවෙන් ප්‍රගුණ කරන, බොහෝ දුරට බටහිර දෘශ්‍ය ව්‍යාකරණයක් වන අතර, ඒවා බිඳීම අර්ථවත් වන්නේ ඒවා අවබෝධ කරගත් විට පමණි. මජිත් එස්. උයන්ගොඩ තිරය එකතු කරයි — සිරස් දුරකථන රාමුවෙන් පෙනෙන පරිදි, උපාංග සහ නැරඹීමේ පුරුදු වෙනස් වන නිසා රාමුව වෙනස් වේ; ඔහු අතීත භාවිතය ‘සම්මත’ වෙනුවට ‘සංකල්පනා’ ලෙස හැඳින්වීමට කැමතිය. භූපති නලින් සුන්දරත්වයේ දේශපාලනය එකතු කරයි — සුන්දර ලෙස සලකන දේ (යුරෝකේන්ද්‍රීය ආලෝකකරණය, බොලිවුඩ් වර්ණ, පඬු පැහැති “මායිම් ගම්මානය”) උරුම කරගත් ඒවා වන අතර, උළෙල සහ පාසල් එය ආයතනගත කළ විට රැඩිකල් දේ සම්මතයක් වේ. හසන්ත දිසානායක ශ්‍රී ලංකාවේ මෙය සිදුවන ආකාරය පෙන්වයි: 2000 දශකයේ උළෙල ශෛලිය — තනි මිනිසෙක්, දිරාපත් බිත්තියක්, වයිඩ් ෂොට් එකක් — නවක සිනමාකරුවන් අනුකරණය කරන සූත්‍රයක් බවට ඝන විය. පළමු නවක සිනමාකරුවා වන නෙරුන් කල්පජිත් රාමුකරණය බොහෝ දුරට ඉගෙන ගත්තේ අන්තර්ජාලයෙන් සහ ප්‍රායෝගිකව කිරීමෙනි; unconventional බව එක් එක් නරඹන්නාගේ අත්දැකීමට සාපේක්ෂ ලෙස දකින අතර, ශිල්ප ක්‍රමයට වඩා අවංක මිනිස් හැඟීම අගය කරයි — න්‍යාය අවධාරණය කරන ශාස්ත්‍රඥයන්ට ප්‍රතිවිරුද්ධව. ප්‍රවීන් කටුකිතුළ නිර්වචනය තියුණු කරයි: සම්මතය යනු සරලවම හුරු බවයි — අප දැනටමත් දැක ඇති දේ; නිර්මාණාත්මක නිදහස සැමවිටම රීතිවලට ඉහළින් ඇත; සිරස්-මනසක් ඇති පරම්පරාවක් තිරස් සිනමාවේ සංයුතිය පවා මැදට ඇද ගනු ඇතැයි ඔහු බලාපොරොත්තු වේ. මෙය අධ්‍යයනය reception න්‍යාය, ජාතික සිනමාවේ දේශපාලනය, සිනමා අධ්‍යාපනය සහ මාධ්‍ය තාක්ෂණය සමඟ සම්බන්ධ කරයි.",
   },
 };
